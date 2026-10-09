@@ -1,0 +1,4 @@
+# calworkforce.org — static HTML site, no build step.
+[build]
+  publish = "."
+  command = ""
