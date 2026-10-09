@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+<link rel="shortcut icon" href="/assets/favicon.ico">
+<title>California Workforce Association</title>
+<meta name="description" content="The California Workforce Association is the champion of the state's 45 local workforce boards — amplifying their voice, equipping them to act, and connecting them to one another.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --coral:#E27A50; --coral-dark:#C9623B; --coral-tint:#F6E4DB; --coral-wash:#FBF0EA;
+    --navy:#1A375D; --navy-deep:#122842; --navy-tint:#3B5578; --navy-wash:#EAEEF3;
+    --ground:#FAF7F3; --white:#FFFFFF; --ink:#1A375D; --muted:#5B6A7D; --line:#E7DFD6;
+    --shadow:0 18px 48px -24px rgba(26,55,93,.28);
+    --shadow-sm:0 8px 24px -16px rgba(26,55,93,.35);
+    --radius:20px; --radius-lg:28px; --maxw:1100px;
+    --ease:cubic-bezier(.22,.61,.36,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{font-family:'Sora',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background:var(--ground);color:var(--ink);font-size:18px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;width:100%}
+  section{padding:96px 0}
+
+  h1,h2,h3{line-height:1.08;font-weight:700;letter-spacing:-.02em;color:var(--navy)}
+  h1{font-size:clamp(2.6rem,6.5vw,4.6rem);font-weight:800}
+  h2{font-size:clamp(2rem,4.2vw,3rem)}
+  h3{font-size:1.25rem;letter-spacing:-.01em}
+  p{color:var(--muted)}
+  .lead{font-size:clamp(1.05rem,2vw,1.3rem);color:var(--navy-tint);font-weight:400}
+  .eyebrow{font-size:.78rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--coral-dark);display:inline-block}
+  .eyebrow.light{color:var(--coral)}
+  .hl{color:var(--coral)}
+
+  .btn{display:inline-flex;align-items:center;gap:.55em;font-family:inherit;font-size:1rem;font-weight:600;letter-spacing:-.01em;padding:16px 30px;border-radius:999px;border:2px solid transparent;cursor:pointer;transition:transform .25s var(--ease),background .25s var(--ease),box-shadow .25s var(--ease),color .2s;line-height:1}
+  .btn-primary{background:var(--coral);color:#fff;box-shadow:0 12px 30px -12px rgba(226,122,80,.7)}
+  .btn-primary:hover{background:var(--coral-dark);transform:translateY(-2px)}
+  .btn-ghost{background:transparent;color:var(--navy);border-color:var(--line)}
+  .btn-ghost:hover{border-color:var(--coral);color:var(--coral-dark);transform:translateY(-2px)}
+  .btn-arrow{transition:transform .25s var(--ease)}
+  .btn:hover .btn-arrow{transform:translateX(4px)}
+  a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--coral);outline-offset:3px;border-radius:8px}
+  .linkarrow{display:inline-flex;align-items:center;gap:.4em;font-weight:600;color:var(--navy);border-bottom:2px solid transparent;transition:color .2s,border-color .2s;padding-bottom:2px}
+  .linkarrow:hover{color:var(--coral-dark);border-color:var(--coral)}
+
+  /* Header + nav */
+  header.site{position:sticky;top:0;z-index:60;background:#FAF7F3;border-bottom:1px solid rgba(231,223,214,.8)}
+  .site .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:18px;padding-bottom:18px}
+  .logo-img{height:54px;width:auto;display:block}
+  .nav{display:flex;align-items:center;gap:22px}
+  .nav a.navlink{font-size:.87rem;font-weight:500;color:var(--navy);transition:color .2s;position:relative;white-space:nowrap}
+  .nav a.navlink:hover{color:var(--coral-dark)}
+  .nav a.navlink::after{content:"";position:absolute;left:0;right:100%;bottom:-6px;height:2px;background:var(--coral);transition:right .25s var(--ease)}
+  .nav a.navlink:hover::after{right:0}
+  .site .btn{padding:11px 20px;font-size:.87rem;white-space:nowrap}
+  /* Dropdown submenu */
+  .nav-item{position:relative;display:flex;align-items:center}
+  .subtoggle{font-family:inherit;background:none;border:none;cursor:pointer;font-size:.87rem;font-weight:500;color:var(--navy);display:inline-flex;align-items:center;gap:6px;padding:0;transition:color .2s;white-space:nowrap}
+  .subtoggle:hover,.has-sub:focus-within .subtoggle{color:var(--coral-dark)}
+  .subtoggle .caret{font-size:.66rem;color:var(--coral-dark);transition:transform .2s var(--ease)}
+  .has-sub:hover .caret,.subtoggle[aria-expanded="true"] .caret{transform:rotate(180deg)}
+  .submenu{position:absolute;top:calc(100% + 16px);left:50%;transform:translateX(-50%) translateY(6px);min-width:210px;background:var(--white);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:8px;opacity:0;visibility:hidden;transition:opacity .2s var(--ease),transform .2s var(--ease);z-index:70}
+  .submenu::before{content:"";position:absolute;top:-16px;left:0;right:0;height:16px}
+  .has-sub:hover .submenu,.has-sub:focus-within .submenu,.submenu.open{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
+  .submenu a{display:block;padding:11px 14px;border-radius:9px;font-size:.92rem;font-weight:500;color:var(--navy);transition:background .18s,color .18s}
+  .submenu a:hover{background:var(--coral-wash);color:var(--coral-dark)}
+  .navtoggle{display:none;background:none;border:1.5px solid var(--line);border-radius:10px;padding:9px 11px;cursor:pointer}
+  .navtoggle span{display:block;width:20px;height:2px;background:var(--navy);margin:4px 0;border-radius:2px}
+  @media (max-width:1024px){
+    .nav{position:fixed;inset:64px 0 auto 0;flex-direction:column;align-items:stretch;gap:0;background:var(--ground);border-bottom:1px solid var(--line);padding:8px 24px 20px;transform:translateY(-140%);transition:transform .3s var(--ease);box-shadow:var(--shadow)}
+    .nav.open{transform:translateY(0)}
+    .nav a.navlink{padding:14px 0;border-bottom:1px solid var(--line)}
+    .nav a.navlink::after{display:none}
+    .nav .btn{margin-top:14px;justify-content:center}
+    .navtoggle{display:block}
+    /* Submenu becomes an accordion */
+    .nav-item{display:block}
+    .subtoggle{width:100%;justify-content:space-between;padding:14px 0;border-bottom:1px solid var(--line);font-size:1rem;font-weight:500}
+    .submenu{position:static;transform:none;opacity:1;visibility:hidden;display:none;min-width:0;background:transparent;border:none;box-shadow:none;padding:0 0 0 14px}
+    .submenu::before{display:none}
+    .submenu.open{display:block;visibility:visible}
+    .submenu,.submenu.open,.has-sub:hover .submenu,.has-sub:focus-within .submenu{transform:none;left:auto}
+    .submenu a{padding:13px 0;border-bottom:1px solid var(--line)}
+  }
+
+  /* Hero */
+  .hero{position:relative;padding:92px 0 96px;overflow:hidden}
+  .hero .wrap{position:relative;z-index:2;max-width:920px}
+  .hero h1{margin:22px 0 24px;max-width:14ch}
+  .hero .lead{max-width:660px;margin-bottom:36px}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin-bottom:44px}
+  .markers{display:flex;flex-wrap:wrap;gap:14px}
+  .marker{display:inline-flex;align-items:center;gap:9px;background:var(--white);border:1px solid var(--line);border-radius:999px;padding:10px 18px;font-size:.9rem;font-weight:500;color:var(--navy);box-shadow:var(--shadow-sm)}
+  .marker .dot{width:9px;height:9px;border-radius:50%;background:var(--coral);flex:none}
+  .geo{position:absolute;border-radius:50%;z-index:1;pointer-events:none}
+  .hero .g1{width:440px;height:440px;top:-150px;right:-130px;background:var(--coral-wash)}
+  .hero .g2{width:190px;height:190px;bottom:26px;right:13%;border:2px solid var(--coral-tint)}
+  .hero .g3{width:14px;height:14px;top:24%;right:7%;background:var(--coral)}
+  .hero .g4{width:10px;height:10px;bottom:30%;left:2%;background:var(--navy)}
+
+  /* Rotator / news + events */
+  .rotator-sec{background:var(--navy-wash)}
+  .rot-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:34px;flex-wrap:wrap}
+  .rot-head .sec-head{margin-bottom:0;max-width:620px}
+  .sec-head h2{margin:14px 0 12px}
+  .sec-head p{font-size:1.08rem}
+  .rot-controls{display:flex;gap:12px}
+  .rot-filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px}
+  .rot-filter{font-family:inherit;font-size:.85rem;font-weight:600;color:var(--navy-tint);background:var(--white);border:1.5px solid var(--line);border-radius:999px;padding:9px 18px;cursor:pointer;transition:background .2s var(--ease),border-color .2s var(--ease),color .2s var(--ease),transform .2s var(--ease)}
+  .rot-filter:hover{border-color:var(--coral-tint);color:var(--coral-dark);transform:translateY(-1px)}
+  .rot-filter[aria-pressed="true"]{background:var(--coral);border-color:var(--coral);color:#fff}
+  .rot-btn{width:52px;height:52px;border-radius:50%;border:1.5px solid var(--line);background:var(--white);color:var(--navy);display:grid;place-items:center;cursor:pointer;transition:border-color .2s,color .2s,transform .2s var(--ease),background .2s}
+  .rot-btn:hover{border-color:var(--coral);color:var(--coral-dark);transform:translateY(-2px)}
+  .rot-btn svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .rot-viewport{overflow:hidden}
+  .rot-track{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 48px)/3);gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:4px 4px 14px;scrollbar-width:none}
+  .rot-track::-webkit-scrollbar{display:none}
+  .rot-card{scroll-snap-align:start;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;transition:transform .3s var(--ease),box-shadow .3s var(--ease),border-color .3s}
+  .rot-card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--coral-tint)}
+  .rot-thumb{height:150px;background:linear-gradient(135deg,var(--coral-wash),var(--navy-wash));position:relative}
+  .rot-thumb .chip{position:absolute;top:14px;left:14px;display:inline-flex;align-items:center;gap:7px;background:var(--white);border-radius:999px;padding:6px 13px;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--coral-dark);box-shadow:var(--shadow-sm)}
+  .rot-thumb .chip.event{color:#fff;background:var(--coral)}
+  .rot-thumb .chip.career{color:#fff;background:var(--navy)}
+  .rot-thumb .chip.policy{color:var(--navy);background:var(--navy-wash)}
+  .rot-body{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+  .rot-date{font-size:.8rem;font-weight:600;color:var(--muted);letter-spacing:.02em;margin-bottom:8px}
+  .rot-card h3{font-size:1.12rem;margin-bottom:9px}
+  .rot-card p{font-size:.92rem;flex:1}
+  .rot-card .linkarrow{margin-top:16px;font-size:.9rem}
+  .rot-dots{display:flex;gap:9px;justify-content:center;margin-top:26px}
+  .rot-dot{width:9px;height:9px;border-radius:50%;background:var(--coral-tint);border:none;padding:0;cursor:pointer;transition:background .2s,transform .2s}
+  .rot-dot[aria-current="true"]{background:var(--coral);transform:scale(1.25)}
+
+  /* Who we are — pillars */
+  .sec-head{max-width:680px;margin-bottom:56px}
+  .sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+  .pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+  .pillar{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:34px 30px;box-shadow:var(--shadow);transition:transform .3s var(--ease),box-shadow .3s var(--ease),border-color .3s}
+  .pillar:hover{transform:translateY(-6px);box-shadow:0 26px 60px -28px rgba(26,55,93,.4);border-color:var(--coral-tint)}
+  .pillar .ico{width:56px;height:56px;border-radius:15px;background:var(--coral-wash);display:grid;place-items:center;margin-bottom:20px}
+  .pillar .ico svg{width:29px;height:29px;stroke:var(--coral-dark);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .pillar h3{margin-bottom:10px}
+  .pillar .k{display:block;font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--coral-dark);margin-bottom:6px}
+  .pillar p{font-size:.97rem}
+  .statstrip{display:flex;flex-wrap:wrap;gap:16px;margin-top:40px}
+  .stat{flex:1;min-width:180px;background:var(--navy);color:#fff;border-radius:var(--radius);padding:28px 26px}
+  .stat .num{font-size:2.6rem;font-weight:800;letter-spacing:-.03em;line-height:1;color:#fff}
+  .stat .num .hl{color:var(--coral)}
+  .stat .lbl{color:rgba(255,255,255,.72);font-size:.92rem;margin-top:8px}
+
+  /* Become a member */
+  .member-sec{background:var(--navy-deep);color:#fff;position:relative;overflow:hidden}
+  .member-sec .wrap{position:relative;z-index:2}
+  .member-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .member-sec h2{color:#fff;margin:16px 0 18px}
+  .member-sec .eyebrow{color:var(--coral)}
+  .member-intro p{color:rgba(255,255,255,.74);font-size:1.08rem}
+  .member-cta{display:flex;flex-wrap:wrap;gap:16px;margin-top:30px}
+  .member-cta .btn-ghost{color:#fff;border-color:rgba(255,255,255,.28)}
+  .member-cta .btn-ghost:hover{border-color:var(--coral);color:var(--coral)}
+  .benefits{list-style:none;display:flex;flex-direction:column;gap:14px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius-lg);padding:34px}
+  .benefits li{display:flex;gap:14px;color:rgba(255,255,255,.9);font-size:1rem;line-height:1.5}
+  .benefits li svg{width:24px;height:24px;flex:none;stroke:var(--coral);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;margin-top:1px}
+  .benefits li strong{color:#fff;font-weight:600}
+  .member-note{margin-top:22px;font-size:.85rem;color:rgba(255,255,255,.55)}
+  .member-sec .mg1{position:absolute;width:520px;height:520px;border:2px solid rgba(226,122,80,.14);border-radius:50%;bottom:-240px;left:-150px;z-index:1}
+  .member-sec .mg2{position:absolute;width:16px;height:16px;background:var(--coral);border-radius:50%;top:22%;right:8%;z-index:1}
+
+  /* Footer */
+  footer.site{background:var(--navy-deep);color:rgba(255,255,255,.6);padding:52px 0;border-top:1px solid rgba(255,255,255,.08)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start;justify-content:space-between}
+  .foot-lockup .cwa{font-weight:800;font-size:1.35rem;color:var(--coral);letter-spacing:.02em}
+  .foot-lockup .ef{display:block;font-weight:500;font-size:.82rem;color:rgba(255,255,255,.8);text-transform:lowercase;margin-top:3px}
+  footer .tag{font-size:.85rem;margin-top:12px;max-width:260px}
+  footer nav{display:flex;gap:44px;flex-wrap:wrap}
+  footer .col h4{color:#fff;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
+  footer .col a{display:block;font-size:.92rem;padding:4px 0;transition:color .2s}
+  footer .col a:hover{color:var(--coral)}
+
+  /* Scroll reveal (progressive enhancement) */
+  .js .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+  .js .reveal.in{opacity:1;transform:none}
+  .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}
+  @media (prefers-reduced-motion:reduce){
+    .js .reveal{opacity:1;transform:none;transition:none}
+    html{scroll-behavior:auto}
+    .btn,.pillar,.rot-card,.rot-track{transition:none}
+    .rot-track{scroll-behavior:auto}
+  }
+
+  @media (max-width:900px){
+    .member-grid{grid-template-columns:1fr;gap:32px}
+    .rot-track{grid-auto-columns:calc((100% - 24px)/2)}
+  }
+  @media (max-width:640px){
+    section{padding:68px 0}
+    .hero{padding:60px 0 64px}
+    body{font-size:17px}
+    .logo-img{height:44px}
+    .rot-track{grid-auto-columns:86%}
+    .rot-head{align-items:flex-start}
+    .hero-cta .btn{width:100%;justify-content:center}
+    footer nav{gap:28px}
+  }
+</style>
+</head>
+<script>document.documentElement.className+=' js';</script>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site">
+  <div class="wrap">
+    <a class="lockup" href="#top" aria-label="California Workforce Association home">
+      <img class="logo-img" src="/assets/logo-primary.png" alt="California Workforce Association">
+    </a>
+    <button class="navtoggle" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button>
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+      <!-- PLACEHOLDER NAV: links point to pages to be built -->
+      <div class="nav-item has-sub">
+        <button class="subtoggle" aria-expanded="false" aria-haspopup="true" aria-controls="submenu-about">About Us <span class="caret" aria-hidden="true">▾</span></button>
+        <div class="submenu" id="submenu-about" role="menu" aria-label="About Us">
+          <a role="menuitem" href="vision.html">Our Vision</a>
+          <a role="menuitem" href="team.html">Our Team</a>
+          <a role="menuitem" href="board.html">Our Board</a>
+          <a role="menuitem" href="contact.html">Contact Us</a>
+        </div>
+      </div>
+      <a class="navlink" href="advocacy.html">Advocacy</a>
+      <div class="nav-item has-sub">
+        <button class="subtoggle" aria-expanded="false" aria-haspopup="true" aria-controls="submenu-members">Our Members <span class="caret" aria-hidden="true">▾</span></button>
+        <div class="submenu" id="submenu-members" role="menu" aria-label="Our Members">
+          <a role="menuitem" href="local-boards.html">Boards</a>
+          <a role="menuitem" href="affiliates.html">Affiliates</a>
+        </div>
+      </div>
+      <div class="nav-item has-sub">
+        <button class="subtoggle" aria-expanded="false" aria-haspopup="true" aria-controls="submenu-conferences">Conferences <span class="caret" aria-hidden="true">▾</span></button>
+        <div class="submenu" id="submenu-conferences" role="menu" aria-label="Conferences">
+          <a role="menuitem" href="meeting-of-the-minds.html">Meeting of the Minds</a>
+          <a role="menuitem" href="workcon.html">Workcon</a>
+        </div>
+      </div>
+      <div class="nav-item has-sub">
+        <button class="subtoggle" aria-expanded="false" aria-haspopup="true" aria-controls="submenu-resources">Resources <span class="caret" aria-hidden="true">▾</span></button>
+        <div class="submenu" id="submenu-resources" role="menu" aria-label="Resources">
+          <a role="menuitem" href="self-sufficiency-calculator.html">Self-Sufficiency Calculator</a>
+        </div>
+      </div>
+      <!-- Contact Us → dedicated membership page (to be built) -->
+      <a class="navlink" href="fellowship.html">Executive Fellowship</a>
+      <a class="btn btn-primary" href="contact.html">Contact Us <span class="btn-arrow" aria-hidden="true">→</span></a>
+    </nav>
+  </div>
+</header>
+<span id="top"></span>
+
+<!-- ============ 1. HERO ============ -->
+<section class="hero" aria-labelledby="hero-h">
+  <div class="geo g1" aria-hidden="true"></div>
+  <div class="geo g2" aria-hidden="true"></div>
+  <div class="geo g3" aria-hidden="true"></div>
+  <div class="geo g4" aria-hidden="true"></div>
+  <div class="wrap">
+    <span class="eyebrow reveal">The California Workforce Association</span>
+    <!-- HERO TITLE — recommended. Swap in an alternate below if preferred:
+         B) We believe every community can put its people to work.
+         C) When local boards are strong, California works.
+         D) Every Californian, connected to opportunity. Every community, stronger for it. -->
+    <h1 id="hero-h" class="reveal d1">We believe in the power of local leadership to build a <span class="hl">stronger California</span>.</h1>
+    <p class="lead reveal d2">The California Workforce Association is the champion of the state's 45 local workforce boards — amplifying their voice, equipping them to act, and connecting them to one another, so every community can put its people to work.</p>
+    <div class="hero-cta reveal d3">
+      <a class="btn btn-primary" href="contact.html">Contact us <span class="btn-arrow" aria-hidden="true">→</span></a>
+    </div>
+    <div class="markers reveal d3">
+      <span class="marker"><span class="dot" aria-hidden="true"></span>45 local workforce boards</span>
+      <span class="marker"><span class="dot" aria-hidden="true"></span>One statewide voice</span>
+      <span class="marker"><span class="dot" aria-hidden="true"></span>Amplify · Equip · Connect</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. WHO WE ARE — DRIVING WORKFORCE INNOVATION ============ -->
+<section id="who" aria-labelledby="who-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Who we are</span>
+      <h2 id="who-h">Driving workforce innovation across California.</h2>
+      <p>We're the connective tissue of California's workforce system — carrying the field's voice outward and building its capacity inward, so 45 local boards can do their best work.</p>
+    </div>
+    <div class="pillars">
+      <div class="pillar reveal">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 11l18-5v12L3 14v-3zM3 11v3M11.5 9.4v6.7"/><path d="M7 15v3a2 2 0 0 0 2 2h1"/></svg></div>
+        <span class="k">Amplify</span>
+        <h3>We carry the field's voice.</h3>
+        <p>We bring our members' stories and needs to the people who shape policy and funding — so California's boards speak with one credible, coordinated voice, and decision-makers act on it.</p>
+      </div>
+      <div class="pillar reveal d1">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 5.3L20 8l-4 4 1 6-5-3-5 3 1-6-4-4 5.6-.7z"/></svg></div>
+        <span class="k">Equip</span>
+        <h3>We give boards what they need to act.</h3>
+        <p>We translate policy into plain-language action, move resources to where they're needed most, and build the capacity boards need to meet whatever comes next.</p>
+      </div>
+      <div class="pillar reveal d2">
+        <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="6" cy="7" r="3"/><circle cx="18" cy="7" r="3"/><circle cx="12" cy="18" r="3"/><path d="M8.5 8.5l2.2 7M15.5 8.5l-2.2 7M9 7h6"/></svg></div>
+        <span class="k">Connect</span>
+        <h3>We bring the system together.</h3>
+        <p>We convene boards and partners — traditional and nontraditional alike — to learn from one another, solve shared problems, and shape what comes next. No board works alone.</p>
+      </div>
+    </div>
+    <!-- PLACEHOLDER STATS: CWA to verify figures -->
+    <div class="statstrip">
+      <div class="stat reveal"><div class="num"><span class="hl">45</span></div><div class="lbl">local workforce boards, one association</div></div>
+      <div class="stat reveal d1"><div class="num">58</div><div class="lbl">counties served across California</div></div>
+      <div class="stat reveal d2"><div class="num">1<span class="hl">M+</span></div><div class="lbl">Californians reached through our members each year</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. CONTACT US ============ -->
+<section class="member-sec" id="contact-cta" aria-labelledby="cc-h">
+  <div class="geo mg1" aria-hidden="true"></div>
+  <div class="geo mg2" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="member-intro reveal" style="max-width:680px;margin:0 auto;text-align:center">
+      <span class="eyebrow">Get in touch</span>
+      <h2 id="cc-h">Let's build California's workforce — together.</h2>
+      <p style="margin-left:auto;margin-right:auto">Questions about CWA, the Executive Fellowship, our conferences, or working with us? We'd love to hear from you.</p>
+      <div class="member-cta" style="justify-content:center">
+        <a class="btn btn-primary" href="contact.html">Contact us <span class="btn-arrow" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <div class="foot-lockup"><span class="cwa">CWA</span><span class="ef">california workforce association</span></div>
+      <p class="tag">The champion of California's local workforce boards.</p>
+    </div>
+    <nav aria-label="Footer">
+      <div class="col"><h4>Explore</h4><a href="vision.html">Our Vision</a><a href="advocacy.html">Advocacy</a><a href="fellowship.html">Executive Fellowship</a></div>
+      <div class="col"><h4>Our Members</h4><a href="local-boards.html">Boards</a><a href="affiliates.html">Affiliates</a><a href="board.html">Our Board</a></div>
+      <div class="col"><h4>Connect</h4><a href="contact.html">Contact</a><a href="https://lp.constantcontactpages.com/su/ulX0Ntk/CWAdistributionlist" target="_blank" rel="noopener">Newsletter</a><a href="meeting-of-the-minds.html">Meeting of the Minds</a></div>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  // Scroll reveal
+  (function(){
+    var els=document.querySelectorAll('.reveal');
+    if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches){els.forEach(function(e){e.classList.add('in')});return;}
+    var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(e){io.observe(e)});
+  })();
+
+  // Mobile nav
+  (function(){
+    var t=document.querySelector('.navtoggle'),n=document.getElementById('primary-nav');
+    if(!t)return;
+    t.addEventListener('click',function(){var o=n.classList.toggle('open');t.setAttribute('aria-expanded',o);});
+    n.addEventListener('click',function(e){if(e.target.closest('a')){n.classList.remove('open');t.setAttribute('aria-expanded','false');}});
+  })();
+
+  // Dropdown submenus (click/tap toggle; hover handled by CSS on desktop)
+  (function(){
+    var items=[].slice.call(document.querySelectorAll('.has-sub'));
+    function closeAll(except){items.forEach(function(it){if(it!==except){it.querySelector('.submenu').classList.remove('open');it.querySelector('.subtoggle').setAttribute('aria-expanded','false');}});}
+    items.forEach(function(it){
+      var btn=it.querySelector('.subtoggle'),menu=it.querySelector('.submenu');
+      if(!btn||!menu)return;
+      btn.addEventListener('click',function(e){e.stopPropagation();var open=menu.classList.toggle('open');btn.setAttribute('aria-expanded',open);closeAll(it);});
+    });
+    document.addEventListener('click',function(e){if(!e.target.closest('.has-sub'))closeAll(null);});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')closeAll(null);});
+  })();
+</script>
+</body>
+</html>
