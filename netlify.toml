@@ -6,12 +6,12 @@
 # Old Design Session URL (renamed Oct 2026) — keep existing email/social links working
 [[redirects]]
   from = "/webinars/ai-blueprint-design-session"
-  to = "/webinars/ai-blueprint-design-session-October"
+  to = "/webinars/ai-blueprint-design-session-october"
   status = 301
   force = true
 
 [[redirects]]
   from = "/webinars/ai-blueprint-design-session.html"
-  to = "/webinars/ai-blueprint-design-session-October"
+  to = "/webinars/ai-blueprint-design-session-october"
   status = 301
   force = true
