@@ -109,8 +109,11 @@
   @media (max-width:640px){ section{padding:56px 0} body{font-size:17px} .logo-img{height:44px} .hero-cta .btn{width:100%;justify-content:center} footer .wrap{flex-direction:column} footer nav{gap:28px} }
 
   .webi-list{display:flex;flex-direction:column;gap:20px;margin-top:4px}
-  a.wcard{display:grid;grid-template-columns:96px 1fr auto;gap:28px;align-items:center;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:28px 32px;transition:border-color .2s var(--ease),transform .2s var(--ease),box-shadow .2s var(--ease)}
+  .wcard{display:grid;grid-template-columns:96px 1fr auto;gap:28px;align-items:center;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:28px 32px;transition:border-color .2s var(--ease),transform .2s var(--ease),box-shadow .2s var(--ease)}
   a.wcard:hover{border-color:var(--coral-tint);transform:translateY(-3px);box-shadow:var(--shadow)}
+  .webi-h{font-size:1.5rem;margin:0 0 18px}
+  .webi-group+.webi-group{margin-top:52px}
+  .webi-empty{background:var(--white);border:1px dashed var(--line);border-radius:var(--radius);padding:26px 32px;font-size:1rem}
   .wdate{width:96px;height:96px;border-radius:16px;background:var(--coral-wash);border:1px solid var(--coral-tint);display:flex;flex-direction:column;align-items:center;justify-content:center;flex:none}
   .wdate .mo{font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--coral-dark)}
   .wdate .dy{font-size:2.1rem;font-weight:800;color:var(--navy);line-height:1;margin-top:2px}
@@ -122,7 +125,7 @@
   .wgo{flex:none;color:var(--coral-dark);font-weight:700;display:inline-flex;align-items:center;gap:.4em;white-space:nowrap}
   .webi-note{margin-top:34px;font-size:.92rem;color:var(--muted)}
   .webi-note a{color:var(--coral-dark);font-weight:600}
-  @media (max-width:760px){ a.wcard{grid-template-columns:1fr;gap:16px} .wgo{justify-self:start} }
+  @media (max-width:760px){ .wcard{grid-template-columns:1fr;gap:16px} .wgo{justify-self:start} }
 </style>
 </head>
 <script>document.documentElement.className+=' js';</script>
@@ -179,30 +182,36 @@
   <div class="wrap">
     <span class="eyebrow reveal" style="display:block">Webinars</span>
     <h1 class="reveal d1" style="margin-top:14px">Live sessions for the <span class="hl">workforce field</span>.</h1>
-    <p class="lead reveal d2">Free, interactive webinars from the California Workforce Association &mdash; working sessions, previews, and conversations that help shape the work. Pick a session below to see details and register.</p>
+    <p class="lead reveal d2">Free, interactive webinars from the California Workforce Association &mdash; working sessions, previews, and conversations that help shape the work. See what's coming up and what we've already covered.</p>
   </div>
 </section>
 
 <section style="padding-top:8px">
   <div class="wrap">
-    <div class="webi-list">
+    <div class="webi-group">
+      <h2 class="webi-h reveal">Upcoming</h2>
+      <p class="webi-empty reveal">No webinars are scheduled right now. The next Design Session is planned for November &mdash; join the CWA list below to hear when the date and registration are announced.</p>
+    </div>
 
-      <a class="wcard reveal" href="/webinars/ai-blueprint-design-session-october">
-        <span class="wdate" aria-hidden="true"><span class="mo">Oct</span><span class="dy">22</span></span>
-        <span class="wbody">
-          <span class="status">Recording</span>
-          <h3>California AI Blueprint Design Session</h3>
-          <span class="wsum">A first look at California's AI Workforce Blueprint &mdash; and a working session to help shape how AI supports the field. See what's being built, hear what boards across the state told us, and weigh in on what comes next.</span>
-          <span class="wmeta">
-            <span>Thu, Oct 22, 2026 &middot; 12:30 PM PT</span><span class="sep"></span>
-            <span>~60 min</span><span class="sep"></span>
-            <span>Online via Zoom</span><span class="sep"></span>
-            <span>Free</span>
+    <div class="webi-group">
+      <h2 class="webi-h reveal">Past</h2>
+      <div class="webi-list">
+
+        <div class="wcard reveal">
+          <span class="wdate" aria-hidden="true"><span class="mo">Oct</span><span class="dy">22</span></span>
+          <span class="wbody">
+            <span class="status">Past session</span>
+            <h3>California AI Blueprint Design Session</h3>
+            <span class="wsum">A first look at California's AI Workforce Blueprint &mdash; and a working session to help shape how AI supports the field. Participants saw what's being built, heard what boards across the state told us, and weighed in on what comes next.</span>
+            <span class="wmeta">
+              <span>Thu, Oct 22, 2026 &middot; 12:30 PM PT</span><span class="sep"></span>
+              <span>~60 min</span><span class="sep"></span>
+              <span>Online via Zoom</span>
+            </span>
           </span>
-        </span>
-        <span class="wgo">Watch the recording <span class="btn-arrow" aria-hidden="true">&rarr;</span></span>
-      </a>
+        </div>
 
+      </div>
     </div>
     <p class="webi-note">More sessions in this series are on the way. Want to be notified? <a href="https://lp.constantcontactpages.com/su/ulX0Ntk/CWAdistributionlist" target="_blank" rel="noopener">Join the CWA list</a>.</p>
   </div>
