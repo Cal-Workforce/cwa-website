@@ -711,12 +711,12 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":
   });
 })();
 
-function select(k, scroll){
+function select(k, scroll, setHash = true){
   if (!A[k]) return;
   $("#areaSel").value = k;
   document.querySelectorAll(".pt").forEach(b => b.classList.toggle("sel", b.dataset.k===k));
   renderProfile(k);
-  try { history.replaceState(null, "", "#area=" + k); } catch(e) {}
+  if (setHash) { try { history.replaceState(null, "", "#area=" + k); } catch(e) {} }
   if (scroll) $("#profiles").scrollIntoView({behavior:"smooth"});
 }
 
@@ -802,7 +802,7 @@ function renderProfile(k){
 (function init(){
   const m = location.hash.match(/area=([a-z_]+)/);
   const k = m && A[m[1]] ? m[1] : keys[0];
-  select(k, false);
+  select(k, false, !!(m && A[m[1]]));
   if (m && A[m[1]]) setTimeout(()=> $("#profiles").scrollIntoView(), 50);
 })();
 
