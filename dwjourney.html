@@ -1,0 +1,844 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+<link rel="shortcut icon" href="/assets/favicon.ico">
+<meta name="robots" content="noindex, nofollow">
+<title>Dislocated Worker Customer — CWA</title>
+<meta name="description" content="California Workforce Association input to the Dislocated Worker Journey Map: who reaches WIOA Title I after a layoff, how they enroll, and how that differs across California's 45 local workforce areas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1A375D;--navy-deep:#122842;--navy-tint:#3B5578;--navy-wash:#EAEEF3;
+  --coral:#E27A50;--coral-dark:#C9623B;--coral-tint:#F6E4DB;--coral-wash:#FBF0EA;
+  --ground:#FAF7F3;--white:#FFFFFF;--muted:#5B6A7D;--line:#E7DFD6;--slate:#8C9DB5;--mist:#D2DAE5;
+  --sans:Sora,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --radius-card:18px;--radius-field:12px;--radius-pill:999px;
+  --shadow-card:0 8px 24px -16px rgba(26,55,93,.35);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--hh,90px) + 56px)}
+body{background:var(--ground);color:var(--muted);font-family:var(--sans);font-size:17px;line-height:1.65;margin:0;-webkit-text-size-adjust:100%}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3,h4{color:var(--navy);font-family:var(--sans);text-wrap:balance;margin:0}
+h1{font-weight:800;font-size:clamp(2.1rem,5.2vw,3.4rem);letter-spacing:-.025em;line-height:1.08}
+h1 .accent{color:var(--coral)}
+h2{font-weight:700;font-size:clamp(1.55rem,3.3vw,2.2rem);letter-spacing:-.02em;line-height:1.15}
+h3{font-weight:700;font-size:1.12rem;line-height:1.3}
+h4{font-weight:700;font-size:.98rem;line-height:1.3}
+p{margin:0;max-width:70ch}
+strong{color:var(--navy);font-weight:600}
+a{color:var(--coral-dark);text-decoration:none}
+a:hover{text-decoration:underline}
+:focus-visible{outline:2px solid var(--coral);outline-offset:2px}
+.eyebrow{font-weight:600;font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;color:var(--coral-dark)}
+.lead{color:var(--navy-tint);font-size:clamp(1.05rem,2vw,1.24rem);line-height:1.55;max-width:64ch}
+.note{font-size:13.5px;line-height:1.55;color:var(--muted)}
+.prose{display:grid;gap:14px;align-content:start}
+
+/* header + nav */
+nav.toc{position:sticky;top:var(--hh,90px);z-index:30;background:rgba(250,247,243,.94);backdrop-filter:saturate(1.2) blur(8px);-webkit-backdrop-filter:saturate(1.2) blur(8px);border-block:1px solid var(--line)}
+nav.toc .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;padding-block:8px}
+nav.toc .wrap::-webkit-scrollbar{display:none}
+nav.toc a{flex:none;font-size:13.5px;font-weight:600;color:var(--navy-tint);padding:7px 12px;border-radius:var(--radius-pill);white-space:nowrap}
+nav.toc a:hover{background:var(--navy-wash);text-decoration:none}
+nav.toc a.on{background:var(--navy);color:var(--white)}
+
+.hero{padding-block:52px 44px;display:grid;gap:20px}
+.hero .byline{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:14px;color:var(--muted)}
+.hero .byline span{display:inline-flex;align-items:center;gap:8px}
+.hero .byline span+span::before{content:"";width:4px;height:4px;border-radius:50%;background:var(--slate);margin-right:10px}
+section{padding-block:52px;border-top:1px solid var(--line);display:grid;gap:22px}
+.sechead{display:grid;gap:10px}
+section>*,.profile>*,.pblock>*,.grid2>*,.grid3>*,.grid4>*,.points>*{min-width:0}
+
+/* cards + stats */
+.card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius-card);box-shadow:var(--shadow-card);padding:24px;min-width:0}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+@media (max-width:960px){.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}.grid3{grid-template-columns:1fr}}
+@media (max-width:720px){.grid2{grid-template-columns:1fr}}
+@media (max-width:460px){.grid4{grid-template-columns:1fr}.profile .grid4{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.profile .stat{padding:14px}.profile .stat .num{font-size:1.45rem}}
+@media (max-width:640px){.split.sm>div{font-size:0;padding:0}}
+.take{display:grid;gap:10px;align-content:start}
+.take .num{font-weight:800;font-size:2.1rem;line-height:1;letter-spacing:-.02em;color:var(--navy);font-variant-numeric:tabular-nums}
+.take .num.c{color:var(--coral)}
+.take p{font-size:15px;line-height:1.55}
+.stat{background:var(--white);border:1px solid var(--line);border-radius:var(--radius-card);padding:18px 20px;display:grid;gap:6px;align-content:start}
+.stat .label{font-weight:600;font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--coral-dark)}
+.stat .num{font-weight:800;font-size:1.85rem;line-height:1.05;letter-spacing:-.02em;color:var(--navy);font-variant-numeric:tabular-nums}
+.stat .m{font-size:13.5px;line-height:1.45}
+.callout{background:var(--coral-wash);border-left:3px solid var(--coral);border-radius:0 var(--radius-field) var(--radius-field) 0;padding:16px 22px;display:grid;gap:6px}
+.callout p{font-size:16px}
+.quiet{background:var(--navy-wash);border-radius:var(--radius-field);padding:16px 22px;display:grid;gap:6px}
+.quiet p{font-size:15.5px}
+
+/* split bars */
+.legend{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:13.5px;color:var(--navy)}
+.legend span{display:inline-flex;align-items:center;gap:8px}
+.sw{display:inline-block;width:12px;height:12px;border-radius:3px;flex:none}
+.c-dw{background:var(--navy)}.c-lay{background:var(--coral)}.c-un{background:var(--slate)}.c-em{background:var(--mist)}
+.split{display:flex;height:40px;border-radius:10px;overflow:hidden;background:var(--navy-wash)}
+.split>div{display:flex;align-items:center;padding:0 12px;font-size:13.5px;font-weight:600;color:var(--white);white-space:nowrap;overflow:hidden;min-width:0}
+.split .c-em{color:var(--navy)}
+.split.sm{height:30px;border-radius:8px}
+.split.sm>div{font-size:12.5px;padding:0 8px}
+.bigsplit{display:grid;gap:10px}
+.bigsplit .labels{display:flex;justify-content:space-between;gap:16px;font-size:14px;color:var(--navy)}
+.bigsplit .labels b{font-weight:800;font-size:1.5rem;display:block;line-height:1.1;font-variant-numeric:tabular-nums}
+.bigsplit .labels .r{text-align:right}
+
+/* tables */
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius-card);background:var(--white);box-shadow:var(--shadow-card);-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-size:15px;font-variant-numeric:tabular-nums}
+th{text-align:right;font-weight:700;font-size:13px;line-height:1.3;color:var(--navy);padding:13px 15px;border-bottom:1px solid var(--line);vertical-align:bottom}
+th:first-child,td:first-child{text-align:left}
+td{padding:11px 15px;border-bottom:1px solid var(--line);text-align:right;color:var(--muted);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td:first-child{color:var(--navy)}
+th.sh,td.sh{background:var(--coral-wash)}
+td.sh{color:var(--navy);font-weight:600}
+th.grp{text-align:center;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--coral-dark);border-bottom:1px solid var(--coral-tint);padding-bottom:8px}
+th.grp.o{color:var(--muted);border-bottom-color:var(--line)}
+td.sub{font-weight:600;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--coral-dark);background:var(--ground);text-align:left}
+td.txt{text-align:left;font-size:14px;line-height:1.45;min-width:150px}
+table.wide{min-width:760px}
+table.modes td{text-align:left;font-size:14.5px;line-height:1.5}
+table.modes td:first-child{font-weight:700;white-space:nowrap}
+details{border:1px solid var(--line);border-radius:var(--radius-field);background:var(--white);padding:12px 16px}
+details summary{cursor:pointer;color:var(--coral-dark);font-weight:600;font-size:15px}
+details[open] summary{margin-bottom:12px}
+details .tbl{box-shadow:none}
+
+/* list blocks */
+.points{display:grid;gap:14px;margin:0;padding:0;list-style:none}
+.points li{background:var(--white);border:1px solid var(--line);border-radius:var(--radius-card);padding:18px 22px;display:grid;gap:6px;align-content:start}
+.points li p{font-size:15.5px}
+.points.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:720px){.points.two{grid-template-columns:1fr}}
+
+/* range strip */
+.strip{display:grid;gap:0}
+.srow,.saxis{display:grid;grid-template-columns:minmax(0,210px) minmax(0,1fr);gap:16px;align-items:center}
+.srow{padding:6px 0;border-bottom:1px solid var(--line)}
+.srow .lab{color:var(--navy);font-size:13.5px;line-height:1.3}
+.track{position:relative;height:30px}
+.track::before{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:var(--line)}
+.track i.g{position:absolute;top:0;bottom:0;width:1px;background:var(--navy-wash)}
+.track .st{position:absolute;top:-6px;bottom:-6px;width:0;border-left:2px dashed var(--coral-dark);z-index:1}
+.pt{position:absolute;top:50%;width:16px;height:16px;margin:-8px 0 0 -8px;border-radius:50%;background:var(--navy);border:2px solid var(--white);padding:0;cursor:pointer;z-index:2;box-shadow:0 0 0 1px rgba(26,55,93,.25)}
+.pt.small{background:var(--white);border:2px solid var(--navy);box-shadow:none}
+.pt:hover,.pt:focus-visible,.pt.sel{background:var(--coral);border-color:var(--white);z-index:3;transform:scale(1.2)}
+.saxis .ticks{position:relative;height:22px;font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.saxis .ticks span{position:absolute;transform:translateX(-50%)}
+.saxis .ticks span:first-child{transform:none}
+.saxis .ticks span:last-child{transform:translateX(-100%)}
+@media (max-width:640px){.srow,.saxis{grid-template-columns:1fr;gap:2px}.saxis>div:first-child{display:none}}
+.tip{position:fixed;z-index:40;background:var(--navy-deep);color:var(--white);font-size:13px;line-height:1.45;padding:9px 12px;border-radius:10px;pointer-events:none;max-width:280px;box-shadow:var(--shadow-card);display:none}
+.tip b{color:var(--white)}
+
+/* comparison bars */
+.cmp{display:grid;gap:12px}
+.crow{display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr) 56px;gap:14px;align-items:center}
+.crow .lab{font-size:14px;color:var(--navy);line-height:1.35}
+.crow .bar{height:22px;background:var(--navy-wash);border-radius:6px;overflow:hidden}
+.crow .bar>div{height:100%;background:var(--navy);border-radius:6px}
+.crow .v{font-weight:700;color:var(--navy);font-variant-numeric:tabular-nums;text-align:right}
+@media (max-width:640px){.crow{grid-template-columns:minmax(0,1fr) 50px}.crow .lab{grid-column:1/-1}}
+
+/* profile */
+.picker{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.picker label{font-weight:600;color:var(--navy);font-size:15px}
+.picker select{font-family:var(--sans);font-size:15px;color:var(--navy);background:var(--white);border:1px solid var(--line);border-radius:var(--radius-field);padding:10px 38px 10px 14px;min-width:min(100%,420px);max-width:100%;appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%231A375D' stroke-width='2'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center}
+.picker .copy{font-size:13.5px;font-weight:600;background:none;border:1px solid var(--line);border-radius:var(--radius-pill);padding:8px 14px;color:var(--coral-dark);cursor:pointer;font-family:var(--sans)}
+.picker .copy:hover{background:var(--coral-wash)}
+.profile{display:grid;gap:22px;background:var(--white);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow-card);padding:clamp(18px,3vw,32px)}
+.profile .phead{display:grid;gap:6px}
+.profile .phead .where{font-size:14.5px;color:var(--muted)}
+.profile .stat{background:var(--ground);border-color:transparent}
+.pblock{display:grid;gap:12px}
+.pblock h4 .s{font-weight:400;color:var(--muted);font-size:13.5px;margin-left:6px}
+.agechart{display:grid;gap:10px;align-content:start}
+.arow{display:grid;grid-template-columns:72px minmax(0,1fr);gap:10px;align-items:center}
+.alab{font-size:13px;color:var(--navy);font-variant-numeric:tabular-nums}
+.agechart .split.sm>div{font-size:12px!important;padding:0 6px!important;justify-content:center}
+.mini th,.mini td{padding:9px 12px;font-size:14px}
+.mini td.state{color:#8592A3}
+.inds{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+@media (max-width:640px){.inds{grid-template-columns:1fr}}
+.inds ol{margin:0;padding-left:20px;display:grid;gap:4px;font-size:14.5px;color:var(--navy)}
+.inds ol span{color:var(--muted)}
+.flag{font-size:13px;background:var(--navy-wash);border-radius:10px;padding:10px 14px;color:var(--navy-tint)}
+.up{color:var(--coral-dark);font-weight:700}
+
+/* journey */
+.stages{display:grid;gap:0;counter-reset:stage}
+.stage{display:grid;grid-template-columns:200px minmax(0,1fr);gap:22px;padding:20px 0;border-bottom:1px solid var(--line)}
+.stage:last-child{border-bottom:0}
+.stage h3{font-size:1.02rem}
+.stage h3::before{counter-increment:stage;content:counter(stage);display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--navy);color:var(--white);font-size:13px;margin-right:10px;vertical-align:1px}
+.stage ul{margin:0;padding-left:18px;display:grid;gap:6px;font-size:15.5px}
+@media (max-width:720px){.stage{grid-template-columns:1fr;gap:8px}}
+
+.vwrap{border-radius:var(--radius-card);overflow:hidden;box-shadow:var(--shadow-card);border:1px solid var(--line);background:var(--navy-deep);aspect-ratio:16/9;max-width:100%}
+.vwrap video{display:block;width:100%;height:100%}
+.methods{font-size:15px;display:grid;gap:12px}
+.methods p{font-size:15px}
+@media print{nav.toc{display:none}.profile,.card,.tbl{box-shadow:none}section{break-inside:auto}}
+
+/* ---- CWA site header/footer (same as every other page) ---- */
+:where(header.site,footer.site) *{margin:0;padding:0}
+:where(header.site,footer.site) a{color:inherit;text-decoration:none}
+:where(header.site,footer.site) a:hover{text-decoration:none}
+:root{--shadow:0 18px 48px -24px rgba(26,55,93,.28);--ease:cubic-bezier(.22,.61,.36,1)}
+.site .wrap{max-width:1100px;margin:0 auto;width:100%;padding-left:24px;padding-right:24px}
+  .btn{display:inline-flex;align-items:center;gap:.55em;font-family:inherit;font-size:1rem;font-weight:600;letter-spacing:-.01em;padding:16px 30px;border-radius:999px;border:2px solid transparent;cursor:pointer;transition:transform .25s var(--ease),background .25s var(--ease),color .2s;line-height:1}
+  .btn-primary{background:var(--coral);color:#fff;box-shadow:0 12px 30px -12px rgba(226,122,80,.7)}
+  .btn-primary:hover{background:var(--coral-dark);transform:translateY(-2px)}
+  .btn-ghost{background:transparent;color:var(--navy);border-color:var(--line)}
+  .btn-ghost:hover{border-color:var(--coral);color:var(--coral-dark);transform:translateY(-2px)}
+  .btn-arrow{transition:transform .25s var(--ease)}
+  .btn:hover .btn-arrow{transform:translateX(4px)}
+  header.site{position:sticky;top:0;z-index:60;background:#FAF7F3;border-bottom:1px solid rgba(231,223,214,.8)}
+  .site .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:18px;padding-bottom:18px}
+  .logo-img{height:54px;width:auto;display:block}
+  .nav{display:flex;align-items:center;gap:22px}
+  .nav a.navlink{font-size:.87rem;font-weight:500;color:var(--navy);transition:color .2s;position:relative;white-space:nowrap}
+  .nav a.navlink:hover{color:var(--coral-dark)}
+  .nav a.navlink::after{content:"";position:absolute;left:0;right:100%;bottom:-6px;height:2px;background:var(--coral);transition:right .25s var(--ease)}
+  .nav a.navlink:hover::after{right:0}
+  .site .btn{padding:11px 20px;font-size:.87rem;white-space:nowrap}
+  .nav-item{position:relative;display:flex;align-items:center}
+  .subtoggle{font-family:inherit;background:none;border:none;cursor:pointer;font-size:.87rem;font-weight:500;color:var(--navy);display:inline-flex;align-items:center;gap:6px;padding:0;transition:color .2s;white-space:nowrap}
+  .subtoggle:hover,.has-sub:focus-within .subtoggle{color:var(--coral-dark)}
+  .subtoggle .caret{font-size:.66rem;color:var(--coral-dark);transition:transform .2s var(--ease)}
+  .has-sub:hover .caret,.subtoggle[aria-expanded="true"] .caret{transform:rotate(180deg)}
+  .submenu{position:absolute;top:calc(100% + 16px);left:50%;transform:translateX(-50%) translateY(6px);min-width:210px;background:var(--white);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:8px;opacity:0;visibility:hidden;transition:opacity .2s var(--ease),transform .2s var(--ease);z-index:70}
+  .submenu::before{content:"";position:absolute;top:-16px;left:0;right:0;height:16px}
+  .has-sub:hover .submenu,.has-sub:focus-within .submenu,.submenu.open{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
+  .submenu a{display:block;padding:11px 14px;border-radius:9px;font-size:.92rem;font-weight:500;color:var(--navy);transition:background .18s,color .18s}
+  .submenu a:hover{background:var(--coral-wash);color:var(--coral-dark)}
+  .navtoggle{display:none;background:none;border:1.5px solid var(--line);border-radius:10px;padding:9px 11px;cursor:pointer}
+  .navtoggle span{display:block;width:20px;height:2px;background:var(--navy);margin:4px 0;border-radius:2px}
+  @media (max-width:1024px){
+    .nav{position:fixed;inset:64px 0 auto 0;flex-direction:column;align-items:stretch;gap:0;background:var(--ground);border-bottom:1px solid var(--line);padding:8px 24px 20px;transform:translateY(-140%);transition:transform .3s var(--ease);box-shadow:var(--shadow)}
+    .nav.open{transform:translateY(0)}
+    .nav a.navlink{padding:14px 0;border-bottom:1px solid var(--line)}
+    .nav a.navlink::after{display:none}
+    .nav .btn{margin-top:14px;justify-content:center}
+    .navtoggle{display:block}
+    .nav-item{display:block}
+    .subtoggle{width:100%;justify-content:space-between;padding:14px 0;border-bottom:1px solid var(--line);font-size:1rem;font-weight:500}
+    .submenu{position:static;transform:none;opacity:1;visibility:hidden;display:none;min-width:0;background:transparent;border:none;box-shadow:none;padding:0 0 0 14px}
+    .submenu::before{display:none}
+    .submenu.open{display:block;visibility:visible}
+    .submenu,.submenu.open,.has-sub:hover .submenu,.has-sub:focus-within .submenu{transform:none;left:auto}
+    .submenu a{padding:13px 0;border-bottom:1px solid var(--line)}
+  }
+  footer.site{background:var(--navy-deep);color:rgba(255,255,255,.6);padding:52px 0;border-top:1px solid rgba(255,255,255,.08)}
+  footer.site .wrap{display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start;justify-content:space-between}
+  .foot-lockup .cwa{font-weight:800;font-size:1.35rem;color:var(--coral);letter-spacing:.02em}
+  .foot-lockup .ef{display:block;font-weight:500;font-size:.82rem;color:rgba(255,255,255,.8);text-transform:lowercase;margin-top:3px}
+  footer.site .tag{font-size:.85rem;margin-top:12px;max-width:260px}
+  footer.site nav{display:flex;gap:44px;flex-wrap:wrap}
+  footer.site .col h4{color:#fff;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
+  footer.site .col a{display:block;font-size:.92rem;padding:4px 0;transition:color .2s}
+  footer.site .col a:hover{color:var(--coral)}
+  @media (max-width:640px){ .logo-img{height:44px} footer.site .wrap{flex-direction:column} footer.site nav{gap:28px} }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="lockup" href="/" aria-label="California Workforce Association home">
+      <img class="logo-img" src="/assets/logo-primary.png" alt="California Workforce Association" width="720" height="238" decoding="sync" fetchpriority="high">
+    </a>
+    <button class="navtoggle" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button>
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+      <div class="nav-item has-sub">
+        <button class="subtoggle" aria-expanded="false" aria-haspopup="true" aria-controls="submenu-about">About Us <span class="caret" aria-hidden="true">&#9662;</span></button>
+        <div class="submenu" id="submenu-about" role="menu" aria-label="About Us">
+          <a role="menuitem" href="/vision">Our Vision</a>
+          <a role="menuitem" href="/team">Our Team</a>
+          <a role="menuitem" href="/board">Our Board</a>
+          <a role="menuitem" href="/contact">Contact Us</a>
+        </div>
+      </div>
+      <a class="navlink" href="/advocacy">Advocacy</a>
+      <div class="nav-item has-sub">
+        <button class="subtoggle" aria-expanded="false" aria-haspopup="true" aria-controls="submenu-members">Our Members <span class="caret" aria-hidden="true">&#9662;</span></button>
+        <div class="submenu" id="submenu-members" role="menu" aria-label="Our Members">
+          <a role="menuitem" href="/local-boards">Boards</a>
+          <a role="menuitem" href="/affiliates">Affiliates</a>
+        </div>
+      </div>
+      <div class="nav-item has-sub">
+        <button class="subtoggle" aria-expanded="false" aria-haspopup="true" aria-controls="submenu-conferences">Conferences <span class="caret" aria-hidden="true">&#9662;</span></button>
+        <div class="submenu" id="submenu-conferences" role="menu" aria-label="Conferences">
+          <a role="menuitem" href="/meeting-of-the-minds">Meeting of the Minds</a>
+          <a role="menuitem" href="/workcon">Workcon</a>
+        </div>
+      </div>
+      <div class="nav-item has-sub">
+        <button class="subtoggle" aria-expanded="false" aria-haspopup="true" aria-controls="submenu-resources">Resources <span class="caret" aria-hidden="true">&#9662;</span></button>
+        <div class="submenu" id="submenu-resources" role="menu" aria-label="Resources">
+          <a role="menuitem" href="/self-sufficiency-calculator">Self-Sufficiency Calculator</a>
+          <a role="menuitem" href="/webinars">Webinars</a>
+        </div>
+      </div>
+      <a class="navlink" href="/fellowship">Executive Fellowship</a>
+      <a class="btn btn-primary" href="/contact">Contact Us <span class="btn-arrow" aria-hidden="true">&rarr;</span></a>
+    </nav>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Sections"><div class="wrap">
+<a href="#video">Video</a>
+<a href="#summary">Summary</a>
+<a href="#customer">One customer, two doors</a>
+<a href="#growth">DW and RESEA growth</a>
+<a href="#age">Age and education</a>
+<a href="#local">Local areas</a>
+<a href="#paths">How people move</a>
+<a href="#human">How people feel</a>
+<a href="#journey">The journey map</a>
+<a href="#more">More data</a>
+<a href="#about">About the data</a>
+</div></nav>
+
+<main class="wrap">
+
+<div class="hero" id="top">
+  <div class="eyebrow">Input to the Dislocated Worker Journey Map</div>
+  <h1>Who reaches Title I <span class="accent">after a layoff</span></h1>
+  <p class="lead">EDD's Workforce Services Branch is mapping the journey of a laid-off Californian with BCG. CWA offers the data on this page as one input to that work. It describes the laid-off workers California's 45 local workforce areas serve through WIOA Title I, the two programs they enroll in, and how that picture changes from one local area to the next.</p>
+  <div class="byline"><span>California Workforce Association</span><span>Federal PIRL records, RESEA workload reports and CalJOBS</span><span>Exiters from July 2024 to June 2025</span></div>
+</div>
+
+<section id="video">
+  <div class="sechead">
+    <div class="eyebrow">Watch</div>
+    <h2>The short version, in about three minutes</h2>
+  </div>
+  <div class="vwrap"><video controls preload="metadata" playsinline poster="/assets/dwjourney/explainer-poster.jpg" aria-label="Explainer video: who reaches Title I after a layoff"><source src="/assets/dwjourney/explainer.mp4" type="video/mp4"></video></div>
+  <p class="note">Captions are on screen. The narration is computer-voiced and the music is original.</p>
+</section>
+
+<section id="summary">
+  <div class="sechead">
+    <div class="eyebrow">Summary</div>
+    <h2>What the data add</h2>
+  </div>
+  <div class="grid4">
+    <div class="card take"><div class="num">15,461</div><h3>Dislocated worker customers in a year of Title I exits</h3><p>8,144 were enrolled as Dislocated Workers and 7,317 as Adults. Their work histories before enrolling look much the same, so this page treats them as one dislocated worker customer served through two funding streams.</p></div>
+    <div class="card take"><div class="num c">+30%</div><h3>Dislocated Worker funds to local areas</h3><p>Formula allocations rose from $95.1 million to $123.6 million between program years 2024-25 and 2025-26. The laid-off workers already enrolled as Adults are one place local areas could look as they grow DW enrollment.</p></div>
+    <div class="card take"><div class="num">179,144</div><h3>Claimants scheduled for a first RESEA</h3><p>That was July 2025 to June 2026, up 50% from the year before. A RESEA appointment establishes DW eligibility under EDD guidance, so these claimants generally qualify to enroll as Dislocated Workers. How many do is not yet measured.</p></div>
+    <div class="card take"><div class="num c">6% to 89%</div><h3>Share enrolled as DW, by local area</h3><p>Local areas divide the same kind of customer between the two programs very differently. The split follows local funding and enrollment decisions more closely than local unemployment or wages. Each area's profile is below.</p></div>
+  </div>
+</section>
+
+<section id="customer">
+  <div class="sechead">
+    <div class="eyebrow">One customer, two doors</div>
+    <h2>Dislocated workers in Title I are split almost evenly between two programs</h2>
+    <p class="lead">When we think of "dislocated workers" in Title I, we usually mean people enrolled in the Dislocated Worker program. Many people enrolled as Adults also lost a job shortly before they came in.</p>
+  </div>
+  <div class="card bigsplit" aria-label="Dislocated worker customer by program">
+    <div class="labels"><div><b>8,144</b>Enrolled as Dislocated Workers (53%)</div><div class="r"><b style="color:var(--coral-dark)">7,317</b>Enrolled as Adults with a layoff pattern (47%)</div></div>
+    <div class="split"><div class="c-dw" style="width:52.7%">Dislocated Worker</div><div class="c-lay" style="width:47.3%">Adult</div></div>
+    <p class="note">California Title I exiters, July 2024 to June 2025. The DW count includes 635 people co-enrolled in both programs. A layoff pattern means unemployed or under layoff notice at entry, with $1,300 or more in UI-covered wages in at least two of the three quarters before enrolling. Applied to Dislocated Worker enrollees, the same test captures 70% of them.</p>
+  </div>
+  <div class="tbl">
+    <table class="wide">
+      <thead>
+        <tr><th></th><th class="grp sh" colspan="2">Dislocated worker customer</th><th class="grp o" colspan="2">Other Adult enrollees</th></tr>
+        <tr><th>July 2024 to June 2025 exiters</th><th class="sh">Enrolled as DW</th><th class="sh">Enrolled as Adult, layoff pattern</th><th>Adult, unemployed, no layoff pattern</th><th>Adult, employed at entry</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Exiters</td><td class="sh">8,144</td><td class="sh">7,317</td><td>15,465</td><td>7,603</td></tr>
+        <tr><td class="sub" colspan="5">Who they are</td></tr>
+        <tr><td>Median age</td><td class="sh">42</td><td class="sh">34</td><td>36</td><td>32</td></tr>
+        <tr><td>Age 45 or older</td><td class="sh">45%</td><td class="sh">27%</td><td>31%</td><td>21%</td></tr>
+        <tr><td>Bachelor's degree or higher</td><td class="sh">29%</td><td class="sh">13%</td><td>14%</td><td>15%</td></tr>
+        <tr><td>Low income</td><td class="sh">63%</td><td class="sh">77%</td><td>92%</td><td>63%</td></tr>
+        <tr><td>Long-term unemployed (27 weeks or more)</td><td class="sh">23%</td><td class="sh">21%</td><td>54%</td><td>1%</td></tr>
+        <tr><td class="sub" colspan="5">Work before enrolling</td></tr>
+        <tr><td>Any UI-covered wages in the three prior quarters</td><td class="sh">87%</td><td class="sh">100%</td><td>29%</td><td>85%</td></tr>
+        <tr><td>Median earnings over those three quarters, among those with wages</td><td class="sh">$29,444</td><td class="sh">$19,977</td><td>$2,222</td><td>$19,322</td></tr>
+        <tr><td>Recorded date of dislocation</td><td class="sh">95%</td><td class="sh">17%</td><td>7%</td><td>2%</td></tr>
+        <tr><td>Median months from dislocation to enrollment, where recorded</td><td class="sh">3.3</td><td class="sh">2.3</td><td>11.2</td><td>Too few records</td></tr>
+        <tr><td>Most common prior industries</td><td class="sh txt">Admin and support, retail, manufacturing, professional services</td><td class="sh txt">Admin and support, health care, retail, food service</td><td class="txt">Admin and support, health care, retail, transportation (29% have an industry code)</td><td class="txt">Health care, retail, admin and support, food service</td></tr>
+        <tr><td class="sub" colspan="5">Services and results</td></tr>
+        <tr><td>Received training</td><td class="sh">36%</td><td class="sh">35%</td><td>27%</td><td>39%</td></tr>
+        <tr><td>Employed in the second quarter after exit, prior-year exiters</td><td class="sh">70%</td><td class="sh">77%</td><td>55%</td><td>83%</td></tr>
+        <tr><td>Share of prior quarterly earnings regained, steady prior earners</td><td class="sh">100%</td><td class="sh">124%</td><td>n/a</td><td>n/a</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="grid2">
+    <div class="card prose"><h3>What the two halves share</h3><p>Both lost recent, steady work and were unemployed when they enrolled. They trained at the same rate. Most of those enrolled as DW (63%) were also low income, so income does little to separate the two programs.</p></div>
+    <div class="card prose"><h3>Where they differ</h3><p>Those enrolled as DW are about eight years older, twice as likely to hold a degree, and earned about half again as much before enrolling. Both came mostly from service industries. Those enrolled as Adults came more often from health care and food service, and those enrolled as DW more often from manufacturing and professional services. In CalJOBS, about 80% of Dislocated Workers were UI claimants or exhaustees, compared with about 10% of Adult participants.</p></div>
+  </div>
+  <p class="note">Outcome rows use people who exited from July 2023 to June 2024, the most recent group with wage records two quarters after exit. They describe the groups and do not measure the effect of services. Adult enrollees with a layoff pattern regained more than their prior earnings; one likely reason is that they started from lower wages.</p>
+</section>
+
+<section id="growth">
+  <div class="sechead">
+    <div class="eyebrow">Building on Dislocated Worker and RESEA growth</div>
+    <h2>The growing funding streams already touch many of these workers</h2>
+    <p class="lead">Dislocated Worker and RESEA funding are both growing, and EDD aims to make full use of both. Two parts of the data speak to where added DW enrollment and RESEA connections could come from.</p>
+  </div>
+  <div class="grid4">
+    <div class="stat"><div class="label">DW allocations</div><div class="num">$123.6M</div><div class="m">Program year 2025-26, up from $95.1M. Every local area's DW allocation rose, by 19% to 52%.</div></div>
+    <div class="stat"><div class="label">Adult allocations</div><div class="num">$138.8M</div><div class="m">Program year 2025-26, up 16% from $120.0M.</div></div>
+    <div class="stat"><div class="label">First RESEAs scheduled</div><div class="num">179,144</div><div class="m">July 2025 to June 2026, up from 119,309 the year before.</div></div>
+    <div class="stat"><div class="label">RESEAs completed</div><div class="num">136,078</div><div class="m">July 2025 to June 2026, up from 90,711.</div></div>
+  </div>
+  <div class="grid2">
+    <div class="card prose">
+      <h3>Laid-off workers already enrolled as Adults</h3>
+      <p>About 7,300 people a year enter Title I as Adults with the same kind of recent, steady work history as Dislocated Workers. Dislocated Worker eligibility rests on a layoff plus UI eligibility or attachment to the workforce, and a finding, under the local area's own definition, that a return to the same work is unlikely. Wage records can show the attachment even when no UI claim was filed.</p>
+      <p>For workers who qualify for both programs, either enrollment is allowable. With DW funds growing faster than Adult funds, DW enrollment gives local areas more room in both budgets.</p>
+    </div>
+    <div class="card prose">
+      <h3>RESEA as a connection into Title I</h3>
+      <p>Under EDD's eligibility guide, a RESEA appointment carries Dislocated Worker eligibility with it. The Governor has determined that California's UI profiling and RESEA referral process meets the DW criteria in WIOA, so a claimant with a RESEA appointment needs no further documentation that they are unlikely to return to their prior work, and the UI claim itself shows the layoff and UI eligibility.</p><p>That makes the 179,144 claimants scheduled for a first RESEA from July 2025 to June 2026 ready candidates for DW enrollment. In the year ending June 2025, 88% of completed RESEAs led to reemployment services, and the state reported 124 claimants going on to training. The following year it reported 167.</p>
+      <p>The federal RESEA report does not record Title I enrollment, so the number of RESEA participants who go on to individualized career or training services, and through which program, is not yet visible. Measuring that step would show how much of the RESEA growth reaches Title I.</p>
+    </div>
+  </div>
+  <div class="quiet"><p><strong>How the two connect.</strong> RESEA reaches the claimant side of the dislocated worker customer. The Adult enrollees with a layoff pattern are mostly the non-claimant side: in CalJOBS, about 10% of Adult participants were UI claimants.</p></div>
+</section>
+
+<section id="age">
+  <div class="sechead">
+    <div class="eyebrow">Age and education</div>
+    <h2>Older workers more often enroll as Dislocated Workers</h2>
+    <p class="lead">A recent California Policy Lab briefing showed older workers reaching Title I mostly through the Dislocated Worker program. The California PIRL records show the same pattern, along with several forces that help explain it.</p>
+  </div>
+  <div class="grid2">
+    <div class="card agechart">
+      <h3>Dislocated worker customers: which program they enrolled in</h3>
+      <p class="note">Each bar is one age group of dislocated worker customers and adds to 100%.</p>
+      <div class="legend"><span><i class="sw c-dw"></i>Enrolled as DW</span><span><i class="sw c-lay"></i>Enrolled as Adult, layoff pattern</span></div>
+      <div class="arow"><div class="alab">18 to 24</div><div class="split sm"><div class="c-dw" style="width:28%">28%</div><div class="c-lay" style="width:72%">72%</div></div></div><div class="arow"><div class="alab">25 to 34</div><div class="split sm"><div class="c-dw" style="width:46%">46%</div><div class="c-lay" style="width:54%">54%</div></div></div><div class="arow"><div class="alab">35 to 44</div><div class="split sm"><div class="c-dw" style="width:56%">56%</div><div class="c-lay" style="width:44%">44%</div></div></div><div class="arow"><div class="alab">45 to 54</div><div class="split sm"><div class="c-dw" style="width:64%">64%</div><div class="c-lay" style="width:36%">36%</div></div></div><div class="arow"><div class="alab">55 to 64</div><div class="split sm"><div class="c-dw" style="width:66%">66%</div><div class="c-lay" style="width:34%">34%</div></div></div>
+      <p>The older the laid-off worker, the more likely they were enrolled as a Dislocated Worker: 28% of those under 25, rising to 66% of those 55 to 64.</p>
+    </div>
+    <div class="card agechart">
+      <h3>Adult enrollees: how they arrived</h3>
+      <p class="note">Each bar is one age group of Adult enrollees and adds to 100%.</p>
+      <div class="legend"><span><i class="sw c-lay"></i>Layoff pattern</span><span><i class="sw c-un"></i>Unemployed, no layoff pattern</span><span><i class="sw c-em"></i>Employed at entry</span></div>
+      <div class="arow"><div class="alab">18 to 24</div><div class="split sm"><div class="c-lay" style="width:23%">23%</div><div class="c-un" style="width:47%">47%</div><div class="c-em" style="width:30%">30%</div></div></div><div class="arow"><div class="alab">25 to 34</div><div class="split sm"><div class="c-lay" style="width:25%">25%</div><div class="c-un" style="width:47%">47%</div><div class="c-em" style="width:28%">28%</div></div></div><div class="arow"><div class="alab">35 to 44</div><div class="split sm"><div class="c-lay" style="width:23%">23%</div><div class="c-un" style="width:53%">53%</div><div class="c-em" style="width:24%">24%</div></div></div><div class="arow"><div class="alab">45 to 54</div><div class="split sm"><div class="c-lay" style="width:24%">24%</div><div class="c-un" style="width:54%">54%</div><div class="c-em" style="width:22%">22%</div></div></div><div class="arow"><div class="alab">55 to 64</div><div class="split sm"><div class="c-lay" style="width:26%">26%</div><div class="c-un" style="width:56%">56%</div><div class="c-em" style="width:18%">18%</div></div></div>
+      <p>About a quarter of Adult enrollees at every age had a layoff pattern. Younger Adult enrollees more often enrolled while working; older ones more often arrived unemployed with no recent steady work.</p>
+    </div>
+  </div>
+  <p class="note">July 2024 to June 2025 exiters. Age at program entry.</p>
+  <ul class="points two">
+    <li><h3>Education points the same way</h3><p>Among dislocated worker customers, the share enrolled as DW rises from 44% of those with a high school diploma or less to 72% of those with a bachelor's degree, and the education difference holds within every age group.</p></li>
+    <li><h3>Dislocated Workers mirror UI claimants by age</h3><p>Workers 45 and older were 45% of DW enrollees and 43% of California UI claimants over the same year. Of those enrolled as Adults with a layoff pattern, 27% were 45 or older and 20% were under 25, compared with 7% of claimants.</p></li>
+    <li><h3>Eligibility rules lean the same direction</h3><p>DW eligibility draws on UI claims and work history, which build with age. Adult priority of service draws on low income, and older Dislocated Workers were less often low income: 55% of those 55 to 64, compared with 71% of those under 25.</p></li>
+    <li><h3>Long-term unemployment rises with age among Adults</h3><p>Of Adult enrollees 45 and older, 37% to 39% had been unemployed 27 weeks or more, compared with 29% of those under 35.</p></li>
+  </ul>
+  <div class="callout"><p><strong>What remains open.</strong> These records show who enrolled, not who could have. Whether older and more educated workers tend to engage only after a layoff would take a count of everyone who could benefit, such as California Policy Lab's linked UI and WIOA records.</p></div>
+</section>
+
+<section id="local">
+  <div class="sechead">
+    <div class="eyebrow">Local areas</div>
+    <h2>Forty-five local areas, each with its own pattern</h2>
+    <p class="lead">A statewide average blends places that have little in common. Each local area makes its own reasonable choices about how to enroll and fund services for laid-off workers. The profiles below show those choices alongside who is served and the local economy, with no rankings.</p>
+  </div>
+
+  <div class="card prose">
+    <h3>Share of each area's dislocated worker customers enrolled as DW</h3>
+    <p class="note">Each dot is a local area, grouped by regional planning unit. Hollow dots mark areas with fewer than 30 dislocated worker customers. The dashed line is the statewide figure (53%). Select a dot to open its profile.</p>
+    <div class="strip" id="strip"></div>
+  </div>
+
+  <div class="sechead"><h3>What shapes the split</h3><p>Local directors at the November 2 review raised several of these points. The data bear them out where they can.</p></div>
+  <ul class="points two">
+    <li><h3>Funding decisions made years ago</h3><p>Many local areas chose, under state guidance of the time, to enroll broadly as Adults and transfer DW funds for flexibility (see the history below). Fourteen areas transferred a combined $11.2 million from DW to Adult in program year 2024-25. In those areas 39% of dislocated worker customers were enrolled as DW, compared with 57% in the other 30. The enrollment pattern and the transfer go together.</p></li>
+    <li><h3>Documenting eligibility</h3><p>DW enrollment asks staff to document the layoff and either UI eligibility or attachment to the workforce. For someone who never filed a UI claim, often a lower-wage service worker, Adult enrollment can be the quicker path to getting them help.</p></li>
+    <li><h3>When people walk in</h3><p>Severance and savings can delay first contact by months, and when people do arrive their circumstances may have changed. One local area already tracks "days from layoff" as a measure.</p></li>
+    <li><h3>Partners and geography</h3><p>Multi-county consortia and city boards that share a labor market with a county board work in different conditions. Networks of community partners also differ, and they shape who arrives and through which door.</p></li>
+    <li><h3>Local economies explain less than expected</h3><p>Across areas, the share enrolled as DW shows almost no relationship to the 2025 unemployment rate or to average weekly wages. Local wages do track what Dislocated Workers earned before enrolling.</p></li>
+    <li><h3>Each profile shows the local picture</h3><p>With DW allocations up in every area, each profile below shows that area's split, the people on each side of it, its funding history and its labor market.</p></li>
+  </ul>
+
+  <div class="card prose" id="history">
+    <h3>Where today's pattern comes from</h3>
+    <p>From 2006 to 2012, California's Integrated Service Delivery initiative, developed jointly by EDD and CWA with local directors, set out to serve WIA and Wagner-Peyser customers as one pool and to enroll every job seeker. State policy made that workable in ways that help explain enrollment patterns today.</p>
+    <div class="tbl" style="box-shadow:none"><table>
+      <thead><tr><th>When</th><th style="text-align:left">State action</th></tr></thead>
+      <tbody>
+        <tr><td>2006 to 2009</td><td class="txt">Federal waivers raised the share of DW funds a local area could move to Adult from 20% to 50%, then to 100% for program years 2007-08 and 2008-09.</td></tr>
+        <tr><td>July 2008</td><td class="txt">In twelve pilot areas, every assessed adult was reported as a WIA Adult. Adult-only exiters there who were UI claimants rose from 527 to 7,732 in the first year.</td></tr>
+        <tr><td>August 2008</td><td class="txt">Directive WSD08-2 let a local board that found Adult funds "not limited" serve adults regardless of income.</td></tr>
+        <tr><td>2011 to 2012</td><td class="txt">The state evaluation recommended that all local areas enroll all clients, and EDD's 2012-2015 strategic plan adopted it. The transfer cap returned to 50%.</td></tr>
+      </tbody>
+    </table></div>
+    <p>Broad Adult enrollment was a deliberate state approach at the time, and many areas carried it forward. That history helps explain why the split differs so much from place to place as DW funding grows.</p>
+  </div>
+
+  <div class="card cmp" aria-label="Share enrolled as DW by transfer status">
+    <h3>Share of dislocated worker customers enrolled as DW, by DW-to-Adult transfer in program year 2024-25</h3>
+    <div class="crow"><div class="lab">14 areas that transferred DW funds to Adult</div><div class="bar"><div style="width:39.2%;background:var(--coral)"></div></div><div class="v">39%</div></div>
+    <div class="crow"><div class="lab">30 areas with no transfer</div><div class="bar"><div style="width:57%"></div></div><div class="v">57%</div></div>
+    <p class="note">Pooled across areas. San Benito County is not in the PIRL public file and is excluded. Transfers from the 80% expenditure reports.</p>
+  </div>
+
+  <div class="sechead" id="profiles"><h3>Local area profiles</h3></div>
+  <div class="picker">
+    <label for="areaSel">Local area</label>
+    <select id="areaSel"></select>
+    <button class="copy" id="copyLink" type="button">Copy link to this profile</button>
+  </div>
+  <div class="profile" id="profile" aria-live="polite"></div>
+
+  <details>
+    <summary>All 45 local areas in one table</summary>
+    <div class="tbl"><table class="wide" id="allTbl"></table></div>
+    <p class="note" style="margin-top:10px">Grouped by regional planning unit, alphabetical within each. Percentages for areas with fewer than 30 dislocated worker customers rest on small numbers.</p>
+  </details>
+</section>
+
+<section id="paths">
+  <div class="sechead">
+    <div class="eyebrow">How people move through it</div>
+    <h2>People make their own way through services</h2>
+    <p class="lead">A journey map has to draw a path. The people on it decide when to arrive, what to take, when to step away and whether to come back. Local directors raised this at the November 2 review, and the records bear it out, within the limits of what they can see.</p>
+  </div>
+  <div class="grid3">
+    <div class="card take"><div class="num">3.3 months</div><h3>Median time from layoff to enrollment</h3><p>Among those enrolled as Dislocated Workers. One in ten enrolled within about four weeks of the layoff, and 12% more than a year after it.</p></div>
+    <div class="card take"><div class="num c">1 in 5</div><h3>Last service within a month of enrolling</h3><p>They were employed in the second quarter after exit at 72%, close to the 73% to 77% of those who stayed longer. Few of them received training.</p></div>
+    <div class="card take"><div class="num">15% to 16%</div><h3>Of trainees withdrew from training</h3><p>The rate is about the same for those enrolled as DW and those enrolled as Adults with a layoff pattern.</p></div>
+  </div>
+  <div class="tbl">
+    <table>
+      <thead><tr><th>Time from enrolling to last service</th><th>Share of dislocated worker customers</th><th>Received training</th><th>Employed in the second quarter after exit</th></tr></thead>
+      <tbody>
+        <tr><td>Within a month</td><td class="sh">21%</td><td>6%</td><td>72%</td></tr>
+        <tr><td>One to three months</td><td class="sh">20%</td><td>25%</td><td>73%</td></tr>
+        <tr><td>Three to six months</td><td class="sh">24%</td><td>43%</td><td>77%</td></tr>
+        <tr><td>Six months to a year</td><td class="sh">23%</td><td>50%</td><td>73%</td></tr>
+        <tr><td>More than a year</td><td class="sh">12%</td><td>69%</td><td>73%</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note">Dislocated worker customers (enrolled as DW, or as Adults with a layoff pattern) who exited from July 2023 to June 2024, the most recent group with wage records two quarters after exit. Employment rates describe the groups and do not measure the effect of services.</p>
+  <ul class="points two">
+    <li><h3>Some come back</h3><p>6% of those enrolled as DW and 8% of those enrolled as Adults with a layoff pattern had another Title I enrollment in the public file. The file holds only recent records, so the share of people who return over time is higher.</p></li>
+    <li><h3>The rules already expect it</h3><p>WIOA records a participant as exited only after 90 days with no services and none planned, dated back to the last service. In the data, every journey ends with a pause the system recognizes in hindsight.</p></li>
+    <li><h3>Many do arrive close to the layoff</h3><p>69% of those enrolled as DW enrolled within six months of the layoff, and about a third of all dislocated worker customers stayed six months or more. A typical path exists for many people. The spread around it is wide.</p></li>
+    <li><h3>What the records cannot show</h3><p>The public file carries the first and last service dates, so the stops in between are invisible. So are AJCC visits that never became an enrollment and the reasons people stop coming.</p></li>
+  </ul>
+</section>
+
+<section id="human">
+  <div class="sechead">
+    <div class="eyebrow">How people feel</div>
+    <h2>Emotional modes, from the 2013 DOL and IDEO workshop</h2>
+    <p class="lead">In April 2013, U.S. DOL ETA and IDEO ran a two-day design workshop on serving displaced workers with teams from California and Washington. IDEO's research found that job seekers arrive in different emotional modes, each with its own core need, and may shift between them in no set order. The framework starts from the person: the mode they are in and the services that help them in it. That keeps a system from treating people as groups who all move through it one way or respond to it the same way.</p>
+  </div>
+  <div class="tbl">
+    <table class="modes wide">
+      <thead><tr><th>Mode</th><th style="text-align:left">What it looks like</th><th style="text-align:left">Core need</th><th style="text-align:left">Example responses from the workshop</th></tr></thead>
+      <tbody>
+        <tr><td>Discouraged</td><td>Withdraws, hides the situation from family and friends</td><td>Emotional support</td><td>Cohorts and affinity groups; small structured successes; mental health referrals</td></tr>
+        <tr><td>Elated</td><td>Relaxes on a promising lead</td><td>Channel momentum</td><td>Keep a plan B and C; time-sensitive check-ins; follow up on leads</td></tr>
+        <tr><td>Panicked</td><td>Sells belongings, takes lower jobs, considers bankruptcy</td><td>Address emergencies</td><td>Connect to rent, housing and financial help; ease job search demands while keeping UI requirements met</td></tr>
+        <tr><td>Ready for focused action</td><td>Focused, a flurry of activity</td><td>Self-direction and encouragement</td><td>The services the system already offers</td></tr>
+        <tr><td>Stalled</td><td>Takes a break, delays, overconfident ("I've always gotten a job before")</td><td>A push to engage</td><td>Initiate contact and check back later; concrete milestones; relatable success stories</td></tr>
+        <tr><td>Wandering</td><td>Applies aimlessly, explores many directions, does busy work</td><td>Structure and guidance</td><td>Milestones; mentors ("someone like me"); work experience; coaching on goals</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note">Listed alphabetically. The workshop noted that most services are built for people who are ready for focused action.</p>
+  <div class="grid3">
+    <div class="card prose"><h3>Any mode, at any point</h3><p>A person can come in Panicked the week of a layoff or Elated about a lead months later. The same person can be Stalled one month and ready for focused action the next. A mode does not belong to a stage of the journey.</p></div>
+    <div class="card prose"><h3>Same circumstances, different needs</h3><p>Two laid-off workers with the same age, wage history and program can need different help because they are in different modes. The framework asks what this person needs now.</p></div>
+    <div class="card prose"><h3>What the records can and cannot say</h3><p>Participant records describe circumstances such as wages, income and UI status. They cannot show a mode. A conversation with staff, or the self-assessment the workshop proposed so job seekers can name the support they want, is where it becomes visible.</p></div>
+  </div>
+</section>
+
+<section id="journey">
+  <div class="sechead">
+    <div class="eyebrow">Connecting to the journey map</div>
+    <h2>Where these data could attach</h2>
+    <p class="lead">The draft journey map follows a laid-off worker from first hearing about services through exit. People enter at different points, skip stages, and leave and return, so each stage below is a place people pass through on their own timing. These are the points where the data on this page could add detail, offered for the team to use as it finds helpful.</p>
+  </div>
+  <div class="card stages">
+    <div class="stage"><h3>Before first contact</h3><ul><li>RESEA is the largest existing contact with laid-off claimants, and a RESEA appointment already establishes DW eligibility.</li><li>Many in the half of the customer enrolled as Adults reach Title I without a UI claim: about 10% of Adult participants in CalJOBS were claimants.</li><li>Severance and savings stretch the time before people come in.</li></ul></div>
+    <div class="stage"><h3>Front door and intake</h3><ul><li>The choice between Adult and DW enrollment is a real step in the journey, and it varies widely by local area.</li><li>UI status is the sharpest divider between the programs in CalJOBS. Wage records show recent steady work for many people who never filed a claim.</li></ul></div>
+    <div class="stage"><h3>Planning and navigation</h3><ul><li>The two halves of the customer differ in age, education and prior earnings, while sharing a recent layoff.</li><li>A person can be in any emotional mode at any stage, so the help that fits can change from one visit to the next.</li></ul></div>
+    <div class="stage"><h3>Training and services</h3><ul><li>Both halves trained at the same rate. Trainees enrolled as Adults used on-the-job training three times as often (17% compared with 5%), a sign that work-based options matter for lower-wage laid-off workers.</li></ul></div>
+    <div class="stage"><h3>Exit and after</h3><ul><li>Wage records show employment and earnings for people who stop responding before a formal exit.</li>
+<li>Federal rules record an exit only after 90 days without services, so the end of every journey is seen in hindsight.</li><li>The full dislocated worker customer can be counted from wage fields already in PIRL.</li></ul></div>
+  </div>
+</section>
+
+<section id="more">
+  <div class="sechead">
+    <div class="eyebrow">Additional data</div>
+    <h2>Data that could add to the picture</h2>
+    <p class="lead">EDD and research partners hold data that could round out these findings. Any of the following would help, as time and capacity allow.</p>
+  </div>
+  <ul class="points two">
+    <li><h3>RESEA participants who continue into Title I</h3><p>The share who go on to individualized career or training services, and whether they enroll as Adult or DW, statewide and by local area.</p></li>
+    <li><h3>A profile of RESEA participants</h3><p>The federal RESEA reports carry counts only. A summary by age, education, prior earnings, prior industry and income would place RESEA participants alongside the groups on this page.</p></li>
+    <li><h3>UI claim history for Adult enrollees with a layoff pattern</h3><p>A match to UI records could show how many filed claims and how many might have qualified for DW on work history.</p></li>
+    <li><h3>Claimant take-up by age and education</h3><p>California Policy Lab's linked UI and WIOA records could show what share of claimants enroll in Title I within six or twelve months, and through which program.</p></li>
+    <li><h3>Time from layoff to first service</h3><p>Days from dislocation to first staff-assisted service, along the lines of the "days from layoff" measure one local area already tracks.</p></li>
+    <li><h3>Service-by-service records</h3><p>The dates and types of each service within an enrollment would show where people pause and where they step away.</p></li>
+    <li><h3>Contacts that never become enrollments</h3><p>AJCC visits and CalJOBS registrations that never lead to a Title I enrollment would show who reaches the front door and turns back.</p></li>
+    <li><h3>What the CalJOBS participant summary counts</h3><p>The WIOA Participant Summary report for July 2024 to June 2025 shows about a third as many participants as the PIRL file. Knowing which participants it includes would show whether its UI-status rates hold statewide.</p></li>
+  </ul>
+</section>
+
+<section id="about">
+  <div class="sechead">
+    <div class="eyebrow">About the data</div>
+    <h2>Sources and methods</h2>
+  </div>
+  <div class="methods card">
+    <p><strong>PIRL.</strong> U.S. DOL ETA WIOA Performance Records Public Use File, PY2025 Q1 release (records through September 30, 2025), California participants. Characteristics use people who exited from July 2024 to June 2025; outcomes use those who exited from July 2023 to June 2024. DOL rounds and randomly adjusts wages in the public file. The file has no UI claimant status or reason for separation, and it leaves out San Benito County, so that profile carries funding and labor market data only. A small number of records carry a statewide code and appear in statewide totals but no local profile.</p>
+    <p><strong>Layoff pattern.</strong> $1,300 or more in UI-covered wages in at least two of the three quarters before the enrollment quarter, and unemployed or under layoff notice at entry. $1,300 is California's minimum high-quarter earnings for a UI claim. Other Adult enrollees are split by employment status at entry; California reports no participants as not in the labor force.</p>
+    <p><strong>RESEA.</strong> U.S. DOL ETA 9128 Reemployment Services and Eligibility Assessment workload report, California, quarters ending September 2024 through June 2026, from DOL's Office of Unemployment Insurance, downloaded November 3, 2026. UI claimant ages come from DOL's monthly Characteristics of the Insured Unemployed, July 2024 through June 2025.</p>
+    <p><strong>CalJOBS.</strong> WIOA Participant Summary, statewide, July 2024 to June 2025, run November 2, 2026. Totals are not yet reconciled with PIRL.</p>
+    <p><strong>Funding.</strong> WIOA Adult and DW formula allocations from EDD's Workforce Services Information Notices and allocation tables; DW-to-Adult transfers from local areas' 80% expenditure reports for program years 2023-24 and 2024-25.</p>
+    <p><strong>Labor market.</strong> EDD Labor Market Information Division LAUS annual averages for 2025 and 2019, and QCEW private-sector employment and average weekly wages for the fourth quarter of 2025, built from counties and, for city-based areas, the county that contains them.</p>
+    <p><strong>Eligibility.</strong> EDD Directive WSD24-04, WIOA Title I Eligibility Technical Assistance Guide (Attachment 1, September 2024), section 6.2, "Profiled and Referred UI Claimants," and 20 CFR 680.130(b)(3).</p>
+    <p><strong>Integrated Service Delivery history.</strong> EDD and CWA, State Framework for Implementing ISD and Learning Labs (September 2007); EDD draft directive LLDD-10 (June 2008); WSD08-2 (August 2008); WSD11-4; CWIB WIA annual reports for PY2008-09 and PY2010-11; CSU Northridge ISD evaluation (Phase I, November 2010); EDD Workforce Services Branch Strategic Business Plan 2012-2015; DOL WIASRD public use files.</p>
+    <p><strong>Exit timing.</strong> 20 CFR 677.150(c) and U.S. DOL ETA TEGL 10-16 on the date of program exit.</p>
+    <p><strong>Emotional modes.</strong> DOL ETA and IDEO, "Serving Job Seekers: Elevating the System of Support," workshop materials, April 2013.</p>
+  </div>
+</section>
+<section class="methods" style="border-top:1px solid var(--line)"><p class="note"><strong>California Workforce Association</strong> · Draft for discussion, November 2026. Questions or corrections: Adam Peck, Executive Director, <a href="mailto:apeck@calworkforce.org">apeck@calworkforce.org</a></p></section>
+</main>
+
+<div class="tip" id="tip" role="status"></div>
+
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <div class="foot-lockup"><span class="cwa">CWA</span><span class="ef">california workforce association</span></div>
+      <p class="tag">The champion of California's local workforce boards.</p>
+    </div>
+    <nav aria-label="Footer">
+      <div class="col"><h4>Explore</h4><a href="/vision">Our Vision</a><a href="/advocacy">Advocacy</a><a href="/fellowship">Executive Fellowship</a></div>
+      <div class="col"><h4>Our Members</h4><a href="/local-boards">Boards</a><a href="/affiliates">Affiliates</a><a href="/board">Our Board</a></div>
+      <div class="col"><h4>Connect</h4><a href="/contact">Contact</a><a href="https://lp.constantcontactpages.com/su/ulX0Ntk/CWAdistributionlist" target="_blank" rel="noopener">Newsletter</a><a href="/webinars">Webinars</a></div>
+    </nav>
+  </div>
+</footer>
+
+<script>
+const DATA = {"areas":{"alameda_county":{"short":"alameda_county","name":"Alameda County Workforce Development Board","rpu":"East Bay","covers":"Alameda County (excluding Oakland)","pirl":{"adult":274,"dw":253,"lay":42,"cust":295,"cust_dw_pct":85.8,"adult_lay_pct":15.3,"adult_unemp_pct":42.3,"adult_emp_pct":42.3,"dw_age":43.0,"dw_45p":47.4,"dw_ba":51.4,"dw_earn":32842,"dw_lowinc":61.3,"dw_train":37.9,"lay_age":33.0,"lay_45p":23.8,"lay_ba":16.7,"lay_earn":23612,"lay_lowinc":76.2,"lay_train":40.5,"cust_top_ind":[["Admin and support",16.2],["Professional services",13.2],["Retail",10.5]],"cust_ind_n":228},"alloc_PY24-25":{"adult":1597662,"dw":2123914},"alloc_PY25-26":{"adult":2570804,"dw":3054653},"transfer":{"PY23-24":0,"PY24-25":0},"laus":{"year":2025,"lf":873300,"ur":4.7,"ur2019":2.8},"qcew":{"period":"4th Qtr 2025","top":[["Education and Health Services",21.7],["Trade, Transportation, and Utilities",19.1],["Professional and Business Services",18.9]],"wage":1938},"geo_note":"The Alameda County WDB serves the county excluding the City of Oakland, which is its own local area. LAUS publishes no county-minus-city series, so figures here are for all of Alameda County and include Oakland. Subtract the Oakland local area page to approximate the WDB's service area."},"anaheim":{"short":"anaheim","name":"Anaheim Workforce Development Board","rpu":"Orange","covers":"City of Anaheim","pirl":{"adult":67,"dw":2,"lay":34,"cust":36,"cust_dw_pct":5.6,"adult_lay_pct":50.7,"adult_unemp_pct":14.9,"adult_emp_pct":34.3,"dw_age":29.0,"dw_45p":0.0,"dw_ba":50.0,"dw_earn":41615,"dw_lowinc":50.0,"dw_train":100.0,"lay_age":42.5,"lay_45p":44.1,"lay_ba":26.5,"lay_earn":34592,"lay_lowinc":47.1,"lay_train":91.2,"cust_top_ind":[["Admin and support",20.6],["Wholesale",17.6],["Manufacturing",14.7]],"cust_ind_n":34},"alloc_PY24-25":{"adult":748510,"dw":688542},"alloc_PY25-26":{"adult":811158,"dw":863079},"transfer":{"PY23-24":300000.0,"PY24-25":300000.0},"laus":{"year":2025,"lf":179009,"ur":4.2,"ur2019":2.9},"qcew":{"period":"4th Qtr 2025","top":[["Professional and Business Services",20.8],["Education and Health Services",18.5],["Trade, Transportation, and Utilities",17.0]],"wage":1684},"geo_note":"Anaheim is a single-city local area. LAUS publishes a Sub-County Place series for the city, used here. Industry and occupational projections, wages, and QCEW exist only at county/metro scale and are shown as Orange County context."},"contra_costa_county":{"short":"contra_costa_county","name":"Workforce Development Board of Contra Costa County","rpu":"East Bay","covers":"Contra Costa County (excluding Richmond)","pirl":{"adult":551,"dw":94,"lay":114,"cust":208,"cust_dw_pct":45.2,"adult_lay_pct":20.7,"adult_unemp_pct":45.0,"adult_emp_pct":34.3,"dw_age":47.0,"dw_45p":55.3,"dw_ba":45.7,"dw_earn":40809,"dw_lowinc":29.8,"dw_train":42.6,"lay_age":33.5,"lay_45p":21.1,"lay_ba":8.8,"lay_earn":18304,"lay_lowinc":77.2,"lay_train":56.1,"cust_top_ind":[["Admin and support",14.3],["Health care",11.2],["Manufacturing",9.7]],"cust_ind_n":196},"alloc_PY24-25":{"adult":1682189,"dw":1985521},"alloc_PY25-26":{"adult":2489329,"dw":2647184},"transfer":{"PY23-24":0,"PY24-25":1000000.0},"laus":{"year":2025,"lf":586300,"ur":4.8,"ur2019":3.0},"qcew":{"period":"4th Qtr 2025","top":[["Education and Health Services",27.7],["Trade, Transportation, and Utilities",19.7],["Professional and Business Services",16.1]],"wage":1704},"geo_note":"The Contra Costa County WDB serves the county excluding the City of Richmond, which is its own local area. Figures here are for all of Contra Costa County and include Richmond. Subtract the Richmond local area page to approximate the WDB's service area."},"foothill":{"short":"foothill","name":"Foothill Workforce Development Board","rpu":"LA Basin","covers":"Arcadia, Duarte, La Ca\u00f1ada Flintridge, Monrovia, Monterey Park, Pasadena, Sierra Madre, South Pasadena, and nearby San Gabriel Valley cities","pirl":{"adult":82,"dw":59,"lay":23,"cust":82,"cust_dw_pct":72.0,"adult_lay_pct":28.0,"adult_unemp_pct":51.2,"adult_emp_pct":20.7,"dw_age":45.0,"dw_45p":55.9,"dw_ba":23.7,"dw_earn":33087,"dw_lowinc":66.1,"dw_train":64.4,"lay_age":40.0,"lay_45p":34.8,"lay_ba":30.4,"lay_earn":21737,"lay_lowinc":78.3,"lay_train":34.8,"cust_top_ind":[["Admin and support",23.0],["Health care",13.5],["Professional services",10.8]],"cust_ind_n":74},"alloc_PY24-25":{"adult":660604,"dw":520018},"alloc_PY25-26":{"adult":750896,"dw":717357},"transfer":{"PY23-24":0,"PY24-25":0},"laus":{"year":2025,"lf":195632,"ur":5.0,"ur2019":4.0},"qcew":{"period":"4th Qtr 2025","top":[["Education and Health Services",25.2],["Trade, Transportation, and Utilities",20.1],["Professional and Business Services",16.5]],"wage":1764},"geo_note":"Foothill WDB serves a set of San Gabriel Valley cities. LAUS place series for the named member cities are summed. The roster also references 'nearby San Gabriel Valley cities' not individually enumerated, so the sum is a close floor rather than an exact boundary. Projections, wages and QCEW are Los Angeles County context."},"fresno_county":{"short":"fresno_county","name":"Fresno Regional Workforce Development Board","rpu":"San Joaquin Valley and Associated Counties","covers":"Fresno County","pirl":{"adult":475,"dw":377,"lay":93,"cust":470,"cust_dw_pct":80.2,"adult_lay_pct":19.6,"adult_unemp_pct":44.4,"adult_emp_pct":36.0,"dw_age":35.0,"dw_45p":29.2,"dw_ba":5.0,"dw_earn":19836,"dw_lowinc":99.7,"dw_train":51.5,"lay_age":33.0,"lay_45p":20.4,"lay_ba":5.4,"lay_earn":17794,"lay_lowinc":98.9,"lay_train":44.1,"cust_top_ind":[["Admin and support",17.3],["Manufacturing",12.5],["Health care",11.8]],"cust_ind_n":415},"alloc_PY24-25":{"adult":6325274,"dw":4121710},"alloc_PY25-26":{"adult":6609108,"dw":5374817},"transfer":{"PY23-24":0,"PY24-25":0},"laus":{"year":2025,"lf":478100,"ur":8.5,"ur2019":7.4},"qcew":{"period":"4th Qtr 2025","top":[["Education and Health Services",25.9],["Trade, Transportation, and Utilities",22.2],["Leisure and Hospitality",10.9]],"wage":1159},"geo_note":null},"golden_sierra":{"short":"golden_sierra","name":"Golden Sierra Workforce Development Board","rpu":"Capital","covers":"Alpine, El Dorado, and Placer Counties","pirl":{"adult":71,"dw":28,"lay":16,"cust":44,"cust_dw_pct":63.6,"adult_lay_pct":22.5,"adult_unemp_pct":46.5,"adult_emp_pct":31.0,"dw_age":48.5,"dw_45p":60.7,"dw_ba":25.0,"dw_earn":34112,"dw_lowinc":46.4,"dw_train":53.6,"lay_age":27.5,"lay_45p":12.5,"lay_ba":0.0,"lay_earn":16921,"lay_lowinc":62.5,"lay_train":68.8,"cust_top_ind":[["Retail",17.1],["Professional services",11.4],["Transportation and warehousing",11.4]],"cust_ind_n":35},"alloc_PY24-25":{"adult":759250,"dw":1029136},"alloc_PY25-26":{"adult":1111962,"dw":1391615},"transfer":{"PY23-24":249132.0,"PY24-25":566025.0},"laus":{"year":2025,"lf":301790,"ur":4.5,"ur2019":3.4},"qcew":{"period":"4th Qtr 2025","top":[["Education and Health Services",22.4],["Trade, Transportation, and Utilities",18.9],["Leisure and Hospitality",15.7]],"wage":1422},"geo_note":null},"humboldt_county":{"short":"humboldt_county","name":"Humboldt County Workforce Development Board","rpu":"North Coast","covers":"Humboldt County","pirl":{"adult":62,"dw":17,"lay":7,"cust":24,"cust_dw_pct":70.8,"adult_lay_pct":11.3,"adult_unemp_pct":30.6,"adult_emp_pct":58.1,"dw_age":45.0,"dw_45p":64.7,"dw_ba":0.0,"dw_earn":13919,"dw_lowinc":76.5,"dw_train":64.7,"lay_age":36.0,"lay_45p":28.6,"lay_ba":14.3,"lay_earn":23859,"lay_lowinc":57.1,"lay_train":71.4,"cust_top_ind":[["Health care",25.0],["Admin and support",15.0],["Retail",15.0]],"cust_ind_n":20},"alloc_PY24-25":{"adult":377977,"dw":277184},"alloc_PY25-26":{"adult":493753,"dw":362750},"transfer":{"PY23-24":0,"PY24-25":0},"laus":{"year":2025,"lf":60720,"ur":5.3,"ur2019":3.8},"qcew":{"period":"4th Qtr 2025","top":[["Education and Health Services",32.2],["Trade, Transportation, and Utilities",20.7],["Leisure and Hospitality",13.3]],"wage":1095},"geo_note":null},"imperial_county":{"short":"imperial_county","name":"Imperial County Workforce Development Board","rpu":"Southern Border","covers":"Imperial County","pirl":{"adult":303,"dw":21,"lay":31,"cust":52,"cust_dw_pct":40.4,"adult_lay_pct":10.2,"adult_unemp_pct":54.5,"adult_emp_pct":35.3,"dw_age":30.0,"dw_45p":28.6,"dw_ba":4.8,"dw_earn":19869,"dw_lowinc":57.1,"dw_train":81.0,"lay_age":26.0,"lay_45p":9.7,"lay_ba":9.7,"lay_earn":11723,"lay_lowinc":58.1,"lay_train":58.1,"cust_top_ind":[["Admin and support",19.6],["Health care",19.6],["Agriculture",15.2]],"cust_ind_n":46},"alloc_PY24-25":{"adult":3100268,"dw":1910466},"alloc_PY25-26":{"adult":3127305,"dw":2500269},"transfer":{"PY23-24":0,"PY24-25":0},"laus":{"year":2025,"lf":75200,"ur":18.9,"ur2019":21.1},"qcew":{"period":"4th Qtr 2025","top":[["Trade, Transportation, and Utilities",26.8],["Education and Health Services",26.1],["Natural Resources and Mining",18.0]],"wage":945},"geo_note":null},"kern_inyo_mono":{"short":"kern_inyo_mono","name":"Kern, Inyo, and Mono Counties Workforce Development Board","rpu":"San Joaquin Valley and Associated Counties","covers":"Kern, Inyo, and Mono Counties","pirl":{"adult":549,"dw":126,"lay":117,"cust":243,"cust_dw_pct":51.9,"adult_lay_pct":21.3,"adult_unemp_pct":38.3,"adult_emp_pct":40.4,"dw_age":30.5,"dw_45p":18.3,"dw_ba":8.7,"dw_earn":13722,"dw_lowinc":63.5,"dw_train":38.9,"lay_age":29.0,"lay_45p":11.1,"lay_ba":6.8,"lay_earn":17710,"lay_lowinc":59.0,"lay_train":50.4,"cust_top_ind":[["Agriculture",19.5],["Health care",14.8],["Admin and support",13.1]],"cust_ind_n":236},"alloc_PY24-25":{"adult":6456510,"dw":3988400},"alloc_PY25-26":{"adult":6807672,"dw":5259929},"transfer":{"PY23-24":0,"PY24-25":0},"laus":{"year":2025,"lf":429520,"ur":8.8,"ur2019":7.7},"qcew":{"period":"4th Qtr 2025","top":[["Trade, Transportation, and Utilities",22.5],["Natural Resources and Mining",20.3],["Education and Health Services",18.8]],"wage":1100},"geo_note":null},"kings_county":{"short":"kings_county","name":"Kings County Workforce Development Board","rpu":"San Joaquin Valley and Associated Counties","covers":"Kings County","pirl":{"adult":104,"dw":16,"lay":20,"cust":36,"cust_dw_pct":44.4,"adult_lay_pct":19.2,"adult_unemp_pct":35.6,"adult_emp_pct":45.2,"dw_age":36.5,"dw_45p":31.2,"dw_ba":0.0,"dw_earn":24674,"dw_lowinc":100.0,"dw_train":93.8,"lay_age":27.5,"lay_45p":10.0,"lay_ba":5.0,"lay_earn":22331,"lay_lowinc":100.0,"lay_train":95.0,"cust_top_ind":[["Agriculture",19.4],["Retail",13.9],["Manufacturing",11.1]],"cust_ind_n":36},"alloc_PY24-25":{"adult":985584,"dw":596927},"alloc_PY25-26":{"adult":1025724,"dw":787139},"transfer":{"PY23-24":0,"PY24-25":0},"laus":{"year":2025,"lf":60400,"ur":9.3,"ur2019":8.4},"qcew":{"period":"4th Qtr 2025","top":[["Natural Resources and Mining",26.5],["Education and Health Services",22.2],["Trade, Transportation, and Utilities",18.1]],"wage":1070},"geo_note":null},"los_angeles_city":{"short":"los_angeles_city","name":"Los Angeles City Workforce Development Board","rpu":"LA Basin","covers":"City of Los Angeles","pirl":{"adult":8514,"dw":2213,"lay":1771,"cust":3984,"cust_dw_pct":55.5,"adult_lay_pct":20.8,"adult_unemp_pct":57.1,"adult_emp_pct":22.1,"dw_age":39.0,"dw_45p":38.8,"dw_ba":21.7,"dw_earn":23912,"dw_lowinc":70.3,"dw_train":27.7,"lay_age":32.0,"lay_45p":24.3,"lay_ba":8.9,"lay_earn":17983,"lay_lowinc":81.5,"lay_train":22.3,"cust_top_ind":[["Admin and support",19.6],["Health care",16.2],["Retail",11.7]],"cust_ind_n":3575},"alloc_PY24-25":{"adult":16046300,"dw":10084426},"alloc_PY25-26":{"adult":17412514,"dw":13224336},"transfer":{"PY23-24":0,"PY24-25":0},"laus":{"year":2025,"lf":2093436,"ur":5.8,"ur2019":4.5},"qcew":{"period":"4th Qtr 2025","top":[["Education and Health Services",25.2],["Trade, Transportation, and Utilities",20.1],["Professional and Business Services",16.5]],"wage":1764},"geo_note":"The City of Los Angeles is its own local area. City-level LAUS is used; projections, wages and QCEW are shown as Los Angeles County context."},"los_angeles_county":{"short":"los_angeles_county","name":"Los Angeles County Workforce Development Board (LACWDB)","rpu":"LA Basin","covers":"58 of 88 incorporated cities and all unincorporated areas in LA County","pirl":{"adult":4182,"dw":717,"lay":1354,"cust":2071,"cust_dw_pct":34.6,"adult_lay_pct":32.4,"adult_unemp_pct":54.8,"adult_emp_pct":12.9,"dw_age":46.0,"dw_45p":53.1,"dw_ba":13.1,"dw_earn":28185,"dw_lowinc":58.6,"dw_train":29.0,"lay_age":33.0,"lay_45p":28.2,"lay_ba":7.6,"lay_earn":19746,"lay_lowinc":78.3,"lay_train":33.8,"cust_top_ind":[["Admin and support",18.1],["Health care",15.6],["Retail",13.8]],"cust_ind_n":2000},"alloc_PY24-25":{"adult":12962982,"dw":8435728},"alloc_PY25-26":{"adult":14101869,"dw":10323807},"transfer":{"PY23-24":0,"PY24-25":0},"laus":{"year":2025,"lf":5098800,"ur":5.7,"ur2019":4.5},"qcew":{"period":"4th Qtr 2025","top":[["Education and Health Services",25.2],["Trade, Transportation, and Utilities",20.1],["Professional and Business Services",16.5]],"wage":1764},"geo_note":"The Los Angeles County WDB serves the unincorporated county plus 58 of 88 incorporated cities - everything not covered by the seven other LA-area local boards. LAUS publishes no matching series, so figures here are for all of Los Angeles County and include the cities served by Los Angeles City, Pacific Gateway, Foothill, Verdugo, SELACO and South Bay. Treat this page as county context, not as the WDB's service area."},"madera_county":{"short":"madera_county","name":"Workforce Development Board of Madera County","rpu":"San Joaquin Valley and Associated Counties","covers":"Madera County","pirl":{"adult":159,"dw":29,"lay":35,"cust":64,"cust_dw_pct":45.3,"adult_lay_pct":22.0,"adult_unemp_pct":47.2,"adult_emp_pct":30.8,"dw_age":39.0,"dw_45p":34.5,"dw_ba":3.4,"dw_earn":25112,"dw_lowinc":44.8,"dw_train":44.8,"lay_age":29.0,"lay_45p":14.3,"lay_ba":5.7,"lay_earn":23035,"lay_lowinc":51.4,"lay_train":34.3,"cust_top_ind":[["Health care",21.3],["Admin and support",14.8],["Manufacturing",13.1]],"cust_ind_n":61},"alloc_PY24-25":{"adult":901189,"dw":563402},"alloc_PY25-26":{"adult":959342,"dw":764497},"transfer":{"PY23-24":250000.0,"PY24-25":100000.0},"laus":{"year":2025,"lf":71350,"ur":7.9,"ur2019":6.7},"qcew":{"period":"4th Qtr 2025","top":[["Natural Resources and Mining",27.4],["Education and Health Services",24.2],["Trade, Transportation, and Utilities",15.7]],"wage":1147},"geo_note":null},"merced_county":{"short":"merced_county","name":"Merced County Workforce Development Board","rpu":"San Joaquin Valley and Associated Counties","covers":"Merced County","pirl":{"adult":261,"dw":163,"lay":43,"cust":206,"cust_dw_pct":79.1,"adult_lay_pct":16.5,"adult_unemp_pct":54.8,"adult_emp_pct":28.7,"dw_age":34.0,"dw_45p":25.2,"dw_ba":3.1,"dw_earn":21050,"dw_lowinc":75.5,"dw_train":40.5,"lay_age":28.0,"lay_45p":14.0,"lay_ba":4.7,"lay_earn":15683,"lay_lowinc":93.0,"lay_train":44.2,"cust_top_ind":[["Manufacturing",21.4],["Retail",19.2],["Admin and support",12.6]],"cust_ind_n":182},"alloc_PY24-25":{"adult":2080959,"dw":1322789},"alloc_PY25-26":{"adult":2140122,"dw":1758921},"transfer":{"PY23-24":0,"PY24-25":0},"laus":{"year":2025,"lf":124400,"ur":10.2,"ur2019":8.2},"qcew":{"period":"4th Qtr 2025","top":[["Natural Resources and Mining",21.2],["Trade, Transportation, and Utilities",20.9],["Education and Health Services",20.5]],"wage":1048},"geo_note":null},"monterey_county":{"short":"monterey_county","name":"Monterey County Workforce Development Board (MCWDB)","rpu":"North Central Coast","covers":"Monterey County","pirl":{"adult":467,"dw":51,"lay":149,"cust":200,"cust_dw_pct":25.5,"adult_lay_pct":31.9,"adult_unemp_pct":35.8,"adult_emp_pct":32.3,"dw_age":36.0,"dw_45p":23.5,"dw_ba":11.8,"dw_earn":24199,"dw_lowinc":64.7,"dw_train":39.2,"lay_age":32.0,"lay_45p":17.4,"lay_ba":9.4,"lay_earn":25446,"lay_lowinc":68.5,"lay_train":53.7,"cust_top_ind":[["Agriculture",14.0],["Construction",12.4],["Admin and support",10.9]],"cust_ind_n":193},"alloc_PY24-25":{"adult":2457195,"dw":2070440},"alloc_PY25-26":{"adult":2537272,"dw":2591113},"transfer":{"PY23-24":0,"PY24-25":963000.0},"laus":{"year":2025,"lf":222700,"ur":7.9,"ur2019":6.4},"qcew":{"period":"4th Qtr 2025","top":[["Natural Resources and Mining",29.6],["Leisure and Hospitality",16.1],["Trade, Transportation, and Utilities",16.0]],"wage":1192},"geo_note":null},"mother_lode":{"short":"mother_lode","name":"Mother Lode Workforce Development Board","rpu":"Middle Sierra","covers":"Amador, Calaveras, Mariposa, and Tuolumne Counties","pirl":{"adult":78,"dw":20,"lay":12,"cust":32,"cust_dw_pct":62.5,"adult_lay_pct":15.4,"adult_unemp_pct":55.1,"adult_emp_pct":29.5,"dw_age":44.5,"dw_45p":50.0,"dw_ba":5.0,"dw_earn":22150,"dw_lowinc":70.0,"dw_train":20.0,"lay_age":38.0,"lay_45p":41.7,"lay_ba":0.0,"lay_earn":13727,"lay_lowinc":83.3,"lay_train":0.0,"cust_top_ind":[["Retail",21.4],["Food service and lodging",17.9],["Health care",10.7]],"cust_ind_n":28},"alloc_PY24-25":{"adult":420307,"dw":325788},"alloc_PY25-26":{"adult":512890,"dw":420988},"transfer":{"PY23-24":0,"PY24-25":0},"laus":{"year":2025,"lf":62340,"ur":5.9,"ur2019":4.5},"qcew":{"period":"4th Qtr 2025","top":[["Leisure and Hospitality",23.9],["Education and Health Services",23.3],["Trade, Transportation, and Utilities",21.0]],"wage":1055},"geo_note":null},"ncc":{"short":"ncc","name":"North Central Counties Consortium","rpu":"Capital","covers":"Colusa, Glenn, Sutter, and Yuba Counties","pirl":{"adult":364,"dw":183,"lay":94,"cust":277,"cust_dw_pct":66.1,"adult_lay_pct":25.8,"adult_unemp_pct":35.7,"adult_emp_pct":38.5,"dw_age":35.0,"dw_45p":30.1,"dw_ba":7.1,"dw_earn":29184,"dw_lowinc":60.7,"dw_train":60.1,"lay_age":30.0,"lay_45p":14.9,"lay_ba":10.6,"lay_earn":21243,"lay_lowinc":64.9,"lay_train":43.6,"cust_top_ind":[["Retail",18.4],["Agriculture",14.8],["Admin and support",12.7]],"cust_ind_n":244},"alloc_PY24-25":{"adult":1437550,"dw":996604},"alloc_PY25-26":{"adult":1458539,"dw":1320082},"transfer":{"PY23-24":0,"PY24-25":0},"laus":{"year":2025,"lf":106270,"ur":8.6,"ur2019":7.5},"qcew":{"period":"4th Qtr 2025","top":[["Trade, Transportation, and Utilities",24.4],["Education and Health Services",22.0],["Natural Resources and Mining",16.2]],"wage":1169},"geo_note":null},"north_bay":{"short":"north_bay","name":"Workforce Alliance of the North Bay","rpu":"North Bay","covers":"Napa, Lake, Marin, and Mendocino Counties","pirl":{"adult":262,"dw":35,"lay":42,"cust":77,"cust_dw_pct":45.5,"adult_lay_pct":16.0,"adult_unemp_pct":50.4,"adult_emp_pct":33.6,"dw_age":42.0,"dw_45p":40.0,"dw_ba":28.6,"dw_earn":30625,"dw_lowinc":60.0,"dw_train":48.6,"lay_age":38.5,"lay_45p":31.0,"lay_ba":11.9,"lay_earn":20236,"lay_lowinc":73.8,"lay_train":26.2,"cust_top_ind":[["Construction",13.7],["Health care",13.7],["Admin and support",12.3]],"cust_ind_n":73},"alloc_PY24-25":{"adult":1020315,"dw":1004220},"alloc_PY25-26":{"adult":1289355,"dw":1362128},"transfer":{"PY23-24":559487.0,"PY24-25":590910.0},"laus":{"year":2025,"lf":262580,"ur":4.8,"ur2019":3.2},"qcew":{"period":"4th Qtr 2025","top":[["Education and Health Services",23.5],["Trade, Transportation, and Utilities",18.5],["Leisure and Hospitality",17.3]],"wage":1312},"geo_note":null},"nortec":{"short":"nortec","name":"Northern Rural Training and Employment Consortium (NoRTEC)","rpu":"North State","covers":"Butte, Del Norte, Lassen, Modoc, Nevada, Plumas, Sierra, Shasta, Siskiyou, Tehama, and Trinity Counties","pirl":{"adult":228,"dw":137,"lay":49,"cust":186,"cust_dw_pct":73.7,"adult_lay_pct":21.5,"adult_unemp_pct":23.2,"adult_emp_pct":55.3,"dw_age":38.0,"dw_45p":38.7,"dw_ba":11.7,"dw_earn":25383,"dw_lowinc":56.2,"dw_train":57.7,"lay_age":31.0,"lay_45p":18.4,"lay_ba":10.2,"lay_earn":19088,"lay_lowinc":63.3,"lay_train":81.6,"cust_top_ind":[["Health care",19.8],["Retail",16.0],["Agriculture",13.0]],"cust_ind_n":162},"alloc_PY24-25":{"adult":2520210,"dw":1686077},"alloc_PY25-26":{"adult":2822043,"dw":2141680},"transfer":{"PY23-24":0,"PY24-25":0},"laus":{"year":2025,"lf":300330,"ur":6.0,"ur2019":5.0},"qcew":{"period":"4th Qtr 2025","top":[["Education and Health Services",29.2],["Trade, Transportation, and Utilities",22.0],["Leisure and Hospitality",13.6]],"wage":1124},"geo_note":null},"novaworks":{"short":"novaworks","name":"NOVAworks Workforce Development Board","rpu":"Bay-Peninsula","covers":"Northern Santa Clara County (Cupertino, Los Altos, Milpitas, Mountain View, Palo Alto, Santa Clara, Sunnyvale) and all of San Mateo County","pirl":{"adult":1255,"dw":800,"lay":284,"cust":1084,"cust_dw_pct":73.8,"adult_lay_pct":22.6,"adult_unemp_pct":47.8,"adult_emp_pct":29.6,"dw_age":52.0,"dw_45p":69.0,"dw_ba":82.5,"dw_earn":81183,"dw_lowinc":44.0,"dw_train":18.2,"lay_age":45.5,"lay_45p":53.2,"lay_ba":65.1,"lay_earn":35543,"lay_lowinc":65.1,"lay_train":2.1,"cust_top_ind":[["Professional services",25.3],["Manufacturing",13.6],["Admin and support",12.0]],"cust_ind_n":955},"alloc_PY24-25":{"adult":1283488,"dw":1959185},"alloc_PY25-26":{"adult":1727628,"dw":2970486},"transfer":{"PY23-24":0,"PY24-25":0},"laus":{"year":2025,"lf":754970,"ur":3.9,"ur2019":2.2},"qcew":{"period":"4th Qtr 2025","top":[["Professional and Business Services",23.5],["Trade, Transportation, and Utilities",18.2],["Education and Health Services",16.0]],"wage":4094},"geo_note":"NOVAworks serves seven northern Santa Clara County cities plus ALL of San Mateo County. The figures here sum the seven city LAUS series and add the San Mateo County total. Projections, wages and QCEW span two projection areas (San Jose-Sunnyvale-Santa Clara and San Francisco-San Mateo-Redwood City) and are shown for both."},"oakland":{"short":"oakland","name":"Oakland Workforce Development Board","rpu":"East Bay","covers":"City of Oakland","pirl":{"adult":345,"dw":61,"lay":79,"cust":140,"cust_dw_pct":43.6,"adult_lay_pct":22.9,"adult_unemp_pct":58.8,"adult_emp_pct":18.3,"dw_age":46.0,"dw_45p":57.4,"dw_ba":27.9,"dw_earn":38339,"dw_lowinc":67.2,"dw_train":34.4,"lay_age":35.0,"lay_45p":34.2,"lay_ba":12.7,"lay_earn":20552,"lay_lowinc":91.1,"lay_train":27.8,"cust_top_ind":[["Admin and support",20.8],["Health care",13.1],["Retail",12.3]],"cust_ind_n":130},"alloc_PY24-25":{"adult":1143021,"dw":1010837},"alloc_PY25-26":{"adult":1562863,"dw":1372555},"transfer":{"PY23-24":0,"PY24-25":0},"laus":{"year":2025,"lf":239590,"ur":4.9,"ur2019":3.1},"qcew":{"period":"4th Qtr 2025","top":[["Education and Health Services",21.7],["Trade, Transportation, and Utilities",19.1],["Professional and Business Services",18.9]],"wage":1938},"geo_note":"Oakland is a single-city local area carved out of Alameda County. City-level LAUS is used; projections, wages and QCEW are shown as Alameda County context."},"orange_county":{"short":"orange_county","name":"Orange County Workforce Development Board","rpu":"Orange","covers":"Orange County (unincorporated areas and member cities, excluding Anaheim and Santa Ana)","pirl":{"adult":385,"dw":294,"lay":67,"cust":361,"cust_dw_pct":81.4,"adult_lay_pct":17.4,"adult_unemp_pct":51.7,"adult_emp_pct":30.9,"dw_age":45.0,"dw_45p":53.4,"dw_ba":48.0,"dw_earn":35962,"dw_lowinc":54.4,"dw_train":20.4,"lay_age":38.0,"lay_45p":32.8,"lay_ba":35.8,"lay_earn":20458,"lay_lowinc":68.7,"lay_train":25.4,"cust_top_ind":[["Admin and support",16.5],["Professional services",11.9],["Health care",11.3]],"cust_ind_n":327},"alloc_PY24-25":{"adult":3439464,"dw":4335366},"alloc_PY25-26":{"adult":4222366,"dw":5412744},"transfer":{"PY23-24":0,"PY24-25":0},"laus":{"year":2025,"lf":1637100,"ur":4.1,"ur2019":2.8},"qcew":{"period":"4th Qtr 2025","top":[["Professional and Business Services",20.8],["Education and Health Services",18.5],["Trade, Transportation, and Utilities",17.0]],"wage":1684},"geo_note":"The Orange County WDB serves unincorporated Orange County and member cities other than Anaheim and Santa Ana. LAUS publishes no matching series, so figures here are for all of Orange County and include Anaheim and Santa Ana. Subtract those two local area pages to approximate the WDB's service area."},"pacific_gateway":{"short":"pacific_gateway","name":"Pacific Gateway Workforce Innovation Network (Long Beach)","rpu":"LA Basin","covers":"Cities of Long Beach and Signal Hill","pirl":{"adult":338,"dw":94,"lay":72,"cust":166,"cust_dw_pct":56.6,"adult_lay_pct":21.3,"adult_unemp_pct":55.0,"adult_emp_pct":23.7,"dw_age":41.0,"dw_45p":43.6,"dw_ba":40.4,"dw_earn":36815,"dw_lowinc":60.6,"dw_train":34.0,"lay_age":35.0,"lay_45p":27.8,"lay_ba":19.4,"lay_earn":20345,"lay_lowinc":76.4,"lay_train":23.6,"cust_top_ind":[["Health care",13.4],["Professional services",10.2],["Retail",10.2]],"cust_ind_n":157},"alloc_PY24-25":{"adult":1774558,"dw":1174561},"alloc_PY25-26":{"adult":1976301,"dw":1408130},"transfer":{"PY23-24":0,"PY24-25":0},"laus":{"year":2025,"lf":251254,"ur":5.4,"ur2019":4.4},"qcew":{"period":"4th Qtr 2025","top":[["Education and Health Services",25.2],["Trade, Transportation, and Utilities",20.1],["Professional and Business Services",16.5]],"wage":1764},"geo_note":"Pacific Gateway serves Long Beach and Signal Hill. LAUS place series for both cities are summed; projections, wages and QCEW are shown as Los Angeles County context."},"richmond":{"short":"richmond","name":"Richmond Workforce Development Board","rpu":"East Bay","covers":"City of Richmond","pirl":{"adult":66,"dw":57,"lay":11,"cust":68,"cust_dw_pct":83.8,"adult_lay_pct":16.7,"adult_unemp_pct":56.1,"adult_emp_pct":27.3,"dw_age":34.0,"dw_45p":26.3,"dw_ba":35.1,"dw_earn":28431,"dw_lowinc":47.4,"dw_train":50.9,"lay_age":33.0,"lay_45p":9.1,"lay_ba":18.2,"lay_earn":13373,"lay_lowinc":90.9,"lay_train":72.7,"cust_top_ind":[["Admin and support",17.0],["Health care",15.1],["Education",9.4]],"cust_ind_n":53},"alloc_PY24-25":{"adult":314139,"dw":270293},"alloc_PY25-26":{"adult":362354,"dw":321738},"transfer":{"PY23-24":0,"PY24-25":0},"laus":{"year":2025,"lf":58627,"ur":5.0,"ur2019":3.2},"qcew":{"period":"4th Qtr 2025","top":[["Education and Health Services",27.7],["Trade, Transportation, and Utilities",19.7],["Professional and Business Services",16.1]],"wage":1704},"geo_note":"Richmond is a single-city local area carved out of Contra Costa County. City-level LAUS is used; projections, wages and QCEW are shown as Contra Costa County context."},"riverside_county":{"short":"riverside_county","name":"Riverside County Workforce Development Board","rpu":"Inland Empire","covers":"Riverside County","pirl":{"adult":1278,"dw":260,"lay":357,"cust":617,"cust_dw_pct":42.1,"adult_lay_pct":27.9,"adult_unemp_pct":36.5,"adult_emp_pct":35.6,"dw_age":40.0,"dw_45p":41.2,"dw_ba":9.2,"dw_earn":25230,"dw_lowinc":59.6,"dw_train":60.4,"lay_age":28.0,"lay_45p":16.0,"lay_ba":8.1,"lay_earn":23551,"lay_lowinc":50.7,"lay_train":70.3,"cust_top_ind":[["Health care",17.4],["Admin and support",14.8],["Retail",9.2]],"cust_ind_n":586},"alloc_PY24-25":{"adult":6977368,"dw":5962218},"alloc_PY25-26":{"adult":8591308,"dw":7676666},"transfer":{"PY23-24":0,"PY24-25":0},"laus":{"year":2025,"lf":1207200,"ur":5.6,"ur2019":4.3},"qcew":{"period":"4th Qtr 2025","top":[["Trade, Transportation, and Utilities",26.8],["Education and Health Services",22.4],["Leisure and Hospitality",15.1]],"wage":1127},"geo_note":null},"san_benito_county":{"short":"san_benito_county","name":"San Benito County Workforce Development Board","rpu":"North Central Coast","covers":"San Benito County","pirl":null,"alloc_PY24-25":{"adult":263848,"dw":229658},"alloc_PY25-26":{"adult":304151,"dw":298370},"transfer":{"PY23-24":0,"PY24-25":0},"laus":{"year":2025,"lf":34600,"ur":6.9,"ur2019":5.0},"qcew":{"period":"4th Qtr 2025","top":[["Trade, Transportation, and Utilities",22.9],["Manufacturing",18.1],["Natural Resources and Mining",12.9]],"wage":1174},"geo_note":null},"san_bernardino_county":{"short":"san_bernardino_county","name":"San Bernardino County Workforce Development Board","rpu":"Inland Empire","covers":"San Bernardino County","pirl":{"adult":1084,"dw":383,"lay":275,"cust":658,"cust_dw_pct":58.2,"adult_lay_pct":25.4,"adult_unemp_pct":37.3,"adult_emp_pct":37.4,"dw_age":43.0,"dw_45p":44.9,"dw_ba":11.2,"dw_earn":31813,"dw_lowinc":45.7,"dw_train":38.4,"lay_age":35.0,"lay_45p":29.1,"lay_ba":11.3,"lay_earn":21972,"lay_lowinc":57.5,"lay_train":30.9,"cust_top_ind":[["Retail",15.3],["Admin and support",13.7],["Transportation and warehousing",13.2]],"cust_ind_n":607},"alloc_PY24-25":{"adult":6223338,"dw":5060216},"alloc_PY25-26":{"adult":7719436,"dw":6331704},"transfer":{"PY23-24":0,"PY24-25":0},"laus":{"year":2025,"lf":1044300,"ur":5.4,"ur2019":3.9},"qcew":{"period":"4th Qtr 2025","top":[["Trade, Transportation, and Utilities",34.6],["Education and Health Services",22.3],["Professional and Business Services",11.4]],"wage":1189},"geo_note":null},"san_diego":{"short":"san_diego","name":"San Diego Workforce Partnership, Inc.","rpu":"Southern Border","covers":"San Diego County","pirl":{"adult":686,"dw":294,"lay":179,"cust":473,"cust_dw_pct":62.2,"adult_lay_pct":26.1,"adult_unemp_pct":51.2,"adult_emp_pct":22.7,"dw_age":44.5,"dw_45p":50.0,"dw_ba":35.7,"dw_earn":29148,"dw_lowinc":99.7,"dw_train":50.7,"lay_age":33.0,"lay_45p":22.3,"lay_ba":14.5,"lay_earn":20074,"lay_lowinc":98.9,"lay_train":60.3,"cust_top_ind":[["Health care",16.9],["Admin and support",13.9],["Professional services",10.0]],"cust_ind_n":432},"alloc_PY24-25":{"adult":6453315,"dw":6341417},"alloc_PY25-26":{"adult":8604692,"dw":8114074},"transfer":{"PY23-24":2800000.0,"PY24-25":0},"laus":{"year":2025,"lf":1671100,"ur":4.6,"ur2019":3.2},"qcew":{"period":"4th Qtr 2025","top":[["Education and Health Services",20.4],["Professional and Business Services",19.9],["Trade, Transportation, and Utilities",17.2]],"wage":1697},"geo_note":null},"san_francisco":{"short":"san_francisco","name":"San Francisco Workforce Development Board (WISF)","rpu":"Bay-Peninsula","covers":"City and County of San Francisco","pirl":{"adult":533,"dw":62,"lay":187,"cust":249,"cust_dw_pct":24.9,"adult_lay_pct":35.1,"adult_unemp_pct":50.3,"adult_emp_pct":14.6,"dw_age":39.0,"dw_45p":30.6,"dw_ba":43.5,"dw_earn":18599,"dw_lowinc":79.0,"dw_train":61.3,"lay_age":49.0,"lay_45p":61.0,"lay_ba":11.8,"lay_earn":19439,"lay_lowinc":96.8,"lay_train":32.6,"cust_top_ind":[["Health care",34.8],["Food service and lodging",13.7],["Admin and support",10.3]],"cust_ind_n":233},"alloc_PY24-25":{"adult":1482735,"dw":1805035},"alloc_PY25-26":{"adult":2224182,"dw":2556034},"transfer":{"PY23-24":0,"PY24-25":0},"laus":{"year":2025,"lf":506400,"ur":4.1,"ur2019":2.4},"qcew":{"period":"4th Qtr 2025","top":[["Professional and Business Services",30.2],["Education and Health Services",17.3],["Leisure and Hospitality",13.7]],"wage":3936},"geo_note":null},"san_joaquin_county":{"short":"san_joaquin_county","name":"San Joaquin County Workforce Development Board","rpu":"San Joaquin Valley and Associated Counties","covers":"San Joaquin County","pirl":{"adult":292,"dw":28,"lay":85,"cust":113,"cust_dw_pct":24.8,"adult_lay_pct":29.1,"adult_unemp_pct":43.8,"adult_emp_pct":27.1,"dw_age":43.0,"dw_45p":50.0,"dw_ba":10.7,"dw_earn":36330,"dw_lowinc":35.7,"dw_train":35.7,"lay_age":34.0,"lay_45p":18.8,"lay_ba":1.2,"lay_earn":21399,"lay_lowinc":82.4,"lay_train":52.9,"cust_top_ind":[["Manufacturing",17.3],["Admin and support",14.5],["Transportation and warehousing",14.5]],"cust_ind_n":110},"alloc_PY24-25":{"adult":3424285,"dw":2404185},"alloc_PY25-26":{"adult":3613634,"dw":3163454},"transfer":{"PY23-24":1236855.0,"PY24-25":1706971.0},"laus":{"year":2025,"lf":378700,"ur":6.7,"ur2019":5.7},"qcew":{"period":"4th Qtr 2025","top":[["Trade, Transportation, and Utilities",34.8],["Education and Health Services",19.0],["Leisure and Hospitality",10.2]],"wage":1208},"geo_note":null},"san_jose_silicon_valley":{"short":"san_jose_silicon_valley","name":"San Jose/Silicon Valley Workforce Investment Network (work2future)","rpu":"Bay-Peninsula","covers":"Campbell, Gilroy, Los Altos Hills, Los Gatos, Monte Sereno, Morgan Hill, San Jose, Saratoga","pirl":{"adult":751,"dw":174,"lay":180,"cust":354,"cust_dw_pct":49.2,"adult_lay_pct":24.0,"adult_unemp_pct":46.3,"adult_emp_pct":29.7,"dw_age":47.0,"dw_45p":54.0,"dw_ba":50.6,"dw_earn":46925,"dw_lowinc":45.4,"dw_train":28.7,"lay_age":40.0,"lay_45p":41.1,"lay_ba":27.2,"lay_earn":26052,"lay_lowinc":62.2,"lay_train":25.0,"cust_top_ind":[["Admin and support",16.1],["Professional services",12.6],["Manufacturing",11.4]],"cust_ind_n":341},"alloc_PY24-25":{"adult":1929234,"dw":2258676},"alloc_PY25-26":{"adult":2621094,"dw":3320677},"transfer":{"PY23-24":700000.0,"PY24-25":600000.0},"laus":{"year":2025,"lf":646271,"ur":4.4,"ur2019":2.7},"qcew":{"period":"4th Qtr 2025","top":[["Professional and Business Services",26.7],["Education and Health Services",20.0],["Manufacturing",12.2]],"wage":4763},"geo_note":"work2future serves San Jose and seven surrounding Santa Clara County jurisdictions. LAUS place series for six of them are summed here. LAUS does not publish estimates for Los Altos Hills or Monte Sereno (both fall below the place-estimate population threshold), so roughly 12,000 residents are not reflected in the labor force totals. Projections, wages and QCEW are shown for the San Jose-Sunnyvale-Santa Clara projection area (San Benito and Santa Clara Counties)."},"san_luis_obispo_county":{"short":"san_luis_obispo_county","name":"Workforce Development Board of San Luis Obispo County","rpu":"South Central Coast","covers":"San Luis Obispo County","pirl":{"adult":58,"dw":24,"lay":14,"cust":38,"cust_dw_pct":63.2,"adult_lay_pct":24.1,"adult_unemp_pct":48.3,"adult_emp_pct":27.6,"dw_age":40.0,"dw_45p":41.7,"dw_ba":33.3,"dw_earn":35571,"dw_lowinc":37.5,"dw_train":25.0,"lay_age":33.0,"lay_45p":28.6,"lay_ba":21.4,"lay_earn":29221,"lay_lowinc":85.7,"lay_train":21.4,"cust_top_ind":[["Retail",21.9],["Public administration",12.5],["Wholesale",9.4]],"cust_ind_n":32},"alloc_PY24-25":{"adult":518705,"dw":423821},"alloc_PY25-26":{"adult":618215,"dw":515549},"transfer":{"PY23-24":0,"PY24-25":0},"laus":{"year":2025,"lf":135700,"ur":4.4,"ur2019":3.0},"qcew":{"period":"4th Qtr 2025","top":[["Leisure and Hospitality",20.3],["Trade, Transportation, and Utilities",19.6],["Education and Health Services",19.0]],"wage":1250},"geo_note":null},"santa_ana":{"short":"santa_ana","name":"Santa Ana Workforce Development Board","rpu":"Orange","covers":"City of Santa Ana","pirl":{"adult":44,"dw":20,"lay":15,"cust":35,"cust_dw_pct":57.1,"adult_lay_pct":34.1,"adult_unemp_pct":56.8,"adult_emp_pct":9.1,"dw_age":50.0,"dw_45p":60.0,"dw_ba":35.0,"dw_earn":35548,"dw_lowinc":30.0,"dw_train":100.0,"lay_age":40.0,"lay_45p":33.3,"lay_ba":13.3,"lay_earn":16360,"lay_lowinc":93.3,"lay_train":60.0,"cust_top_ind":[["Manufacturing",18.8],["Professional services",18.8],["Admin and support",15.6]],"cust_ind_n":32},"alloc_PY24-25":{"adult":743809,"dw":546957},"alloc_PY25-26":{"adult":791699,"dw":681153},"transfer":{"PY23-24":0,"PY24-25":0},"laus":{"year":2025,"lf":162281,"ur":4.1,"ur2019":2.8},"qcew":{"period":"4th Qtr 2025","top":[["Professional and Business Services",20.8],["Education and Health Services",18.5],["Trade, Transportation, and Utilities",17.0]],"wage":1684},"geo_note":"Santa Ana is a single-city local area. City-level LAUS is used; projections, wages and QCEW are shown as Orange County context."},"santa_barbara_county":{"short":"santa_barbara_county","name":"Santa Barbara County Workforce Development Board","rpu":"South Central Coast","covers":"Santa Barbara County","pirl":{"adult":99,"dw":70,"lay":9,"cust":79,"cust_dw_pct":88.6,"adult_lay_pct":9.1,"adult_unemp_pct":22.2,"adult_emp_pct":68.7,"dw_age":44.5,"dw_45p":50.0,"dw_ba":28.6,"dw_earn":32552,"dw_lowinc":55.7,"dw_train":58.6,"lay_age":38.0,"lay_45p":44.4,"lay_ba":11.1,"lay_earn":15610,"lay_lowinc":88.9,"lay_train":66.7,"cust_top_ind":[["Health care",18.3],["Retail",18.3],["Professional services",15.0]],"cust_ind_n":60},"alloc_PY24-25":{"adult":987217,"dw":934677},"alloc_PY25-26":{"adult":1204724,"dw":1175559},"transfer":{"PY23-24":0,"PY24-25":0},"laus":{"year":2025,"lf":223900,"ur":4.8,"ur2019":3.7},"qcew":{"period":"4th Qtr 2025","top":[["Education and Health Services",18.2],["Leisure and Hospitality",16.0],["Natural Resources and Mining",15.9]],"wage":1436},"geo_note":null},"santa_cruz_county":{"short":"santa_cruz_county","name":"Santa Cruz County Workforce Development Board","rpu":"North Central Coast","covers":"Santa Cruz County","pirl":{"adult":76,"dw":32,"lay":10,"cust":42,"cust_dw_pct":76.2,"adult_lay_pct":13.2,"adult_unemp_pct":35.5,"adult_emp_pct":51.3,"dw_age":34.0,"dw_45p":18.8,"dw_ba":15.6,"dw_earn":24285,"dw_lowinc":100.0,"dw_train":59.4,"lay_age":28.5,"lay_45p":0.0,"lay_ba":0.0,"lay_earn":14940,"lay_lowinc":80.0,"lay_train":60.0,"cust_top_ind":[["Health care",25.0],["Agriculture",16.7],["Admin and support",16.7]],"cust_ind_n":36},"alloc_PY24-25":{"adult":1050465,"dw":908486},"alloc_PY25-26":{"adult":1164500,"dw":1149905},"transfer":{"PY23-24":90422.0,"PY24-25":0},"laus":{"year":2025,"lf":139000,"ur":6.3,"ur2019":4.9},"qcew":{"period":"4th Qtr 2025","top":[["Education and Health Services",23.0],["Trade, Transportation, and Utilities",17.8],["Leisure and Hospitality",16.0]],"wage":1356},"geo_note":null},"selaco":{"short":"selaco","name":"Southeast Los Angeles County Workforce Development Board (SELACO)","rpu":"LA Basin","covers":"Artesia, Bellflower, Cerritos, Downey, Hawaiian Gardens, Lakewood, Norwalk","pirl":{"adult":308,"dw":40,"lay":88,"cust":128,"cust_dw_pct":31.2,"adult_lay_pct":28.6,"adult_unemp_pct":48.7,"adult_emp_pct":22.7,"dw_age":45.5,"dw_45p":52.5,"dw_ba":22.5,"dw_earn":44900,"dw_lowinc":80.0,"dw_train":32.5,"lay_age":40.0,"lay_45p":37.5,"lay_ba":17.0,"lay_earn":27847,"lay_lowinc":87.5,"lay_train":28.4,"cust_top_ind":[["Admin and support",19.4],["Retail",9.7],["Professional services",9.7]],"cust_ind_n":124},"alloc_PY24-25":{"adult":1501711,"dw":1121366},"alloc_PY25-26":{"adult":1704599,"dw":1366459},"transfer":{"PY23-24":600000.0,"PY24-25":772820.0},"laus":{"year":2025,"lf":227023,"ur":5.3,"ur2019":4.2},"qcew":{"period":"4th Qtr 2025","top":[["Education and Health Services",25.2],["Trade, Transportation, and Utilities",20.1],["Professional and Business Services",16.5]],"wage":1764},"geo_note":"SELACO WDB serves seven southeast LA County cities; their LAUS place series are summed. Projections, wages and QCEW are Los Angeles County context."},"seta":{"short":"seta","name":"Sacramento Employment and Training Agency (SETA)","rpu":"Capital","covers":"Sacramento County","pirl":{"adult":1141,"dw":63,"lay":306,"cust":369,"cust_dw_pct":17.1,"adult_lay_pct":26.8,"adult_unemp_pct":53.4,"adult_emp_pct":19.8,"dw_age":45.0,"dw_45p":50.8,"dw_ba":20.6,"dw_earn":28311,"dw_lowinc":71.4,"dw_train":28.6,"lay_age":38.0,"lay_45p":36.9,"lay_ba":12.7,"lay_earn":20027,"lay_lowinc":78.8,"lay_train":12.7,"cust_top_ind":[["Admin and support",20.4],["Health care",16.8],["Retail",12.6]],"cust_ind_n":358},"alloc_PY24-25":{"adult":4038419,"dw":3500291},"alloc_PY25-26":{"adult":4944707,"dw":4373490},"transfer":{"PY23-24":2412551.0,"PY24-25":2745743.0},"laus":{"year":2025,"lf":791600,"ur":5.0,"ur2019":3.6},"qcew":{"period":"4th Qtr 2025","top":[["Education and Health Services",27.0],["Trade, Transportation, and Utilities",19.8],["Professional and Business Services",17.3]],"wage":1462},"geo_note":null},"solano_county":{"short":"solano_county","name":"Workforce Development Board of Solano County","rpu":"North Bay","covers":"Solano County","pirl":{"adult":86,"dw":40,"lay":17,"cust":57,"cust_dw_pct":70.2,"adult_lay_pct":19.8,"adult_unemp_pct":45.3,"adult_emp_pct":34.9,"dw_age":46.5,"dw_45p":55.0,"dw_ba":27.5,"dw_earn":38176,"dw_lowinc":5.0,"dw_train":45.0,"lay_age":43.0,"lay_45p":47.1,"lay_ba":35.3,"lay_earn":22947,"lay_lowinc":70.6,"lay_train":64.7,"cust_top_ind":[["Transportation and warehousing",16.4],["Admin and support",14.5],["Construction",10.9]],"cust_ind_n":55},"alloc_PY24-25":{"adult":1235797,"dw":1055800},"alloc_PY25-26":{"adult":1441622,"dw":1292993},"transfer":{"PY23-24":0,"PY24-25":0},"laus":{"year":2025,"lf":220800,"ur":5.3,"ur2019":3.7},"qcew":{"period":"4th Qtr 2025","top":[["Education and Health Services",26.7],["Trade, Transportation, and Utilities",22.2],["Leisure and Hospitality",13.2]],"wage":1408},"geo_note":null},"sonoma_county":{"short":"sonoma_county","name":"Sonoma County Workforce Investment Board","rpu":"North Bay","covers":"Sonoma County","pirl":{"adult":234,"dw":46,"lay":46,"cust":92,"cust_dw_pct":50.0,"adult_lay_pct":19.7,"adult_unemp_pct":34.6,"adult_emp_pct":45.7,"dw_age":51.5,"dw_45p":63.0,"dw_ba":28.3,"dw_earn":29661,"dw_lowinc":65.2,"dw_train":26.1,"lay_age":35.5,"lay_45p":23.9,"lay_ba":8.7,"lay_earn":25647,"lay_lowinc":65.2,"lay_train":37.0,"cust_top_ind":[["Health care",15.7],["Manufacturing",14.5],["Admin and support",12.0]],"cust_ind_n":83},"alloc_PY24-25":{"adult":731789,"dw":865513},"alloc_PY25-26":{"adult":973188,"dw":1119752},"transfer":{"PY23-24":0,"PY24-25":0},"laus":{"year":2025,"lf":248700,"ur":4.4,"ur2019":2.7},"qcew":{"period":"4th Qtr 2025","top":[["Education and Health Services",21.4],["Trade, Transportation, and Utilities",18.5],["Leisure and Hospitality",14.3]],"wage":1480},"geo_note":null},"south_bay":{"short":"south_bay","name":"South Bay Workforce Investment Board (SBWIB)","rpu":"LA Basin","covers":"Carson, El Segundo, Gardena, Hawthorne, Hermosa Beach, Inglewood, Lawndale, Manhattan Beach, Redondo Beach, Torrance, Lomita","pirl":{"adult":294,"dw":250,"lay":80,"cust":330,"cust_dw_pct":75.8,"adult_lay_pct":27.2,"adult_unemp_pct":55.1,"adult_emp_pct":17.7,"dw_age":46.0,"dw_45p":56.0,"dw_ba":40.8,"dw_earn":36836,"dw_lowinc":35.2,"dw_train":52.8,"lay_age":36.0,"lay_45p":33.8,"lay_ba":12.5,"lay_earn":25168,"lay_lowinc":80.0,"lay_train":36.2,"cust_top_ind":[["Admin and support",13.2],["Health care",12.5],["Retail",11.5]],"cust_ind_n":304},"alloc_PY24-25":{"adult":1947784,"dw":1548775},"alloc_PY25-26":{"adult":2177139,"dw":1894714},"transfer":{"PY23-24":0,"PY24-25":0},"laus":{"year":2025,"lf":353439,"ur":5.3,"ur2019":4.3},"qcew":{"period":"4th Qtr 2025","top":[["Education and Health Services",25.2],["Trade, Transportation, and Utilities",20.1],["Professional and Business Services",16.5]],"wage":1764},"geo_note":"South Bay WIB serves eleven cities in the LA South Bay; their LAUS place series are summed. Projections, wages and QCEW are Los Angeles County context."},"stanislaus_county":{"short":"stanislaus_county","name":"Stanislaus County Workforce Development Board","rpu":"San Joaquin Valley and Associated Counties","covers":"Stanislaus County","pirl":{"adult":410,"dw":61,"lay":81,"cust":142,"cust_dw_pct":43.0,"adult_lay_pct":19.8,"adult_unemp_pct":52.7,"adult_emp_pct":27.6,"dw_age":40.0,"dw_45p":42.6,"dw_ba":9.8,"dw_earn":32795,"dw_lowinc":54.1,"dw_train":8.2,"lay_age":34.0,"lay_45p":24.7,"lay_ba":8.6,"lay_earn":20789,"lay_lowinc":59.3,"lay_train":19.8,"cust_top_ind":[["Manufacturing",23.6],["Admin and support",20.5],["Health care",9.4]],"cust_ind_n":127},"alloc_PY24-25":{"adult":2560693,"dw":1794670},"alloc_PY25-26":{"adult":2713022,"dw":2379563},"transfer":{"PY23-24":600000.0,"PY24-25":200000.0},"laus":{"year":2025,"lf":257000,"ur":7.2,"ur2019":6.1},"qcew":{"period":"4th Qtr 2025","top":[["Education and Health Services",24.6],["Trade, Transportation, and Utilities",23.4],["Manufacturing",13.7]],"wage":1241},"geo_note":null},"tulare_county":{"short":"tulare_county","name":"Workforce Investment Board of Tulare County","rpu":"San Joaquin Valley and Associated Counties","covers":"Tulare County","pirl":{"adult":962,"dw":190,"lay":204,"cust":394,"cust_dw_pct":48.2,"adult_lay_pct":21.2,"adult_unemp_pct":49.4,"adult_emp_pct":29.4,"dw_age":37.0,"dw_45p":30.0,"dw_ba":5.3,"dw_earn":21597,"dw_lowinc":90.0,"dw_train":18.4,"lay_age":33.0,"lay_45p":23.0,"lay_ba":3.9,"lay_earn":17908,"lay_lowinc":98.0,"lay_train":16.7,"cust_top_ind":[["Admin and support",18.3],["Health care",13.3],["Retail",13.1]],"cust_ind_n":360},"alloc_PY24-25":{"adult":4293902,"dw":2582634},"alloc_PY25-26":{"adult":4430980,"dw":3590435},"transfer":{"PY23-24":750000.0,"PY24-25":1000000.0},"laus":{"year":2025,"lf":221800,"ur":10.8,"ur2019":9.7},"qcew":{"period":"4th Qtr 2025","top":[["Natural Resources and Mining",23.4],["Trade, Transportation, and Utilities",22.5],["Education and Health Services",16.4]],"wage":1009},"geo_note":null},"ventura_county":{"short":"ventura_county","name":"Workforce Development Board of Ventura County","rpu":"Ventura","covers":"Ventura County","pirl":{"adult":276,"dw":77,"lay":60,"cust":137,"cust_dw_pct":56.2,"adult_lay_pct":21.7,"adult_unemp_pct":56.5,"adult_emp_pct":21.7,"dw_age":46.0,"dw_45p":57.1,"dw_ba":22.1,"dw_earn":30415,"dw_lowinc":51.9,"dw_train":36.4,"lay_age":37.0,"lay_45p":30.0,"lay_ba":13.3,"lay_earn":16475,"lay_lowinc":76.7,"lay_train":25.0,"cust_top_ind":[["Admin and support",15.3],["Health care",11.5],["Manufacturing",11.5]],"cust_ind_n":131},"alloc_PY24-25":{"adult":1449707,"dw":1856305},"alloc_PY25-26":{"adult":1994161,"dw":2389366},"transfer":{"PY23-24":750000.0,"PY24-25":500000.0},"laus":{"year":2025,"lf":426700,"ur":4.8,"ur2019":3.7},"qcew":{"period":"4th Qtr 2025","top":[["Education and Health Services",20.6],["Trade, Transportation, and Utilities",19.6],["Professional and Business Services",14.2]],"wage":1372},"geo_note":null},"verdugo":{"short":"verdugo","name":"Verdugo Workforce Development Board","rpu":"LA Basin","covers":"Glendale, Burbank, La Ca\u00f1ada Flintridge","pirl":{"adult":319,"dw":117,"lay":79,"cust":196,"cust_dw_pct":59.7,"adult_lay_pct":24.8,"adult_unemp_pct":52.0,"adult_emp_pct":23.2,"dw_age":44.0,"dw_45p":48.7,"dw_ba":72.6,"dw_earn":51954,"dw_lowinc":40.2,"dw_train":58.1,"lay_age":41.0,"lay_45p":38.0,"lay_ba":54.4,"lay_earn":23560,"lay_lowinc":70.9,"lay_train":19.0,"cust_top_ind":[["Information",19.9],["Professional services",17.2],["Admin and support",14.0]],"cust_ind_n":186},"alloc_PY24-25":{"adult":1225815,"dw":894167},"alloc_PY25-26":{"adult":1400270,"dw":1183852},"transfer":{"PY23-24":0,"PY24-25":0},"laus":{"year":2025,"lf":162252,"ur":6.0,"ur2019":4.6},"qcew":{"period":"4th Qtr 2025","top":[["Education and Health Services",25.2],["Trade, Transportation, and Utilities",20.1],["Professional and Business Services",16.5]],"wage":1764},"geo_note":"Verdugo WDB serves Burbank, Glendale and La Canada Flintridge. La Canada Flintridge is also referenced by Foothill WDB in the roster; it is counted in both here, so do not add Foothill and Verdugo together. Projections, wages and QCEW are Los Angeles County context."},"yolo_county":{"short":"yolo_county","name":"Yolo County Workforce Innovation Board","rpu":"Capital","covers":"Yolo County","pirl":{"adult":64,"dw":35,"lay":13,"cust":48,"cust_dw_pct":72.9,"adult_lay_pct":20.3,"adult_unemp_pct":48.4,"adult_emp_pct":31.2,"dw_age":41.0,"dw_45p":34.3,"dw_ba":11.4,"dw_earn":33426,"dw_lowinc":51.4,"dw_train":85.7,"lay_age":32.0,"lay_45p":15.4,"lay_ba":15.4,"lay_earn":20406,"lay_lowinc":61.5,"lay_train":84.6,"cust_top_ind":[["Retail",31.1],["Construction",15.6],["Manufacturing",11.1]],"cust_ind_n":45},"alloc_PY24-25":{"adult":449580,"dw":528111},"alloc_PY25-26":{"adult":716523,"dw":688149},"transfer":{"PY23-24":200000.0,"PY24-25":125000.0},"laus":{"year":2025,"lf":113600,"ur":5.8,"ur2019":4.2},"qcew":{"period":"4th Qtr 2025","top":[["Trade, Transportation, and Utilities",32.1],["Education and Health Services",18.2],["Professional and Business Services",12.7]],"wage":1363},"geo_note":null}},"state":{"pirl":{"adult":28437,"dw":8113,"lay":6844,"cust":14957,"cust_dw_pct":54.2,"adult_lay_pct":24.1,"adult_unemp_pct":50.5,"adult_emp_pct":25.4,"dw_age":42.0,"dw_45p":45.2,"dw_ba":28.7,"dw_earn":29426,"dw_lowinc":62.7,"dw_train":35.6,"lay_age":34.0,"lay_45p":27.9,"lay_ba":13.0,"lay_earn":20184,"lay_lowinc":76.5,"lay_train":32.6,"cust_top_ind":[["Admin and support",16.3],["Health care",14.1],["Retail",11.2]],"cust_ind_n":13702},"pirl_all":{"adult":30385,"dw":8144,"lay":7317,"cust":15461,"cust_dw_pct":52.7,"adult_lay_pct":24.1,"adult_unemp_pct":50.9,"adult_emp_pct":25.0,"dw_age":42.0,"dw_45p":45.2,"dw_ba":28.7,"dw_earn":29444,"dw_lowinc":62.7,"dw_train":35.6,"lay_age":34.0,"lay_45p":27.4,"lay_ba":12.6,"lay_earn":19977,"lay_lowinc":77.0,"lay_train":34.8,"cust_top_ind":[["Admin and support",16.3],["Health care",14.1],["Retail",11.2]],"cust_ind_n":14197},"laus":{"year":2025,"lf":19823800,"ur":5.5,"ur2019":4.1},"qcew":{"top":[["Education and Health Services",22.2],["Trade, Transportation, and Utilities",19.8],["Professional and Business Services",17.0]],"wage":1859,"period":"4th Qtr 2025"},"alloc":{"PY24-25":{"adult":117527156,"dw":93103688},"PY25-26":{"adult":138837015,"dw":123613915}},"transfer":{"PY23-24":11498447.0,"PY24-25":11170469.0},"transfer_n":{"PY23-24":14,"PY24-25":14}}};
+const RPU_ORDER = ["North State","North Coast","North Bay","Capital","Middle Sierra","East Bay","Bay-Peninsula","North Central Coast","San Joaquin Valley and Associated Counties","South Central Coast","Ventura","LA Basin","Orange","Inland Empire","Southern Border"];
+const A = DATA.areas, S = DATA.state;
+const keys = Object.keys(A).sort((a,b)=>{
+  const r = RPU_ORDER.indexOf(A[a].rpu) - RPU_ORDER.indexOf(A[b].rpu);
+  return r || A[a].name.localeCompare(A[b].name);
+});
+const SMALL = 30;
+const $ = s => document.querySelector(s);
+const n0 = v => v==null ? "n/a" : Math.round(v).toLocaleString("en-US");
+const pc = v => v==null ? "n/a" : Math.round(v) + "%";
+const usd = v => v==null ? "n/a" : "$" + Math.round(v).toLocaleString("en-US");
+const usdM = v => v==null ? "n/a" : (v>=1e6 ? "$" + (v/1e6).toFixed(v>=1e7?1:2) + "M" : "$" + Math.round(v/1e3).toLocaleString("en-US") + "K");
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+/* strip plot */
+(function strip(){
+  const el = $("#strip"); const tip = $("#tip");
+  const ticks = [0,25,50,75,100];
+  const stLine = S.pirl_all.cust_dw_pct;
+  let html = "";
+  RPU_ORDER.forEach(r => {
+    const ks = keys.filter(k => A[k].rpu===r && A[k].pirl);
+    const nob = keys.filter(k => A[k].rpu===r && !A[k].pirl);
+    html += `<div class="srow"><div class="lab">${esc(r)}${nob.length?' <span class="note">(San Benito: no PIRL data)</span>':''}</div><div class="track">${ticks.map(t=>`<i class="g" style="left:${t}%"></i>`).join("")}<span class="st" style="left:${stLine}%"></span>`;
+    ks.forEach(k => {
+      const p = A[k].pirl;
+      html += `<button class="pt${p.cust<SMALL?' small':''}" data-k="${k}" style="left:${p.cust_dw_pct}%" aria-label="${esc(A[k].name)}: ${pc(p.cust_dw_pct)} enrolled as DW, ${n0(p.cust)} dislocated worker customers"></button>`;
+    });
+    html += `</div></div>`;
+  });
+  html += `<div class="saxis"><div></div><div class="ticks">${ticks.map(t=>`<span style="left:${t}%">${t}%</span>`).join("")}</div></div>`;
+  el.innerHTML = html;
+  const show = (b) => {
+    const k = b.dataset.k, p = A[k].pirl;
+    tip.innerHTML = `<b>${esc(A[k].name)}</b><br>${pc(p.cust_dw_pct)} enrolled as DW · ${n0(p.cust)} dislocated worker customers (${n0(p.dw)} DW, ${n0(p.lay)} Adult)`;
+    tip.style.display = "block";
+    const r = b.getBoundingClientRect(); const w = tip.offsetWidth;
+    let x = r.left + r.width/2 - w/2; x = Math.max(8, Math.min(x, window.innerWidth - w - 8));
+    let y = r.top - tip.offsetHeight - 10; if (y < 60) y = r.bottom + 10;
+    tip.style.left = x + "px"; tip.style.top = y + "px";
+  };
+  const hide = () => tip.style.display = "none";
+  el.querySelectorAll(".pt").forEach(b => {
+    b.addEventListener("mouseenter", () => show(b));
+    b.addEventListener("focus", () => show(b));
+    b.addEventListener("mouseleave", hide);
+    b.addEventListener("blur", hide);
+    b.addEventListener("click", () => { select(b.dataset.k, true); });
+  });
+  window.addEventListener("scroll", hide, {passive:true});
+})();
+
+/* picker */
+(function picker(){
+  const sel = $("#areaSel");
+  sel.innerHTML = RPU_ORDER.map(r => {
+    const ks = keys.filter(k => A[k].rpu===r);
+    return ks.length ? `<optgroup label="${esc(r)}">${ks.map(k=>`<option value="${k}">${esc(A[k].name)}</option>`).join("")}</optgroup>` : "";
+  }).join("");
+  sel.addEventListener("change", () => select(sel.value, false));
+  $("#copyLink").addEventListener("click", async () => {
+    const url = location.href.split("#")[0] + "#area=" + sel.value;
+    try { await navigator.clipboard.writeText(url); $("#copyLink").textContent = "Link copied"; }
+    catch(e) { $("#copyLink").textContent = "Copy failed: " + url; }
+    setTimeout(()=> $("#copyLink").textContent = "Copy link to this profile", 2500);
+  });
+})();
+
+function select(k, scroll){
+  if (!A[k]) return;
+  $("#areaSel").value = k;
+  document.querySelectorAll(".pt").forEach(b => b.classList.toggle("sel", b.dataset.k===k));
+  renderProfile(k);
+  try { history.replaceState(null, "", "#area=" + k); } catch(e) {}
+  if (scroll) $("#profiles").scrollIntoView({behavior:"smooth"});
+}
+
+function splitBar(parts, cls){
+  return `<div class="split ${cls||''}">${parts.filter(p=>p.v>0).map(p=>`<div class="${p.c}" style="width:${p.v}%" title="${esc(p.t)}: ${pc(p.v)}">${p.v>=28?esc(p.l)+' '+pc(p.v):(p.v>=10?pc(p.v):'')}</div>`).join("")}</div>`;
+}
+
+function renderProfile(k){
+  const a = A[k], p = a.pirl, sp = S.pirl_all;
+  const a24 = a["alloc_PY24-25"], a25 = a["alloc_PY25-26"];
+  const dwCh = a24 && a25 && a24.dw ? (a25.dw/a24.dw - 1)*100 : null;
+  const adCh = a24 && a25 && a24.adult ? (a25.adult/a24.adult - 1)*100 : null;
+  let h = `<div class="phead"><div class="eyebrow">${esc(a.rpu)} regional planning unit</div><h3 style="font-size:1.45rem">${esc(a.name)}</h3><div class="where">Serves ${esc(a.covers)}</div></div>`;
+  h += `<div class="grid4">`;
+  if (p) {
+    h += `<div class="stat"><div class="label">Dislocated worker customers</div><div class="num">${n0(p.cust)}</div><div class="m">${n0(p.dw)} enrolled as DW, ${n0(p.lay)} as Adults with a layoff pattern</div></div>`;
+    h += `<div class="stat"><div class="label">Enrolled as DW</div><div class="num">${pc(p.cust_dw_pct)}</div><div class="m">Statewide ${pc(sp.cust_dw_pct)}</div></div>`;
+  } else {
+    h += `<div class="stat"><div class="label">Title I participant data</div><div class="num">n/a</div><div class="m">Not included in the federal public use file</div></div>`;
+    h += `<div class="stat"><div class="label">Labor force, 2025</div><div class="num">${n0(a.laus.lf)}</div><div class="m">LAUS annual average</div></div>`;
+  }
+  h += `<div class="stat"><div class="label">DW allocation, 2025-26</div><div class="num">${usdM(a25&&a25.dw)}</div><div class="m">${dwCh!=null?`<span class="up">+${Math.round(dwCh)}%</span> from ${usdM(a24.dw)} in 2024-25`:''}</div></div>`;
+  h += `<div class="stat"><div class="label">Unemployment rate, 2025</div><div class="num">${a.laus.ur.toFixed(1)}%</div><div class="m">${a.laus.ur2019!=null?a.laus.ur2019.toFixed(1)+'% in 2019; ':''}statewide ${S.laus.ur.toFixed(1)}%</div></div>`;
+  h += `</div>`;
+
+  if (p) {
+    h += `<div class="pblock"><h4>How the dislocated worker customer enrolls</h4>${splitBar([{v:p.cust_dw_pct,c:'c-dw',l:'DW',t:'Enrolled as DW'},{v:100-p.cust_dw_pct,c:'c-lay',l:'Adult',t:'Enrolled as Adult, layoff pattern'}])}</div>`;
+    h += `<div class="pblock"><h4>The Adult program here <span class="s">${n0(p.adult)} Adult exiters</span></h4>${splitBar([{v:p.adult_lay_pct,c:'c-lay',l:'Layoff pattern',t:'Layoff pattern'},{v:p.adult_unemp_pct,c:'c-un',l:'Unemployed, no pattern',t:'Unemployed, no layoff pattern'},{v:p.adult_emp_pct,c:'c-em',l:'Employed',t:'Employed at entry'}],'sm')}
+      <div class="legend"><span><i class="sw c-lay"></i>Layoff pattern ${pc(p.adult_lay_pct)}</span><span><i class="sw c-un"></i>Unemployed, no layoff pattern ${pc(p.adult_unemp_pct)}</span><span><i class="sw c-em"></i>Employed at entry ${pc(p.adult_emp_pct)}</span><span class="note">Statewide: ${pc(sp.adult_lay_pct)}, ${pc(sp.adult_unemp_pct)}, ${pc(sp.adult_emp_pct)}</span></div></div>`;
+    const showD = p.dw >= 10, showL = p.lay >= 10;
+    const cell = (ok, v) => ok ? v : "few";
+    const rows = [
+      ["Median age", p.dw_age, p.lay_age, sp.dw_age, sp.lay_age, v=>v==null?'n/a':Math.round(v)],
+      ["Age 45 or older", p.dw_45p, p.lay_45p, sp.dw_45p, sp.lay_45p, pc],
+      ["Bachelor's degree or higher", p.dw_ba, p.lay_ba, sp.dw_ba, sp.lay_ba, pc],
+      ["Median earnings, three quarters before enrolling", p.dw_earn, p.lay_earn, sp.dw_earn, sp.lay_earn, usd],
+      ["Low income", p.dw_lowinc, p.lay_lowinc, sp.dw_lowinc, sp.lay_lowinc, pc],
+      ["Received training", p.dw_train, p.lay_train, sp.dw_train, sp.lay_train, pc],
+    ];
+    h += `<div class="pblock"><h4>Who is on each side</h4><div class="tbl" style="box-shadow:none"><table class="mini"><thead><tr><th></th><th class="sh">Enrolled as DW</th><th class="sh">Enrolled as Adult, layoff pattern</th><th>Statewide DW</th><th>Statewide Adult, layoff pattern</th></tr></thead><tbody>
+      ${rows.map(r=>`<tr><td>${r[0]}</td><td class="sh">${cell(showD,r[5](r[1]))}</td><td class="sh">${cell(showL,r[5](r[2]))}</td><td class="state">${r[5](r[3])}</td><td class="state">${r[5](r[4])}</td></tr>`).join("")}
+      </tbody></table></div></div>`;
+    h += `<div class="pblock inds"><div><h4>Most common prior industries of dislocated worker customers</h4><ol>${(p.cust_top_ind||[]).map(i=>`<li>${esc(i[0])} <span>${pc(i[1])}</span></li>`).join("")}</ol><p class="note">Share of the ${n0(p.cust_ind_n)} with an industry code.</p></div>`;
+  } else {
+    h += `<div class="flag">San Benito County is not in the federal PIRL public use file, so participant characteristics are not shown. Funding and labor market information below come from EDD and LMID sources.</div><div class="pblock inds"><div></div>`;
+  }
+  h += `<div><h4>Largest private employment sectors, ${esc(a.qcew.period||'4th Qtr 2025')}</h4><ol>${a.qcew.top.map(i=>`<li>${esc(i[0])} <span>${pc(i[1])}</span></li>`).join("")}</ol><p class="note">Average weekly private wage ${usd(a.qcew.wage)} (statewide ${usd(S.qcew.wage)}).</p></div></div>`;
+
+  const t23 = a.transfer["PY23-24"]||0, t24 = a.transfer["PY24-25"]||0;
+  h += `<div class="pblock"><h4>Funding</h4><div class="tbl" style="box-shadow:none"><table class="mini"><thead><tr><th>Program year</th><th>Adult allocation</th><th>DW allocation</th><th>DW transferred to Adult</th></tr></thead><tbody>
+    <tr><td>2024-25</td><td>${usdM(a24&&a24.adult)}</td><td>${usdM(a24&&a24.dw)}</td><td>${t24?usdM(t24):'None'}</td></tr>
+    <tr><td>2025-26</td><td>${usdM(a25&&a25.adult)}${adCh!=null?` <span class="note">(+${Math.round(adCh)}%)</span>`:''}</td><td>${usdM(a25&&a25.dw)}${dwCh!=null?` <span class="up">(+${Math.round(dwCh)}%)</span>`:''}</td><td class="note">Not yet reported</td></tr>
+    </tbody></table></div><p class="note">2023-24 transfer: ${t23?usdM(t23):'none'}. Transfers are from the 80% expenditure reports.</p></div>`;
+
+  const notes = [];
+  if (p && t24>0) notes.push(`This area transferred DW funds to Adult in 2024-25, which goes with enrolling more of its dislocated worker customers as Adults. Statewide, areas that transferred enrolled 39% of these customers as DW, compared with 57% elsewhere.`);
+  if (p && p.cust < SMALL) notes.push(`This area had fewer than ${SMALL} dislocated worker customers in the year, so its percentages can shift a lot from year to year.`);
+  if (p && (p.dw < 10 || p.lay < 10)) notes.push(`Characteristics are shown as "few" for any group with fewer than 10 people.`);
+  if (a.geo_note) notes.push(a.geo_note);
+  if (notes.length) h += `<div class="flag">${notes.map(esc).join("<br>")}</div>`;
+  $("#profile").innerHTML = h;
+}
+
+/* all-areas table */
+(function allTable(){
+  let h = `<thead><tr><th>Local area</th><th>Dislocated worker customers</th><th>Enrolled as DW</th><th>Adult exiters with a layoff pattern</th><th>DW allocation change, 2024-25 to 2025-26</th><th>DW transferred to Adult, 2024-25</th><th>Unemployment rate, 2025</th></tr></thead><tbody>`;
+  RPU_ORDER.forEach(r => {
+    const ks = keys.filter(k => A[k].rpu===r); if (!ks.length) return;
+    h += `<tr><td class="sub" colspan="7">${esc(r)}</td></tr>`;
+    ks.forEach(k => {
+      const a = A[k], p = a.pirl, a24 = a["alloc_PY24-25"], a25 = a["alloc_PY25-26"];
+      const ch = a24&&a25&&a24.dw ? "+" + Math.round((a25.dw/a24.dw-1)*100) + "%" : "n/a";
+      const t = a.transfer["PY24-25"];
+      h += `<tr><td><a href="#area=${k}" data-k="${k}" class="jump">${esc(a.name)}</a></td><td>${p?n0(p.cust):'n/a'}</td><td>${p?pc(p.cust_dw_pct):'n/a'}</td><td>${p?pc(p.adult_lay_pct):'n/a'}</td><td>${ch}</td><td>${t?usdM(t):'None'}</td><td>${a.laus.ur.toFixed(1)}%</td></tr>`;
+    });
+  });
+  h += `<tr><td><strong>Statewide</strong></td><td>${n0(S.pirl_all.cust)}</td><td>${pc(S.pirl_all.cust_dw_pct)}</td><td>${pc(S.pirl_all.adult_lay_pct)}</td><td>+${Math.round((S.alloc["PY25-26"].dw/95104512-1)*100)}%</td><td>${usdM(S.transfer["PY24-25"])}</td><td>${S.laus.ur.toFixed(1)}%</td></tr></tbody>`;
+  $("#allTbl").innerHTML = h;
+  $("#allTbl").addEventListener("click", e => { const a = e.target.closest("a.jump"); if (a){ e.preventDefault(); select(a.dataset.k, true); } });
+})();
+
+/* initial area from hash */
+(function init(){
+  const m = location.hash.match(/area=([a-z_]+)/);
+  const k = m && A[m[1]] ? m[1] : keys[0];
+  select(k, false);
+  if (m && A[m[1]]) setTimeout(()=> $("#profiles").scrollIntoView(), 50);
+})();
+
+/* nav highlight */
+(function nav(){
+  const links = [...document.querySelectorAll("nav.toc a")];
+  const secs = links.map(l => document.querySelector(l.getAttribute("href")));
+  const io = new IntersectionObserver(es => {
+    es.forEach(e => { if (e.isIntersecting) { links.forEach(l => l.classList.toggle("on", l.getAttribute("href")==="#"+e.target.id)); } });
+  }, {rootMargin:"-40% 0px -55% 0px"});
+  secs.forEach(s => s && io.observe(s));
+})();
+</script>
+<script>
+  (function(){
+    var t=document.querySelector('.navtoggle'),n=document.getElementById('primary-nav');
+    if(!t)return;
+    t.addEventListener('click',function(){var o=n.classList.toggle('open');t.setAttribute('aria-expanded',o);});
+    n.addEventListener('click',function(e){if(e.target.closest('a')){n.classList.remove('open');t.setAttribute('aria-expanded','false');}});
+  })();
+  (function(){
+    var items=[].slice.call(document.querySelectorAll('.has-sub'));
+    function closeAll(except){items.forEach(function(it){if(it!==except){it.querySelector('.submenu').classList.remove('open');it.querySelector('.subtoggle').setAttribute('aria-expanded','false');}});}
+    items.forEach(function(it){
+      var btn=it.querySelector('.subtoggle'),menu=it.querySelector('.submenu');
+      if(!btn||!menu)return;
+      btn.addEventListener('click',function(e){e.stopPropagation();var open=menu.classList.toggle('open');btn.setAttribute('aria-expanded',open);closeAll(it);});
+    });
+    document.addEventListener('click',function(e){if(!e.target.closest('.has-sub'))closeAll(null);});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')closeAll(null);});
+  })();
+  (function(){
+    var h=document.querySelector('header.site');
+    function set(){document.documentElement.style.setProperty('--hh',h.offsetHeight+'px');}
+    set();window.addEventListener('resize',set);window.addEventListener('load',set);
+  })();
+</script>
+</body>
+</html>
