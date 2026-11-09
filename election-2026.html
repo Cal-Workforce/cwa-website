@@ -1,0 +1,1028 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+<title>Election 2026 and Local Workforce Boards | California Workforce Association</title>
+<meta name="description" content="What the November 2026 election changes for California's local workforce development boards, with maps of every congressional and legislative district and the local workforce areas inside it.">
+<meta property="og:title" content="What the 2026 election changes for local workforce boards">
+<meta property="og:description" content="New committee leaders in Washington, a new governor in Sacramento, and maps of every district and the local workforce areas inside it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --coral:#E27A50; --coral-dark:#C9623B; --coral-tint:#F6E4DB; --coral-wash:#FBF0EA;
+    --navy:#1A375D; --navy-deep:#122842; --navy-tint:#3B5578; --navy-wash:#EAEEF3;
+    --ground:#FAF7F3; --white:#FFFFFF; --ink:#1A375D; --muted:#5B6A7D; --line:#E7DFD6;
+    --shadow:0 18px 48px -24px rgba(26,55,93,.28);
+    --shadow-sm:0 8px 24px -16px rgba(26,55,93,.35);
+    --radius:20px; --radius-lg:28px; --maxw:1100px;
+    --ease:cubic-bezier(.22,.61,.36,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{font-family:'Sora',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background:var(--ground);color:var(--ink);font-size:18px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;width:100%}
+  section{padding:96px 0}
+
+  h1,h2,h3{line-height:1.08;font-weight:700;letter-spacing:-.02em;color:var(--navy)}
+  h1{font-size:clamp(2.6rem,6.5vw,4.6rem);font-weight:800}
+  h2{font-size:clamp(2rem,4.2vw,3rem)}
+  h3{font-size:1.25rem;letter-spacing:-.01em}
+  p{color:var(--muted)}
+  .lead{font-size:clamp(1.05rem,2vw,1.3rem);color:var(--navy-tint);font-weight:400}
+  .eyebrow{font-size:.78rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--coral-dark);display:inline-block}
+  .eyebrow.light{color:var(--coral)}
+  .hl{color:var(--coral)}
+
+  .btn{display:inline-flex;align-items:center;gap:.55em;font-family:inherit;font-size:1rem;font-weight:600;letter-spacing:-.01em;padding:16px 30px;border-radius:999px;border:2px solid transparent;cursor:pointer;transition:transform .25s var(--ease),background .25s var(--ease),box-shadow .25s var(--ease),color .2s;line-height:1}
+  .btn-primary{background:var(--coral);color:#fff;box-shadow:0 12px 30px -12px rgba(226,122,80,.7)}
+  .btn-primary:hover{background:var(--coral-dark);transform:translateY(-2px)}
+  .btn-ghost{background:transparent;color:var(--navy);border-color:var(--line)}
+  .btn-ghost:hover{border-color:var(--coral);color:var(--coral-dark);transform:translateY(-2px)}
+  .btn-arrow{transition:transform .25s var(--ease)}
+  .btn:hover .btn-arrow{transform:translateX(4px)}
+  a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--coral);outline-offset:3px;border-radius:8px}
+  .linkarrow{display:inline-flex;align-items:center;gap:.4em;font-weight:600;color:var(--navy);border-bottom:2px solid transparent;transition:color .2s,border-color .2s;padding-bottom:2px}
+  .linkarrow:hover{color:var(--coral-dark);border-color:var(--coral)}
+
+  /* Header + nav */
+  header.site{position:sticky;top:0;z-index:60;background:#FAF7F3;border-bottom:1px solid rgba(231,223,214,.8)}
+  .site .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:18px;padding-bottom:18px}
+  .logo-img{height:54px;width:auto;display:block}
+  .nav{display:flex;align-items:center;gap:22px}
+  .nav a.navlink{font-size:.87rem;font-weight:500;color:var(--navy);transition:color .2s;position:relative;white-space:nowrap}
+  .nav a.navlink:hover{color:var(--coral-dark)}
+  .nav a.navlink::after{content:"";position:absolute;left:0;right:100%;bottom:-6px;height:2px;background:var(--coral);transition:right .25s var(--ease)}
+  .nav a.navlink:hover::after{right:0}
+  .site .btn{padding:11px 20px;font-size:.87rem;white-space:nowrap}
+  /* Dropdown submenu */
+  .nav-item{position:relative;display:flex;align-items:center}
+  .subtoggle{font-family:inherit;background:none;border:none;cursor:pointer;font-size:.87rem;font-weight:500;color:var(--navy);display:inline-flex;align-items:center;gap:6px;padding:0;transition:color .2s;white-space:nowrap}
+  .subtoggle:hover,.has-sub:focus-within .subtoggle{color:var(--coral-dark)}
+  .subtoggle .caret{font-size:.66rem;color:var(--coral-dark);transition:transform .2s var(--ease)}
+  .has-sub:hover .caret,.subtoggle[aria-expanded="true"] .caret{transform:rotate(180deg)}
+  .submenu{position:absolute;top:calc(100% + 16px);left:50%;transform:translateX(-50%) translateY(6px);min-width:210px;background:var(--white);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:8px;opacity:0;visibility:hidden;transition:opacity .2s var(--ease),transform .2s var(--ease);z-index:70}
+  .submenu::before{content:"";position:absolute;top:-16px;left:0;right:0;height:16px}
+  .has-sub:hover .submenu,.has-sub:focus-within .submenu,.submenu.open{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
+  .submenu a{display:block;padding:11px 14px;border-radius:9px;font-size:.92rem;font-weight:500;color:var(--navy);transition:background .18s,color .18s}
+  .submenu a:hover{background:var(--coral-wash);color:var(--coral-dark)}
+  .navtoggle{display:none;background:none;border:1.5px solid var(--line);border-radius:10px;padding:9px 11px;cursor:pointer}
+  .navtoggle span{display:block;width:20px;height:2px;background:var(--navy);margin:4px 0;border-radius:2px}
+  @media (max-width:1024px){
+    .nav{position:fixed;inset:64px 0 auto 0;flex-direction:column;align-items:stretch;gap:0;background:var(--ground);border-bottom:1px solid var(--line);padding:8px 24px 20px;transform:translateY(-140%);transition:transform .3s var(--ease);box-shadow:var(--shadow)}
+    .nav.open{transform:translateY(0)}
+    .nav a.navlink{padding:14px 0;border-bottom:1px solid var(--line)}
+    .nav a.navlink::after{display:none}
+    .nav .btn{margin-top:14px;justify-content:center}
+    .navtoggle{display:block}
+    /* Submenu becomes an accordion */
+    .nav-item{display:block}
+    .subtoggle{width:100%;justify-content:space-between;padding:14px 0;border-bottom:1px solid var(--line);font-size:1rem;font-weight:500}
+    .submenu{position:static;transform:none;opacity:1;visibility:hidden;display:none;min-width:0;background:transparent;border:none;box-shadow:none;padding:0 0 0 14px}
+    .submenu::before{display:none}
+    .submenu.open{display:block;visibility:visible}
+    .submenu,.submenu.open,.has-sub:hover .submenu,.has-sub:focus-within .submenu{transform:none;left:auto}
+    .submenu a{padding:13px 0;border-bottom:1px solid var(--line)}
+  }
+
+  /* Hero */
+  .hero{position:relative;padding:92px 0 96px;overflow:hidden}
+  .hero .wrap{position:relative;z-index:2;max-width:920px}
+  .hero h1{margin:22px 0 24px;max-width:14ch}
+  .hero .lead{max-width:660px;margin-bottom:36px}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin-bottom:44px}
+  .markers{display:flex;flex-wrap:wrap;gap:14px}
+  .marker{display:inline-flex;align-items:center;gap:9px;background:var(--white);border:1px solid var(--line);border-radius:999px;padding:10px 18px;font-size:.9rem;font-weight:500;color:var(--navy);box-shadow:var(--shadow-sm)}
+  .marker .dot{width:9px;height:9px;border-radius:50%;background:var(--coral);flex:none}
+  .geo{position:absolute;border-radius:50%;z-index:1;pointer-events:none}
+  .hero .g1{width:440px;height:440px;top:-150px;right:-130px;background:var(--coral-wash)}
+  .hero .g2{width:190px;height:190px;bottom:26px;right:13%;border:2px solid var(--coral-tint)}
+  .hero .g3{width:14px;height:14px;top:24%;right:7%;background:var(--coral)}
+  .hero .g4{width:10px;height:10px;bottom:30%;left:2%;background:var(--navy)}
+
+  /* Rotator / news + events */
+  .rotator-sec{background:var(--navy-wash)}
+  .rot-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:34px;flex-wrap:wrap}
+  .rot-head .sec-head{margin-bottom:0;max-width:620px}
+  .sec-head h2{margin:14px 0 12px}
+  .sec-head p{font-size:1.08rem}
+  .rot-controls{display:flex;gap:12px}
+  .rot-filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px}
+  .rot-filter{font-family:inherit;font-size:.85rem;font-weight:600;color:var(--navy-tint);background:var(--white);border:1.5px solid var(--line);border-radius:999px;padding:9px 18px;cursor:pointer;transition:background .2s var(--ease),border-color .2s var(--ease),color .2s var(--ease),transform .2s var(--ease)}
+  .rot-filter:hover{border-color:var(--coral-tint);color:var(--coral-dark);transform:translateY(-1px)}
+  .rot-filter[aria-pressed="true"]{background:var(--coral);border-color:var(--coral);color:#fff}
+  .rot-btn{width:52px;height:52px;border-radius:50%;border:1.5px solid var(--line);background:var(--white);color:var(--navy);display:grid;place-items:center;cursor:pointer;transition:border-color .2s,color .2s,transform .2s var(--ease),background .2s}
+  .rot-btn:hover{border-color:var(--coral);color:var(--coral-dark);transform:translateY(-2px)}
+  .rot-btn svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .rot-viewport{overflow:hidden}
+  .rot-track{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 48px)/3);gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:4px 4px 14px;scrollbar-width:none}
+  .rot-track::-webkit-scrollbar{display:none}
+  .rot-card{scroll-snap-align:start;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;transition:transform .3s var(--ease),box-shadow .3s var(--ease),border-color .3s}
+  .rot-card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--coral-tint)}
+  .rot-thumb{height:150px;background:linear-gradient(135deg,var(--coral-wash),var(--navy-wash));position:relative}
+  .rot-thumb .chip{position:absolute;top:14px;left:14px;display:inline-flex;align-items:center;gap:7px;background:var(--white);border-radius:999px;padding:6px 13px;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--coral-dark);box-shadow:var(--shadow-sm)}
+  .rot-thumb .chip.event{color:#fff;background:var(--coral)}
+  .rot-thumb .chip.career{color:#fff;background:var(--navy)}
+  .rot-thumb .chip.policy{color:var(--navy);background:var(--navy-wash)}
+  .rot-body{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+  .rot-date{font-size:.8rem;font-weight:600;color:var(--muted);letter-spacing:.02em;margin-bottom:8px}
+  .rot-card h3{font-size:1.12rem;margin-bottom:9px}
+  .rot-card p{font-size:.92rem;flex:1}
+  .rot-card .linkarrow{margin-top:16px;font-size:.9rem}
+  .rot-dots{display:flex;gap:9px;justify-content:center;margin-top:26px}
+  .rot-dot{width:9px;height:9px;border-radius:50%;background:var(--coral-tint);border:none;padding:0;cursor:pointer;transition:background .2s,transform .2s}
+  .rot-dot[aria-current="true"]{background:var(--coral);transform:scale(1.25)}
+
+  /* Who we are — pillars */
+  .sec-head{max-width:680px;margin-bottom:56px}
+  .sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+  .pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+  .pillar{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:34px 30px;box-shadow:var(--shadow);transition:transform .3s var(--ease),box-shadow .3s var(--ease),border-color .3s}
+  .pillar:hover{transform:translateY(-6px);box-shadow:0 26px 60px -28px rgba(26,55,93,.4);border-color:var(--coral-tint)}
+  .pillar .ico{width:56px;height:56px;border-radius:15px;background:var(--coral-wash);display:grid;place-items:center;margin-bottom:20px}
+  .pillar .ico svg{width:29px;height:29px;stroke:var(--coral-dark);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .pillar h3{margin-bottom:10px}
+  .pillar .k{display:block;font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--coral-dark);margin-bottom:6px}
+  .pillar p{font-size:.97rem}
+  .statstrip{display:flex;flex-wrap:wrap;gap:16px;margin-top:40px}
+  .stat{flex:1;min-width:180px;background:var(--navy);color:#fff;border-radius:var(--radius);padding:28px 26px}
+  .stat .num{font-size:2.6rem;font-weight:800;letter-spacing:-.03em;line-height:1;color:#fff}
+  .stat .num .hl{color:var(--coral)}
+  .stat .lbl{color:rgba(255,255,255,.72);font-size:.92rem;margin-top:8px}
+
+  /* Become a member */
+  .member-sec{background:var(--navy-deep);color:#fff;position:relative;overflow:hidden}
+  .member-sec .wrap{position:relative;z-index:2}
+  .member-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .member-sec h2{color:#fff;margin:16px 0 18px}
+  .member-sec .eyebrow{color:var(--coral)}
+  .member-intro p{color:rgba(255,255,255,.74);font-size:1.08rem}
+  .member-cta{display:flex;flex-wrap:wrap;gap:16px;margin-top:30px}
+  .member-cta .btn-ghost{color:#fff;border-color:rgba(255,255,255,.28)}
+  .member-cta .btn-ghost:hover{border-color:var(--coral);color:var(--coral)}
+  .benefits{list-style:none;display:flex;flex-direction:column;gap:14px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius-lg);padding:34px}
+  .benefits li{display:flex;gap:14px;color:rgba(255,255,255,.9);font-size:1rem;line-height:1.5}
+  .benefits li svg{width:24px;height:24px;flex:none;stroke:var(--coral);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;margin-top:1px}
+  .benefits li strong{color:#fff;font-weight:600}
+  .member-note{margin-top:22px;font-size:.85rem;color:rgba(255,255,255,.55)}
+  .member-sec .mg1{position:absolute;width:520px;height:520px;border:2px solid rgba(226,122,80,.14);border-radius:50%;bottom:-240px;left:-150px;z-index:1}
+  .member-sec .mg2{position:absolute;width:16px;height:16px;background:var(--coral);border-radius:50%;top:22%;right:8%;z-index:1}
+
+  /* Footer */
+  footer.site{background:var(--navy-deep);color:rgba(255,255,255,.6);padding:52px 0;border-top:1px solid rgba(255,255,255,.08)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start;justify-content:space-between}
+  .foot-lockup .cwa{font-weight:800;font-size:1.35rem;color:var(--coral);letter-spacing:.02em}
+  .foot-lockup .ef{display:block;font-weight:500;font-size:.82rem;color:rgba(255,255,255,.8);text-transform:lowercase;margin-top:3px}
+  footer .tag{font-size:.85rem;margin-top:12px;max-width:260px}
+  footer nav{display:flex;gap:44px;flex-wrap:wrap}
+  footer .col h4{color:#fff;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
+  footer .col a{display:block;font-size:.92rem;padding:4px 0;transition:color .2s}
+  footer .col a:hover{color:var(--coral)}
+
+  /* Scroll reveal (progressive enhancement) */
+  .js .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+  .js .reveal.in{opacity:1;transform:none}
+  .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}
+  @media (prefers-reduced-motion:reduce){
+    .js .reveal{opacity:1;transform:none;transition:none}
+    html{scroll-behavior:auto}
+    .btn,.pillar,.rot-card,.rot-track{transition:none}
+    .rot-track{scroll-behavior:auto}
+  }
+
+  @media (max-width:900px){
+    .member-grid{grid-template-columns:1fr;gap:32px}
+    .rot-track{grid-auto-columns:calc((100% - 24px)/2)}
+  }
+  @media (max-width:640px){
+    section{padding:68px 0}
+    .hero{padding:60px 0 64px}
+    body{font-size:17px}
+    .logo-img{height:44px}
+    .rot-track{grid-auto-columns:86%}
+    .rot-head{align-items:flex-start}
+    .hero-cta .btn{width:100%;justify-content:center}
+    footer nav{gap:28px}
+  }
+
+
+  /* ===== Election 2026 page ===== */
+  .e-hero h1{max-width:18ch;font-size:clamp(2.3rem,5.6vw,4rem)}
+  .glance{padding:0 0 72px}
+  .glance .statstrip{margin-top:0}
+  .glance .stat .num{font-size:2.1rem}
+  .alt{background:var(--navy-wash)}
+  .h3{font-size:1.25rem}
+  .sec-head{margin-bottom:44px}
+
+  .cgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+  .ccard{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:28px 28px 24px;box-shadow:var(--shadow-sm)}
+  .ccard .k{display:block;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--coral-dark);margin-bottom:8px}
+  .ccard h3{margin-bottom:16px}
+  .ccard dl{display:grid;grid-template-columns:7.2em 1fr;gap:10px 14px;font-size:.93rem;line-height:1.55}
+  .ccard dt{font-weight:600;color:var(--navy);font-size:.8rem;letter-spacing:.04em;text-transform:uppercase;padding-top:2px}
+  .ccard dd{color:var(--muted)}
+  .note-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:22px}
+  .note{background:var(--navy);border-radius:var(--radius);padding:26px 26px 24px}
+  .note h3{color:#fff;margin-bottom:10px;font-size:1.08rem}
+  .note p{color:rgba(255,255,255,.78);font-size:.93rem;line-height:1.6}
+
+  .two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-bottom:22px}
+  .panel{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:26px 26px 22px;box-shadow:var(--shadow-sm);min-width:0}
+  .panel h3{margin-bottom:14px}
+  .panel .sub{font-size:.95rem;margin:-6px 0 14px}
+  .tbl{width:100%;border-collapse:collapse;font-size:.9rem;line-height:1.45}
+  .tbl th{text-align:left;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--coral-dark);font-weight:700;padding:0 10px 10px 0;border-bottom:2px solid var(--line)}
+  .tbl td{padding:11px 10px 11px 0;border-bottom:1px solid var(--line);vertical-align:top;color:var(--navy-tint)}
+  .tbl td:first-child{color:var(--navy)}
+  .tbl tr:last-child td{border-bottom:none}
+  .fine{font-size:.82rem;color:var(--muted);margin-top:12px;line-height:1.55}
+  .pill{display:inline-block;font-size:.74rem;font-weight:600;border-radius:999px;padding:4px 11px;white-space:nowrap;line-height:1.3}
+  .pill.ok{background:#E3F0E8;color:#1F5B3A}
+  .pill.wait{background:var(--coral-wash);color:var(--coral-dark)}
+  .pill.close{background:#FCE9D9;color:#9A4A1F}
+  .pill.nb{background:var(--navy-wash);color:var(--navy-tint)}
+  .pill.new{background:var(--navy);color:#fff}
+
+  .sgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;align-items:start}
+  .scol{display:flex;flex-direction:column;gap:14px}
+  .scol-h{font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--navy-tint);margin-bottom:2px}
+  .scard{background:var(--white);border:1px solid var(--line);border-left:4px solid var(--coral);border-radius:16px;padding:18px 22px 18px;box-shadow:var(--shadow-sm)}
+  .scard h4{font-size:1.05rem;color:var(--navy);line-height:1.3;margin:10px 0 6px;letter-spacing:-.01em}
+  .scard p{font-size:.92rem;line-height:1.55}
+  .dl{display:inline-block;font-size:.8rem;font-weight:600;color:var(--coral-dark);background:var(--coral-wash);border-radius:999px;padding:3px 10px;margin:3px 0 0 0;white-space:nowrap}
+  .dl:hover{background:var(--coral-tint)}
+  .quotes{margin-bottom:22px}
+  .quotes .eyebrow{margin-bottom:8px}
+  .qgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:6px}
+  .q{background:var(--coral-wash);border-radius:16px;padding:20px 20px 16px;display:flex;flex-direction:column;justify-content:space-between;gap:12px;margin:0}
+  .q blockquote{font-size:.98rem;line-height:1.5;color:var(--navy);font-weight:500}
+  .q figcaption{font-size:.8rem;color:var(--muted);line-height:1.45}
+  .q figcaption a{color:var(--coral-dark);font-weight:600}
+
+  /* Map controls */
+  .mapbar{display:flex;flex-wrap:wrap;gap:16px 22px;align-items:flex-end;margin-bottom:22px}
+  .seg{display:inline-flex;background:var(--white);border:1.5px solid var(--line);border-radius:999px;padding:4px}
+  .seg button{font-family:inherit;font-size:.88rem;font-weight:600;color:var(--navy-tint);background:none;border:none;border-radius:999px;padding:10px 18px;cursor:pointer;transition:background .2s,color .2s;white-space:nowrap}
+  .seg button[aria-selected="true"]{background:var(--coral);color:#fff}
+  .field{display:flex;flex-direction:column;gap:6px;min-width:0;flex:1 1 220px;max-width:360px}
+  .field span{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--coral-dark)}
+  .field select{font-family:inherit;font-size:.93rem;color:var(--navy);background:var(--white);border:1.5px solid var(--line);border-radius:12px;padding:11px 12px;width:100%}
+  .mapgrid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:22px;align-items:start}
+  .mapcard{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:18px 18px 14px;box-shadow:var(--shadow-sm);position:sticky;top:104px}
+  .maphead{display:flex;justify-content:space-between;align-items:center;gap:10px;font-weight:600;color:var(--navy);font-size:.95rem;margin-bottom:8px;min-height:34px}
+  .reset{font-family:inherit;font-size:.8rem;font-weight:600;color:var(--coral-dark);background:var(--coral-wash);border:none;border-radius:999px;padding:8px 14px;cursor:pointer}
+  .statemap svg{width:100%;height:auto;max-height:68vh;display:block;touch-action:manipulation}
+  .statemap .loading{padding:60px 0;text-align:center}
+  .statemap path.dist{cursor:pointer}
+  .hover{font-size:.85rem;margin-top:8px;min-height:1.5em;color:var(--navy-tint)}
+  .detail{min-width:0}
+  .prompt,.dcard{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow-sm)}
+  .prompt h3{margin-bottom:8px}
+  .prompt>p{font-size:.95rem}
+  .newlist{margin-top:20px}
+  .newlist h4{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--coral-dark);margin-bottom:10px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{font-family:inherit;font-size:.82rem;font-weight:500;color:var(--navy);background:var(--navy-wash);border:1px solid transparent;border-radius:999px;padding:7px 13px;cursor:pointer;transition:border-color .2s,background .2s;text-align:left}
+  .chip:hover{border-color:var(--coral);background:var(--coral-wash)}
+  .chip b{font-weight:700;margin-right:4px}
+  .dcard .eyebrow{margin-bottom:6px}
+  .dcard h3{font-size:1.35rem;margin-bottom:6px}
+  .race{font-size:.93rem;color:var(--navy-tint);margin-bottom:14px;line-height:1.55}
+  .race .pill{margin:0 6px 0 0;vertical-align:1px}
+  .race .who{font-weight:600;color:var(--navy)}
+  .dsvg{width:100%;height:auto;display:block;border-radius:14px;background:#F7F9FB;margin:6px 0 12px}
+  .dbar{display:flex;height:12px;border-radius:999px;overflow:hidden;margin:4px 0 12px;gap:2px}
+  .dbar i{display:block;min-width:3px}
+  .dleg{list-style:none;display:flex;flex-direction:column;gap:7px;font-size:.9rem}
+  .dleg li{display:grid;grid-template-columns:14px 3.6em 1fr;gap:10px;align-items:baseline;color:var(--navy)}
+  .dleg li i{width:12px;height:12px;border-radius:3px;display:block;transform:translateY(1px)}
+  .dleg .p{font-weight:700;font-variant-numeric:tabular-nums;color:var(--navy)}
+  .dleg small{color:var(--muted)}
+  .dleg button{font:inherit;color:inherit;background:none;border:none;padding:0;text-align:left;cursor:pointer;text-decoration:underline;text-decoration-color:var(--coral-tint);text-underline-offset:3px}
+  .dleg button:hover{color:var(--coral-dark)}
+  .alist{list-style:none;display:flex;flex-direction:column;gap:0;margin-top:6px}
+  .alist li{border-bottom:1px solid var(--line)}
+  .alist li:last-child{border-bottom:none}
+  .alist button{font-family:inherit;width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:12px 4px;display:grid;grid-template-columns:4.2em 1fr auto;gap:12px;align-items:center;color:var(--navy);font-size:.92rem;border-radius:10px}
+  .alist button:hover{background:var(--coral-wash)}
+  .alist .id{font-weight:700}
+  .alist .nm{line-height:1.4}
+  .alist .nm small{display:block;color:var(--muted);font-size:.8rem}
+  .alist .sh{font-size:.8rem;color:var(--muted);text-align:right;white-space:nowrap}
+  .back{font-family:inherit;font-size:.82rem;font-weight:600;color:var(--coral-dark);background:none;border:none;cursor:pointer;padding:0;margin-bottom:12px}
+  .method{max-width:820px}
+
+  /* Timeline */
+  .timeline{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 28px;counter-reset:none}
+  .timeline li{display:grid;grid-template-columns:7.2em 1fr;gap:14px;align-items:baseline;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:16px 20px;font-size:.95rem;color:var(--muted)}
+  .timeline time{font-weight:700;color:var(--coral-dark);font-size:.9rem}
+  .timeline b{color:var(--navy);font-weight:600}
+  .timeline li.cwa{border-color:var(--coral-tint);background:var(--coral-wash)}
+
+  .sources{padding:64px 0}
+  .sources h2{margin-bottom:14px}
+  .sources ul{padding-left:20px;display:flex;flex-direction:column;gap:6px}
+  .sources li{font-size:.88rem;color:var(--muted)}
+  .sources a{color:var(--navy);text-decoration:underline;text-decoration-color:var(--coral-tint);text-underline-offset:3px}
+  .sources a:hover{color:var(--coral-dark)}
+
+  @media (max-width:980px){
+    .cgrid,.two,.sgrid{grid-template-columns:1fr}
+    .qgrid{grid-template-columns:1fr 1fr}
+    .note-row{grid-template-columns:1fr}
+    .mapgrid{grid-template-columns:1fr}
+    .mapcard{position:static}
+    .timeline{grid-template-columns:1fr}
+  }
+  @media (max-width:640px){
+    .glance{padding-bottom:52px}
+    .ccard{padding:22px 20px}
+    .ccard dl{grid-template-columns:1fr;gap:2px}
+    .ccard dd{margin-bottom:10px}
+    .panel{padding:20px 16px}
+    .tbl{font-size:.85rem}
+    .seg{width:100%}
+    .seg button{flex:1;padding:10px 8px;font-size:.82rem}
+    .field{max-width:none;flex-basis:100%}
+    .statemap svg{max-height:none}
+    .timeline li{grid-template-columns:1fr;gap:4px}
+    .qgrid{grid-template-columns:1fr}
+    .alist button{grid-template-columns:3.8em 1fr}
+    .alist .sh{grid-column:2;text-align:left}
+  }
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="lockup" href="https://calworkforce.org/" aria-label="California Workforce Association home">
+      <img class="logo-img" src="/assets/logo-primary.png" alt="California Workforce Association" width="720" height="238" decoding="sync" fetchpriority="high">
+    </a>
+    <button class="navtoggle" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button>
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+      <!-- PLACEHOLDER NAV: links point to pages to be built -->
+      <div class="nav-item has-sub">
+        <button class="subtoggle" aria-expanded="false" aria-haspopup="true" aria-controls="submenu-about">About Us <span class="caret" aria-hidden="true">▾</span></button>
+        <div class="submenu" id="submenu-about" role="menu" aria-label="About Us">
+          <a href='https://calworkforce.org/vision' role='menuitem'>Our Vision</a>
+          <a href='https://calworkforce.org/team' role='menuitem'>Our Team</a>
+          <a href='https://calworkforce.org/board' role='menuitem'>Our Board</a>
+          <a href='https://calworkforce.org/contact' role='menuitem'>Contact Us</a>
+        </div>
+      </div>
+      <a class='navlink' href='https://calworkforce.org/advocacy'>Advocacy</a>
+      <div class="nav-item has-sub">
+        <button class="subtoggle" aria-expanded="false" aria-haspopup="true" aria-controls="submenu-members">Our Members <span class="caret" aria-hidden="true">▾</span></button>
+        <div class="submenu" id="submenu-members" role="menu" aria-label="Our Members">
+          <a href='https://calworkforce.org/local-boards' role='menuitem'>Boards</a>
+          <a href='https://calworkforce.org/affiliates' role='menuitem'>Affiliates</a>
+        </div>
+      </div>
+      <div class="nav-item has-sub">
+        <button class="subtoggle" aria-expanded="false" aria-haspopup="true" aria-controls="submenu-conferences">Conferences <span class="caret" aria-hidden="true">▾</span></button>
+        <div class="submenu" id="submenu-conferences" role="menu" aria-label="Conferences">
+          <a href='https://calworkforce.org/meeting-of-the-minds' role='menuitem'>Meeting of the Minds</a>
+          <a href='https://calworkforce.org/workcon' role='menuitem'>Workcon</a>
+        </div>
+      </div>
+      <div class="nav-item has-sub">
+        <button class="subtoggle" aria-expanded="false" aria-haspopup="true" aria-controls="submenu-resources">Resources <span class="caret" aria-hidden="true">▾</span></button>
+        <div class="submenu" id="submenu-resources" role="menu" aria-label="Resources">
+          <a href='https://calworkforce.org/self-sufficiency-calculator' role='menuitem'>Self-Sufficiency Calculator</a>
+          <a href='https://calworkforce.org/webinars' role='menuitem'>Webinars</a>
+        </div>
+      </div>
+      <!-- Contact Us → dedicated membership page (to be built) -->
+      <a class='navlink' href='https://calworkforce.org/fellowship'>Executive Fellowship</a>
+      <a class='btn btn-primary' href='https://calworkforce.org/contact'>Contact Us <span class="btn-arrow" aria-hidden="true">→</span></a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero e-hero">
+  <span class="geo g1" aria-hidden="true"></span><span class="geo g2" aria-hidden="true"></span><span class="geo g3" aria-hidden="true"></span>
+  <div class="wrap">
+    <span class="eyebrow">Election 2026 &middot; Unofficial results as of November 9</span>
+    <h1>What the 2026 election changes for local workforce boards</h1>
+    <p class="lead">Voters chose a new governor and new majorities in both houses of Congress. California counts ballots for weeks, and nothing is official until the Secretary of State certifies results on December 11. This page shows where things stand and maps every congressional and legislative district to the local workforce areas inside it.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#maps">Find your local area&rsquo;s districts <span class="btn-arrow" aria-hidden="true">&rarr;</span></a>
+      <a class="btn btn-ghost" href="#next">Key dates ahead</a>
+    </div>
+    <div class="markers">
+      <span class="marker"><span class="dot"></span>Legislature convenes Dec. 7</span>
+      <span class="marker"><span class="dot"></span>Results certified Dec. 11</span>
+      <span class="marker"><span class="dot"></span>Federal funding expires Dec. 11</span>
+      <span class="marker"><span class="dot"></span>New governor takes office Jan. 4</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AT A GLANCE ============ -->
+<section class="glance">
+  <div class="wrap">
+    <div class="statstrip">
+      <div class="stat"><div class="num">House <span class="hl">&amp;</span> Senate</div><div class="lbl">The AP has called both chambers of Congress for Democrats. They hold at least 254 House seats and 54 Senate seats, with races still being counted.</div></div>
+      <div class="stat"><div class="num">48<span class="hl"> to </span>4</div><div class="lbl">California&rsquo;s House delegation if current leads hold under the Prop 50 map, up from 43 Democrats and 9 Republicans.</div></div>
+      <div class="stat"><div class="num">2<span class="hl">/</span>3</div><div class="lbl">Democrats keep two-thirds majorities in both the Assembly and the state Senate.</div></div>
+      <div class="stat"><div class="num">Jan<span class="hl">.</span> 4</div><div class="lbl">Governor-elect Xavier Becerra takes office. His first budget is due January 10.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SURPRISES ============ -->
+<section id="surprises">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">What stood out</span>
+      <h2>The results that surprised observers</h2>
+      <p>Several longtime incumbents lost or are trailing, and late-counted ballots have changed the lead in close races. Races marked &ldquo;not called&rdquo; can still change before certification. Counts are from the Secretary of State&rsquo;s November 8 report.</p>
+    </div>
+    <div class="sgrid">
+      <div class="scol">
+        <h3 class="scol-h">Congress</h3>
+        <article class="scard"><span class="pill ok">Called</span><h4>At least seven Senate seats changed party</h4><p>Democrats picked up seats in Iowa, Kansas, Maine, North Carolina, Ohio, South Carolina and Texas, with Alaska and Mississippi still being counted.</p></article>
+        <article class="scard"><span class="pill ok">Called</span><h4>Senate Appropriations Chair Susan Collins lost her seat</h4><p>Troy Jackson defeated Collins in Maine, ending nearly 30 years in the Senate. The committee that writes the Labor-HHS-Education funding bill will have new leaders on both sides.</p></article>
+        <article class="scard"><span class="pill close">Too close to call</span><h4>Former Education and Workforce Chair Virginia Foxx trails by 99 votes</h4><p>Rep. Virginia Foxx (R-N.C.), who chaired the committee that writes WIOA in two Congresses, most recently from 2023 to 2025, trailed Democrat Chuck Hubbard by 99 votes after the initial count. Provisional and late mail ballots are still being reviewed before counties finish their canvass on November 13. If the margin is then 1 percent or less, the trailing candidate can request a recount.</p></article>
+        <article class="scard"><span class="pill ok">Called</span><h4>Rep. David Valadao lost by about two to one</h4><p>Randy Villegas, a community college instructor, won the redrawn Central Valley seat. <a class="dl" href="#maps?d=CD-22">Local areas in CD-22</a></p></article>
+        <article class="scard"><span class="pill ok">Called</span><h4>Rep. Jimmy Gomez lost to a fellow Democrat</h4><p>Angela Gonzales-Torres defeated Gomez in a race between two Democrats. <a class="dl" href="#maps?d=CD-34">Local areas in CD-34</a></p></article>
+        <article class="scard"><span class="pill ok">Called</span><h4>Rep. Kevin Kiley&rsquo;s run without a party fell short</h4><p>Kiley left the Republican Party in March and ran without a party preference in the new district. Richard Pan won the seat. <a class="dl" href="#maps?d=CD-06">Local areas in CD-06</a></p></article>
+        <article class="scard"><span class="pill close">Too close to call</span><h4>Rep. Mike Thompson trails a fellow Democrat</h4><p>Eric Jones leads Thompson by 7,699 votes. <a class="dl" href="#maps?d=CD-04">Local areas in CD-04</a></p></article>
+        <article class="scard"><span class="pill wait">Leads; not called</span><h4>Two Republican incumbents faced each other, and a safe seat tightened</h4><p>Under the new map, Rep. Ken Calvert leads Rep. Young Kim by 13,241 votes, so one will leave Congress. Rep. Jay Obernolte, in a seat rated safe before the election, leads by 5,434 votes. <a class="dl" href="#maps?d=CD-40">CD-40</a> <a class="dl" href="#maps?d=CD-23">CD-23</a></p></article>
+      </div>
+      <div class="scol">
+        <h3 class="scol-h">California Legislature</h3>
+        <article class="scard"><span class="pill wait">Leads; not called</span><h4>Democrats lead in four Republican-held Assembly seats</h4><p>Assemblymembers Josh Hoover, Jeff Gonzalez, Greg Wallis and Leticia Castillo trail by margins of 6 to 23 points. Hoover is vice chair of Assembly Appropriations, and Castillo is vice chair of the Assembly Economic Development, Growth, and Household Impact Committee. <a class="dl" href="#maps?ch=AD&amp;d=AD-07">AD-07</a> <a class="dl" href="#maps?ch=AD&amp;d=AD-36">AD-36</a> <a class="dl" href="#maps?ch=AD&amp;d=AD-47">AD-47</a> <a class="dl" href="#maps?ch=AD&amp;d=AD-58">AD-58</a></p></article>
+        <article class="scard"><span class="pill close">Too close to call</span><h4>Late ballots flipped the lead in two Orange County Assembly races</h4><p>Paula Swift now leads Assemblymember Tri Ta by 1,490 votes after Ta led by about 1,700 on election night. Jessie Lopez overtook David Penaloza and leads by 1,105 votes. <a class="dl" href="#maps?ch=AD&amp;d=AD-70">AD-70</a> <a class="dl" href="#maps?ch=AD&amp;d=AD-68">AD-68</a></p></article>
+        <article class="scard"><span class="pill close">Too close to call</span><h4>The Senate Labor Committee&rsquo;s vice chair trails</h4><p>Chris Duncan leads Sen. Tony Strickland by 5,568 votes, a lead that has grown with each count. <a class="dl" href="#maps?ch=SD&amp;d=SD-36">Local areas in SD-36</a></p></article>
+        <article class="scard"><span class="pill wait">Leads; not called</span><h4>A June runner-up now leads by 21 points</h4><p>Sen. Melissa Hurtado finished second in the June primary with 35.6 percent and now leads 60.4 percent to 39.6 percent. <a class="dl" href="#maps?ch=SD&amp;d=SD-16">Local areas in SD-16</a></p></article>
+        <article class="scard"><span class="pill wait">Leads; not called</span><h4>The Assembly Republican Leader&rsquo;s own race is close</h4><p>Assemblymember Alexandra Macedo, leader since August, leads by 1,974 votes. <a class="dl" href="#maps?ch=AD&amp;d=AD-33">Local areas in AD-33</a></p></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WASHINGTON ============ -->
+<section id="washington">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Washington</span>
+      <h2>New leaders for the committees that write and fund WIOA</h2>
+      <p>Democratic majorities in January mean new chairs on every committee that shapes federal workforce law and funding. Committee assignments are expected in December. These are the expectations reported so far.</p>
+    </div>
+    <div class="cgrid">
+      <article class="ccard">
+        <span class="k">Writes WIOA</span>
+        <h3>House Education and Workforce Committee</h3>
+        <dl>
+          <dt>2025&ndash;26</dt><dd>Chair Tim Walberg (R-Mich.); ranking member Bobby Scott (D-Va.)</dd>
+          <dt>2027 outlook</dt><dd>Reps. Bobby Scott, Jahana Hayes and Suzanne Bonamici are seeking the gavel, with a decision expected in December. Walberg is expected to become the top Republican. Democrats may rename the panel the Education and Labor Committee.</dd>
+          <dt>Californians</dt><dd>Mark DeSaulnier <a class="dl" href="#maps?d=CD-10">CD-10</a> and Mark Takano <a class="dl" href="#maps?d=CD-39">CD-39</a>. Kevin Kiley lost his race and will leave the committee. <a class="dl" href="#maps?d=CD-06">CD-06</a></dd>
+        </dl>
+      </article>
+      <article class="ccard">
+        <span class="k">Funds WIOA</span>
+        <h3>House Appropriations, Labor-HHS-Education Subcommittee</h3>
+        <dl>
+          <dt>2025&ndash;26</dt><dd>Subcommittee chair Robert Aderholt (R-Ala.); ranking member Rosa DeLauro (D-Conn.)</dd>
+          <dt>2027 outlook</dt><dd>DeLauro is expected to chair the full Appropriations Committee and to lead this subcommittee herself. Aderholt is expected to be the subcommittee&rsquo;s top Republican.</dd>
+          <dt>Californians</dt><dd>Josh Harder is the only Californian on the subcommittee and will now serve in the majority. <a class="dl" href="#maps?d=CD-09">CD-09</a></dd>
+        </dl>
+      </article>
+      <article class="ccard">
+        <span class="k">Writes WIOA</span>
+        <h3>Senate Health, Education, Labor and Pensions (HELP) Committee</h3>
+        <dl>
+          <dt>2025&ndash;26</dt><dd>Chair Bill Cassidy (R-La.); ranking member Bernie Sanders (I-Vt.)</dd>
+          <dt>2027 outlook</dt><dd>Sanders, who chaired the committee from 2023 to 2025, is expected to return as chair. Cassidy lost his May primary, and the top Republican seat is unresolved.</dd>
+          <dt>Californians</dt><dd>None</dd>
+        </dl>
+      </article>
+      <article class="ccard">
+        <span class="k">Funds WIOA</span>
+        <h3>Senate Appropriations Committee</h3>
+        <dl>
+          <dt>2025&ndash;26</dt><dd>Chair Susan Collins (R-Maine); vice chair Patty Murray (D-Wash.). Shelley Moore Capito (R-W.Va.) chairs the Labor-HHS-Education subcommittee.</dd>
+          <dt>2027 outlook</dt><dd>Collins lost her seat. Murray is expected to chair the full committee and Tammy Baldwin (D-Wis.) the Labor-HHS-Education subcommittee, with Capito expected as its top Republican.</dd>
+          <dt>Californians</dt><dd>None</dd>
+        </dl>
+      </article>
+    </div>
+    <div class="note-row">
+      <div class="note">
+        <h3>Leadership</h3>
+        <p>House Democrats elect their leaders November 18 and 19. Rep. Pete Aguilar of California is running for Majority Whip. <a class="dl" href="#maps?d=CD-33">CD-33</a></p>
+      </div>
+      <div class="note">
+        <h3>The lame-duck session</h3>
+        <p>Current federal funding expires December 11, and federal workforce programs run at FY 2026 levels until then. Congress can finish full-year FY 2027 bills or extend current funding again. The House committee&rsquo;s FY 2027 Labor-HHS-Education bill, approved in June, is 2.9 percent below FY 2026 overall.</p>
+      </div>
+      <div class="note">
+        <h3>WIOA reauthorization</h3>
+        <p>A Stronger Workforce for America Act of 2026 cleared the House Education and Workforce Committee this spring, but the full House has not voted. Bills that do not pass by the end of this Congress expire, so reauthorization starts over in January under new committee leadership.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SACRAMENTO ============ -->
+<section id="sacramento" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Sacramento</span>
+      <h2>A new governor and a Legislature with more than two dozen new members</h2>
+      <p>The Legislature convenes December 7. The Speaker and Senate leadership announce committee assignments in December or January, and Governor-elect Becerra&rsquo;s first budget follows on January 10.</p>
+    </div>
+
+    <div class="panel wide quotes">
+      <span class="eyebrow">In his words</span>
+      <h3>What Governor-elect Becerra said about workers and workforce development</h3>
+      <p class="sub">His campaign offered few details on how workforce programs would be organized or funded, and his January 10 budget will be the first detailed look. These are his own words from the campaign and his first week as governor-elect.</p>
+      <div class="qgrid">
+        <figure class="q"><blockquote>&ldquo;My administration will strengthen and expand California&rsquo;s existing workforce development infrastructure.&rdquo;</blockquote><figcaption>Campaign platform, entertainment industry workforce and transition programs. <a href="https://www.xavierbecerra2026.com/priorities/filmindustry/" target="_blank" rel="noopener">Source</a></figcaption></figure>
+        <figure class="q"><blockquote>&ldquo;Workforce investment and transition support are not barriers to progress; they are what make progress sustainable.&rdquo;</blockquote><figcaption>Campaign platform on artificial intelligence. <a href="https://www.xavierbecerra2026.com/priorities/ai/" target="_blank" rel="noopener">Source</a></figcaption></figure>
+        <figure class="q"><blockquote>&ldquo;Displacement without support is abandonment.&rdquo;</blockquote><figcaption>Campaign platform on artificial intelligence. <a href="https://www.xavierbecerra2026.com/priorities/ai/" target="_blank" rel="noopener">Source</a></figcaption></figure>
+        <figure class="q"><blockquote>The same platform commits to &ldquo;build accessible, stackable workforce programs that prepare Californians for the AI economy&rdquo; and to direct the state&rsquo;s labor market infrastructure to track AI&rsquo;s effects on jobs, &ldquo;with findings feeding directly into workforce investment decisions.&rdquo;</blockquote><figcaption>Campaign platform on artificial intelligence. <a href="https://www.xavierbecerra2026.com/priorities/ai/" target="_blank" rel="noopener">Source</a></figcaption></figure>
+        <figure class="q"><blockquote>&ldquo;The community college system is the gateway to higher education.&rdquo;</blockquote><figcaption>Post on X, May 2026, as reported by EdSource. <a href="https://timesofsandiego.com/education/2026/10/11/becerra-hasnt-made-education-a-priority-california-education-leaders-arent-worried/" target="_blank" rel="noopener">Source</a></figcaption></figure>
+        <figure class="q"><blockquote>&ldquo;The public made it very clear we should be focused on job one, two and three, and that is cost of living, cost of living, cost of living.&rdquo;</blockquote><figcaption>First news conference as governor-elect, November 5, as reported by KTLA. <a href="https://www.yahoo.com/news/politics/articles/xavier-becerra-holds-first-news-230617945.html" target="_blank" rel="noopener">Source</a></figcaption></figure>
+      </div>
+    </div>
+
+    <div class="two">
+      <div class="panel">
+        <h3>Statewide offices</h3>
+        <table class="tbl">
+          <thead><tr><th>Office</th><th>Result</th></tr></thead>
+          <tbody>
+            <tr><td>Governor</td><td>Xavier Becerra (D), called by the AP</td></tr>
+            <tr><td>Lieutenant Governor</td><td>Fiona Ma (D), called by the AP</td></tr>
+            <tr><td>Superintendent of Public Instruction</td><td>Richard Barrera leads; Sonja Shaw has conceded</td></tr>
+            <tr><td>Attorney General</td><td>Rob Bonta (D), projected by NBC News</td></tr>
+            <tr><td>Secretary of State</td><td>Shirley Weber (D), projected by NBC News</td></tr>
+            <tr><td>Treasurer</td><td>Eleni Kounalakis (D), projected by NBC News</td></tr>
+            <tr><td>Controller</td><td>Malia Cohen (D), called by the AP</td></tr>
+            <tr><td>Insurance Commissioner</td><td>Jane Kim (D) leads Ben Allen (D); not called</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="panel">
+        <h3>Ballot measures with budget effects</h3>
+        <table class="tbl">
+          <thead><tr><th>Measure</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td><b>Prop 2.</b> Raises the rainy day fund cap from 10 to 20 percent of General Fund tax revenue</td><td><span class="pill ok">Projected to pass</span></td></tr>
+            <tr><td><b>Prop 3.</b> Makes permanent the income tax rates on high earners that were set to expire in 2031</td><td><span class="pill ok">Projected to pass</span></td></tr>
+            <tr><td><b>Prop 1.</b> $10 billion affordable housing bond and veterans home loans</td><td><span class="pill ok">Projected to pass</span></td></tr>
+            <tr><td><b>Prop 37.</b> $25 billion bond for down-payment loans on newly built homes</td><td><span class="pill ok">Projected to pass</span></td></tr>
+            <tr><td><b>Prop 40.</b> One-time 5 percent tax on billionaires&rsquo; wealth</td><td><span class="pill wait">Trailing; not called</span></td></tr>
+            <tr><td><b>Prop 42.</b> Bars new taxes on personal property such as financial assets</td><td><span class="pill wait">Leading; not called</span></td></tr>
+            <tr><td><b>Prop 45.</b> Speeds environmental review for nine types of projects</td><td><span class="pill wait">Trailing; not called</span></td></tr>
+          </tbody>
+        </table>
+        <p class="fine">Projections are from the Associated Press.</p>
+      </div>
+    </div>
+
+    <div class="panel wide">
+      <h3>Workforce-related committees in the Legislature</h3>
+      <p class="sub">Most chairs return. These are the committees where the 2026 results point to a change in leadership. Assignments are not final until the Speaker and Senate leadership announce them.</p>
+      <table class="tbl">
+        <thead><tr><th>Committee</th><th>2025&ndash;26 leadership</th><th>What the results suggest</th></tr></thead>
+        <tbody>
+          <tr><td>Assembly Budget Subcommittee No. 5 on State Administration (labor and employment)</td><td>Chair Sharon Quirk-Silva <a class="dl" href="#maps?ch=AD&amp;d=AD-67">AD-67</a></td><td>New chair needed. Quirk-Silva is termed out.</td></tr>
+          <tr><td>Senate Labor, Public Employment and Retirement</td><td>Chair Lola Smallwood-Cuevas <a class="dl" href="#maps?ch=SD&amp;d=SD-28">SD-28</a>; vice chair Tony Strickland <a class="dl" href="#maps?ch=SD&amp;d=SD-36">SD-36</a></td><td>Smallwood-Cuevas leads her race. Strickland trails in SD-36, and one Democratic seat turns over.</td></tr>
+          <tr><td>Senate Business, Professions and Economic Development</td><td>Chair seat vacant since Aisha Wahab was elected to Congress <a class="dl" href="#maps?d=CD-14">CD-14</a></td><td>New chair needed.</td></tr>
+          <tr><td>Assembly Economic Development, Growth, and Household Impact</td><td>Chair Jos&eacute; Luis Solache Jr. <a class="dl" href="#maps?ch=AD&amp;d=AD-62">AD-62</a>; vice chair Leticia Castillo <a class="dl" href="#maps?ch=AD&amp;d=AD-58">AD-58</a></td><td>Solache leads his race. Castillo trails, so the Republican side is likely to change.</td></tr>
+          <tr><td>Assembly Appropriations</td><td>Chair Buffy Wicks <a class="dl" href="#maps?ch=AD&amp;d=AD-14">AD-14</a>; vice chair Josh Hoover <a class="dl" href="#maps?ch=AD&amp;d=AD-07">AD-07</a></td><td>Wicks won. Hoover trails, so Republicans may need a new vice chair.</td></tr>
+          <tr><td>Assembly Labor and Employment</td><td>Chair Liz Ortega <a class="dl" href="#maps?ch=AD&amp;d=AD-20">AD-20</a></td><td>Ortega won, and every member won or leads.</td></tr>
+          <tr><td>Assembly Higher Education</td><td>Chair Mike Fong <a class="dl" href="#maps?ch=AD&amp;d=AD-49">AD-49</a></td><td>Fong leads his race.</td></tr>
+          <tr><td>Assembly Budget</td><td>Chair Jesse Gabriel <a class="dl" href="#maps?ch=AD&amp;d=AD-46">AD-46</a></td><td>Gabriel leads his race.</td></tr>
+          <tr><td>Senate Education; Senate Budget and Fiscal Review; Senate Appropriations</td><td>Chairs Sasha Ren&eacute;e P&eacute;rez <a class="dl" href="#maps?ch=SD&amp;d=SD-25">SD-25</a>, John Laird <a class="dl" href="#maps?ch=SD&amp;d=SD-17">SD-17</a> and Sabrina Cervantes <a class="dl" href="#maps?ch=SD&amp;d=SD-31">SD-31</a></td><td>None of the three chairs was on the 2026 ballot.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MAPS ============ -->
+<section id="maps">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Maps</span>
+      <h2>Which districts include your local area</h2>
+      <p>Pick a chamber, then choose a local workforce area or tap a district on the map. Congressional districts follow the new Prop 50 map. Assembly and Senate districts follow the 2021 Citizens Redistricting Commission maps.</p>
+    </div>
+
+    <div class="mapbar" role="group" aria-label="Map controls">
+      <div class="seg" role="tablist" aria-label="Chamber">
+        <button type="button" role="tab" data-ch="CD" aria-selected="true">U.S. House</button>
+        <button type="button" role="tab" data-ch="SD" aria-selected="false">State Senate</button>
+        <button type="button" role="tab" data-ch="AD" aria-selected="false">Assembly</button>
+      </div>
+      <label class="field"><span>Local workforce area</span><select id="areaSel"><option value="">All of California</option></select></label>
+      <label class="field"><span>District</span><select id="distSel"><option value="">Choose a district</option></select></label>
+    </div>
+
+    <div class="mapgrid">
+      <div class="mapcard">
+        <div class="maphead"><span id="mapTitle">U.S. House districts</span><button type="button" class="reset" id="resetBtn" hidden>Show all of California</button></div>
+        <div id="stateMap" class="statemap" aria-live="polite"><p class="loading">Loading map&hellip;</p></div>
+        <p class="hover" id="hoverLine">Tap or hover over a district.</p>
+      </div>
+      <div class="detail" id="detail">
+        <div class="prompt">
+          <h3>Start with your local area</h3>
+          <p>Choose a local workforce area to see every district that includes part of it, or choose a district to see the local areas inside it.</p>
+          <div id="newList"></div>
+        </div>
+      </div>
+    </div>
+    <p class="fine method">How the maps work: each district&rsquo;s residents are assigned to local workforce areas using 2020 Census blocks and official block equivalency files. A local area is listed for a district when at least 1 percent of the district&rsquo;s residents live there. Results shown are unofficial until certification on December 11. Called races reflect calls by the Associated Press or major news outlets; leads reflect the latest Secretary of State count.</p>
+  </div>
+</section>
+
+<!-- ============ NEXT ============ -->
+<section id="next" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Key dates</span>
+      <h2>What happens next</h2>
+    </div>
+    <ol class="timeline">
+      <li><time>Nov. 10</time><div><b>Mail ballot arrival deadline.</b> Ballots postmarked by Election Day count if they arrive by this date.</div></li>
+      <li><time>Nov. 18&ndash;19</time><div><b>House Democratic leadership elections.</b> The Education and Workforce chair decision is expected in December.</div></li>
+      <li><time>Dec. 3</time><div><b>Counties finish their official canvass.</b></div></li>
+      <li><time>Dec. 7</time><div><b>Legislature convenes</b> and new members are sworn in.</div></li>
+      <li><time>Dec. 11</time><div><b>Secretary of State certifies results.</b> Current federal funding expires the same day.</div></li>
+      <li><time>Jan. 1</time><div><b>H.R. 1 Medi-Cal work requirements</b> take effect in California.</div></li>
+      <li><time>Jan. 3</time><div><b>The 120th Congress convenes.</b></div></li>
+      <li><time>Jan. 4</time><div><b>Governor Becerra takes office.</b></div></li>
+      <li><time>Jan. 10</time><div><b>Governor&rsquo;s budget due.</b></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="member-sec">
+  <span class="mg1" aria-hidden="true"></span><span class="mg2" aria-hidden="true"></span>
+  <div class="wrap">
+    <div class="member-grid">
+      <div class="member-intro">
+        <span class="eyebrow">How CWA is engaging</span>
+        <h2>Building relationships with new leaders in both capitals</h2>
+        <p>As races are called, CWA is reaching out to new and returning members of Congress and the Legislature with a short briefing on the local workforce boards in their districts. CWA is also connecting with the offices expected to lead the committees that write and fund WIOA, and with Governor-elect Becerra&rsquo;s team.</p>
+        <div class="member-cta">
+          <a class="btn btn-primary" href="https://calworkforce.org/contact">Contact CWA <span class="btn-arrow" aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+      <ul class="benefits">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Tell us who you know.</strong> If your organization already works with a new member, let CWA know so we can build on that relationship.</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Invite a new member to see the work.</strong> A visit to an America&rsquo;s Job Center of California or a training program in their first months in office shows how the system works in their community. CWA can help with timing and talking points.</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Watch for certified results.</strong> CWA will update representation for every local area after December 11.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOURCES ============ -->
+<section class="sources">
+  <div class="wrap">
+    <h2 class="h3">Sources</h2>
+    <ul>
+      <li>Race calls and counts: Associated Press via <a href="https://www.yahoo.com/news/politics/live/midterms-2026-election-results-and-latest-updates-mississippi-votes-still-being-counted-in-senate-nail-biter-after-democrats-take-control-of-congress-200037541.html" target="_blank" rel="noopener">Yahoo News</a>; <a href="https://calmatters.org/politics/2026/11/california-election-2026-congress/" target="_blank" rel="noopener">CalMatters</a>; California Secretary of State semi-official results.</li>
+      <li>Committee outlook: <a href="https://www.ccdaily.com/2026/11/washington-watch-how-key-congressional-committees-will-look/" target="_blank" rel="noopener">Community College Daily</a>; Bloomberg Government; Inside Higher Ed; Punchbowl News; K&amp;L Gates; committee rosters.</li>
+      <li>Statewide offices and propositions: <a href="https://www.opb.org/article/2026/11/03/democrat-xavier-becerra-wins-california-governors-race-defeating-republican-steve-hilton/" target="_blank" rel="noopener">Associated Press</a>; <a href="https://laist.com/news/politics/shaw-concedes-california-superintendent-race" target="_blank" rel="noopener">EdSource via LAist</a>; <a href="https://www.kqed.org/news/12108185/california-proposition-roundup-results-so-far" target="_blank" rel="noopener">KQED</a>; <a href="https://californiatoday.com/guides/elections/2026-california-election-results-master-guide/" target="_blank" rel="noopener">California Today</a>.</li>
+      <li>Results that stood out: <a href="https://www.yahoo.com/news/politics/articles/know-won-virginia-foxx-chuck-213830162.html" target="_blank" rel="noopener">Yahoo News on the Foxx race</a>; <a href="https://news.ballotpedia.org/2026/11/04/democrats-win-u-s-house-and-senate-majorities/" target="_blank" rel="noopener">Ballotpedia</a>; <a href="https://www.yahoo.com/news/politics/articles/republican-susan-collins-loses-seat-062637357.html" target="_blank" rel="noopener">Yahoo News</a>; <a href="https://calmatters.org/politics/2026/11/california-election-2026-congress/" target="_blank" rel="noopener">CalMatters</a>; California Secretary of State report of November 8.</li>
+      <li>Governor-elect Becerra&rsquo;s statements: <a href="https://www.xavierbecerra2026.com/priorities/ai/" target="_blank" rel="noopener">campaign platform on AI</a>; <a href="https://www.xavierbecerra2026.com/priorities/filmindustry/" target="_blank" rel="noopener">campaign platform on the film industry</a>; <a href="https://timesofsandiego.com/education/2026/10/11/becerra-hasnt-made-education-a-priority-california-education-leaders-arent-worried/" target="_blank" rel="noopener">EdSource</a>; <a href="https://www.yahoo.com/news/politics/articles/xavier-becerra-holds-first-news-230617945.html" target="_blank" rel="noopener">KTLA</a>.</li>
+      <li>Legislature: <a href="https://www.kqed.org/news/12108358/after-historic-blue-wave-california-democrats-hope-to-turn-their-focus-inward" target="_blank" rel="noopener">KQED</a>; Assembly and Senate committee rosters.</li>
+      <li>Federal funding deadline: Continuing Appropriations and Extensions Act, 2027 (<a href="https://ncuih.org/2026/09/10/congress-extends-government-funding-through-december/" target="_blank" rel="noopener">summary</a>).</li>
+      <li>District lines: AB 604 (Prop 50) congressional plan via the Statewide Database; U.S. Census Bureau TIGER/Line state legislative districts. Local area boundaries and population shares: CWA analysis of 2020 Census counties, places and blocks.</li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <div class="foot-lockup"><span class="cwa">CWA</span><span class="ef">california workforce association</span></div>
+      <p class="tag">The champion of California's local workforce boards.</p>
+    </div>
+    <nav aria-label="Footer">
+      <div class="col"><h4>Explore</h4><a href='https://calworkforce.org/vision'>Our Vision</a><a href='https://calworkforce.org/advocacy'>Advocacy</a><a href='https://calworkforce.org/fellowship'>Executive Fellowship</a></div>
+      <div class="col"><h4>Our Members</h4><a href='https://calworkforce.org/local-boards'>Boards</a><a href='https://calworkforce.org/affiliates'>Affiliates</a><a href='https://calworkforce.org/board'>Our Board</a></div>
+      <div class="col"><h4>Connect</h4><a href='https://calworkforce.org/contact'>Contact</a><a href="https://lp.constantcontactpages.com/su/ulX0Ntk/CWAdistributionlist" target="_blank" rel="noopener">Newsletter</a><a href='https://calworkforce.org/meeting-of-the-minds'>Meeting of the Minds</a></div>
+    </nav>
+  </div>
+</footer>
+<script>
+  // Scroll reveal
+  (function(){
+    var els=document.querySelectorAll('.reveal');
+    if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches){els.forEach(function(e){e.classList.add('in')});return;}
+    var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(e){io.observe(e)});
+  })();
+
+  // Mobile nav
+  (function(){
+    var t=document.querySelector('.navtoggle'),n=document.getElementById('primary-nav');
+    if(!t)return;
+    t.addEventListener('click',function(){var o=n.classList.toggle('open');t.setAttribute('aria-expanded',o);});
+    n.addEventListener('click',function(e){if(e.target.closest('a')){n.classList.remove('open');t.setAttribute('aria-expanded','false');}});
+  })();
+
+  // Dropdown submenus (click/tap toggle; hover handled by CSS on desktop)
+  (function(){
+    var items=[].slice.call(document.querySelectorAll('.has-sub'));
+    function closeAll(except){items.forEach(function(it){if(it!==except){it.querySelector('.submenu').classList.remove('open');it.querySelector('.subtoggle').setAttribute('aria-expanded','false');}});}
+    items.forEach(function(it){
+      var btn=it.querySelector('.subtoggle'),menu=it.querySelector('.submenu');
+      if(!btn||!menu)return;
+      btn.addEventListener('click',function(e){e.stopPropagation();var open=menu.classList.toggle('open');btn.setAttribute('aria-expanded',open);closeAll(it);});
+    });
+    document.addEventListener('click',function(e){if(!e.target.closest('.has-sub'))closeAll(null);});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')closeAll(null);});
+  })();
+</script>
+<script>window.E26_BASE = '/';</script>
+<script>
+(function(){
+  var BASE = window.E26_BASE || '';
+  var NS = 'http://www.w3.org/2000/svg';
+  var PAL = ['#1a375d','#e27a50','#3b5578','#9fb3cc','#c9623b','#6f86a6','#f0b49a','#122842'];
+  var CH = {CD:{name:'U.S. House', long:'Congressional District', map:'Prop 50 map'}, SD:{name:'State Senate', long:'State Senate District', map:'2021 map'}, AD:{name:'Assembly', long:'Assembly District', map:'2021 map'}};
+  var G, D, B, svg, areaG, distG, VB0;
+  var st = {ch:'CD', area:'', dist:''};
+  var $ = function(s){ return document.querySelector(s); };
+  function el(tag, cls, text){ var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function sv(tag, attrs, text){ var e = document.createElementNS(NS, tag); for (var k in attrs) e.setAttribute(k, attrs[k]); if (text != null) e.textContent = text; return e; }
+  function num(id){ return +id.slice(3); }
+  function ids(ch){ return Object.keys(D).filter(function(k){ return k.indexOf(ch) === 0; }).sort(function(a,b){ return num(a) - num(b); }); }
+  function board(a){ return B[a] || a; }
+  function who(id){
+    var x = D[id];
+    if (x.race && x.race.leader) return x.race.leader + ' (' + x.race.party + ')';
+    return x.holder || '';
+  }
+  var STATUS = {'Called':['ok','Called'], 'Leading':['wait','Leads; not called'], 'Too close':['close','Too close to call'], 'Unopposed':['ok','Unopposed']};
+
+  function raceBlock(id){
+    var x = D[id], p = el('div', 'race');
+    if (x.race){
+      var r = x.race, s = STATUS[r.status] || ['nb', r.status];
+      p.append(el('span', 'pill ' + s[0], s[1]));
+      if (r.change === 'New member') p.append(el('span', 'pill new', 'New member'));
+      if (r.change === 'New to Senate') p.append(el('span', 'pill new', 'Moving to the Senate'));
+      if (r.flip) p.append(el('span', 'pill nb', 'Seat changes party'));
+      p.append(el('br'));
+      p.append(el('span', 'who', r.leader + ' (' + r.party + ')'));
+      if (r.pct != null && r.opponent) p.append(document.createTextNode(' ' + r.pct + '% to ' + r.opp_pct + '% for ' + r.opponent));
+      else if (r.opponent) p.append(document.createTextNode(' vs. ' + r.opponent));
+      if (r.change !== 'Returning' && r.prior){ p.append(el('br')); var sm = el('small', null, 'Before: ' + r.prior); p.append(sm); }
+    } else {
+      p.append(el('span', 'pill nb', 'Not on the 2026 ballot'));
+      p.append(el('br'));
+      p.append(el('span', 'who', x.holder || 'Seat vacant'));
+      p.append(document.createTextNode(x.holder ? ' continues to serve.' : ''));
+    }
+    return p;
+  }
+
+  // ---------- Statewide map ----------
+  function setVB(b, padFrac){
+    var pad = Math.max(b[2], b[3]) * (padFrac == null ? 0.08 : padFrac);
+    var v = [b[0] - pad, b[1] - pad, b[2] + 2 * pad, b[3] + 2 * pad];
+    // keep a sensible aspect so small areas are not stretched across a wide card
+    var ar = VB0[2] / VB0[3];
+    if (v[2] / v[3] > ar * 1.6){ var nh = v[2] / (ar * 1.6); v[1] -= (nh - v[3]) / 2; v[3] = nh; }
+    if (v[3] / v[2] > 1.6 / ar){ var nw = v[3] * ar / 1.6; v[0] -= (nw - v[2]) / 2; v[2] = nw; }
+    svg.setAttribute('viewBox', v.join(' '));
+  }
+  function buildState(){
+    var box = $('#stateMap'); box.replaceChildren();
+    VB0 = G.cabox.slice();
+    svg = sv('svg', {viewBox: VB0.join(' '), role: 'img', 'aria-label': 'Map of California with local workforce areas and district lines', preserveAspectRatio: 'xMidYMid meet'});
+    areaG = sv('g', {});
+    Object.keys(G.areas).forEach(function(a){
+      var p = sv('path', {d: G.areas[a].d, fill: '#F3EFE9', stroke: '#D9CFC3', 'stroke-width': 0.8, 'vector-effect': 'non-scaling-stroke', 'data-a': a});
+      p.append(sv('title', {}, board(a)));
+      areaG.append(p);
+    });
+    distG = sv('g', {});
+    svg.append(sv('path', {d: G.ca, fill: 'none', stroke: '#9fb3cc', 'stroke-width': 1, 'vector-effect': 'non-scaling-stroke'}), areaG, distG);
+    box.append(svg);
+    drawDistricts();
+  }
+  function drawDistricts(){
+    distG.replaceChildren();
+    ids(st.ch).forEach(function(id){
+      var g = G.districts[id]; if (!g) return;
+      var p = sv('path', {d: g.d, class: 'dist', 'data-id': id, fill: 'rgba(255,255,255,0)', stroke: '#3B5578', 'stroke-width': 0.9, 'stroke-linejoin': 'round', 'vector-effect': 'non-scaling-stroke', 'pointer-events': 'all'});
+      p.addEventListener('mouseenter', function(){ hover(id, p, true); });
+      p.addEventListener('mouseleave', function(){ hover(id, p, false); });
+      p.addEventListener('click', function(){ selectDist(id); });
+      distG.append(p);
+    });
+    paint();
+  }
+  function hover(id, p, on){
+    if (on){
+      var r = D[id], s = r.race ? (STATUS[r.race.status] || [0, r.race.status])[1] : 'Not on the 2026 ballot';
+      $('#hoverLine').textContent = id + ' · ' + (who(id) || 'Seat vacant') + ' · ' + s;
+      if (id !== st.dist) p.setAttribute('fill', 'rgba(226,122,80,.22)');
+    } else {
+      $('#hoverLine').textContent = st.dist ? st.dist + ' · ' + (who(st.dist) || '') : 'Tap or hover over a district.';
+      paint();
+    }
+  }
+  function covering(a){ return ids(st.ch).filter(function(id){ return D[id].areas.some(function(x){ return x[0] === a; }); }); }
+  function paint(){
+    var cov = st.area ? covering(st.area) : [];
+    [].forEach.call(areaG.children, function(p){
+      var on = p.getAttribute('data-a') === st.area;
+      p.setAttribute('fill', on ? '#F4C9B4' : '#F3EFE9');
+      p.setAttribute('stroke', on ? '#C9623B' : '#D9CFC3');
+      p.setAttribute('stroke-width', on ? 2.2 : 0.8);
+    });
+    if (st.area){ var sel = areaG.querySelector('[data-a="' + CSS.escape(st.area) + '"]'); if (sel) areaG.append(sel); }
+    [].forEach.call(distG.children, function(p){
+      var id = p.getAttribute('data-id');
+      var isSel = id === st.dist, isCov = cov.indexOf(id) > -1;
+      p.setAttribute('fill', isSel ? 'rgba(226,122,80,.45)' : 'rgba(255,255,255,0)');
+      p.setAttribute('stroke', isSel ? '#122842' : '#3B5578');
+      p.setAttribute('stroke-width', isSel ? 2.6 : isCov ? 1.6 : 0.9);
+      p.setAttribute('stroke-opacity', st.area && !isCov && !isSel ? 0.45 : 1);
+    });
+    var s = distG.querySelector('[data-id="' + st.dist + '"]'); if (s) distG.append(s);
+    $('#resetBtn').hidden = !(st.area || st.dist);
+    $('#mapTitle').textContent = CH[st.ch].name + ' districts' + (st.area ? ' in ' + st.area : '');
+  }
+  function zoom(){
+    if (st.dist && G.districts[st.dist]) setVB(G.districts[st.dist].bbox, 0.25);
+    else if (st.area && G.areas[st.area]) setVB(G.areas[st.area].b, 0.1);
+    else svg.setAttribute('viewBox', VB0.join(' '));
+  }
+
+  // ---------- District detail map ----------
+  var _cv = document.createElement('canvas').getContext('2d');
+  function textW(t, fs){ try { _cv.font = '600 100px Sora, system-ui, sans-serif'; return _cv.measureText(t).width * fs / 100; } catch (e) { return t.length * fs * 0.62; } }
+  function distSvg(id){
+    var g = G.districts[id], r = D[id]; if (!g) return null;
+    var color = {}; r.areas.forEach(function(a, i){ color[a[0]] = PAL[i % PAL.length]; });
+    var bx = g.bbox[0], by = g.bbox[1], bw = g.bbox[2], bh = g.bbox[3], pad = Math.max(bw, bh) * 0.06;
+    var vb = [bx - pad, by - pad, bw + 2 * pad, bh + 2 * pad];
+    var s = sv('svg', {viewBox: vb.join(' '), class: 'dsvg', role: 'img', preserveAspectRatio: 'xMidYMid meet', 'aria-label': 'Map of ' + id + ' showing local workforce areas: ' + r.areas.map(function(a){ return a[0]; }).join(', ')});
+    var cid = 'clip' + id.replace('-', '');
+    var defs = sv('defs', {}), cp = sv('clipPath', {id: cid}); cp.append(sv('path', {d: g.d})); defs.append(cp); s.append(defs);
+    var ctx = sv('g', {fill: '#f3efe9', stroke: '#d9cfc3', 'stroke-width': 0.8});
+    Object.keys(G.areas).forEach(function(a){ var b = G.areas[a].b; if (b[0] > vb[0] + vb[2] || b[1] > vb[1] + vb[3] || b[0] + b[2] < vb[0] || b[1] + b[3] < vb[1]) return; ctx.append(sv('path', {d: G.areas[a].d, 'vector-effect': 'non-scaling-stroke'})); });
+    s.append(ctx, sv('path', {d: g.d, fill: '#e3ebf3'}));
+    var pg = sv('g', {'clip-path': 'url(#' + cid + ')'});
+    g.pieces.forEach(function(p){
+      var e = sv('path', {d: p.d, fill: color[p.area] || '#dfe5ec', stroke: '#ffffff', 'stroke-width': 1, 'vector-effect': 'non-scaling-stroke'});
+      var t = r.areas.filter(function(a){ return a[0] === p.area; })[0];
+      e.append(sv('title', {}, board(p.area) + (t ? ': ' + t[1] + '% of district residents' : ': under 1% of district residents')));
+      pg.append(e);
+    });
+    s.append(pg, sv('path', {d: g.d, fill: 'none', stroke: '#122842', 'stroke-width': 2, 'stroke-linejoin': 'round', 'vector-effect': 'non-scaling-stroke'}));
+    // Labels: white bubbles; small pieces get a leader line.
+    var labeled = r.areas.map(function(a){ return g.pieces.filter(function(p){ return p.area === a[0]; })[0]; }).filter(Boolean).sort(function(p, q){ return q.a - p.a; });
+    var fs = vb[2] / (labeled.length > 4 ? 26 : 23), padX = fs * 0.55, bh2 = fs * 1.55, gap = fs * 0.25, placed = [];
+    var iw0 = vb[2] * 0.16; placed.push({x: vb[0] + vb[2] - iw0 - vb[2] * 0.03, y: vb[1], w: iw0 + vb[2] * 0.03, h: iw0 * 1.1 + vb[2] * 0.02});
+    function hit(b){ return placed.some(function(q){ return b.x < q.x + q.w + gap && b.x + b.w + gap > q.x && b.y < q.y + q.h + gap && b.y + b.h + gap > q.y; }); }
+    function inside(b){ return b.x >= vb[0] + fs * 0.2 && b.y >= vb[1] + fs * 0.2 && b.x + b.w <= vb[0] + vb[2] - fs * 0.2 && b.y + b.h <= vb[1] + vb[3] - fs * 0.2; }
+    var leaders = sv('g', {}), lab = sv('g', {'font-family': 'Sora, system-ui, sans-serif', 'font-size': fs, 'font-weight': 600, 'text-anchor': 'middle'});
+    labeled.forEach(function(p){
+      var w = textW(p.area, fs) + padX * 2;
+      function at(cx, cy){ return {x: cx - w / 2, y: cy - bh2 / 2, w: w, h: bh2}; }
+      var b = null, lead = false;
+      if (p.a >= 6){ var c0 = at(p.lx, p.ly); if (!hit(c0) && inside(c0)) b = c0; }
+      for (var k = 1; !b && k <= 8; k++){
+        var rad = bh2 * 1.1 * k;
+        for (var t = 0; t < 16 && !b; t++){
+          var ang = (t * Math.PI) / 8 - Math.PI / 2;
+          var c = at(p.lx + Math.cos(ang) * (rad + w / 2 * Math.abs(Math.cos(ang))), p.ly + Math.sin(ang) * rad);
+          if (!hit(c) && inside(c)){ b = c; lead = true; }
+        }
+      }
+      if (!b){ b = at(p.lx, p.ly); lead = false; }
+      placed.push(b);
+      if (lead){
+        var ex = Math.min(Math.max(p.lx, b.x), b.x + b.w), ey = Math.min(Math.max(p.ly, b.y), b.y + b.h);
+        leaders.append(sv('line', {x1: p.lx, y1: p.ly, x2: ex, y2: ey, stroke: '#122842', 'stroke-width': 1.2, 'vector-effect': 'non-scaling-stroke'}));
+        leaders.append(sv('circle', {cx: p.lx, cy: p.ly, r: fs * 0.22, fill: '#122842', stroke: '#ffffff', 'stroke-width': 1.2, 'vector-effect': 'non-scaling-stroke'}));
+      }
+      lab.append(sv('rect', {x: b.x, y: b.y, width: b.w, height: b.h, rx: bh2 / 2, fill: '#ffffff', stroke: '#c9d3df', 'stroke-width': 1, 'vector-effect': 'non-scaling-stroke', style: 'filter:drop-shadow(0 1px 1.5px rgba(18,40,66,.25))'}));
+      lab.append(sv('text', {x: b.x + b.w / 2, y: b.y + bh2 / 2 + fs * 0.36, fill: '#122842'}, p.area));
+    });
+    s.append(leaders, lab);
+    // California locator
+    var iw = vb[2] * 0.16, ih = iw * G.cabox[3] / G.cabox[2];
+    var ins = sv('svg', {x: vb[0] + vb[2] - iw - vb[2] * 0.015, y: vb[1] + vb[2] * 0.015, width: iw, height: ih, viewBox: G.cabox.join(' ')});
+    ins.append(sv('path', {d: G.ca, fill: '#eaeef3', stroke: '#9fb3cc', 'stroke-width': 1, 'vector-effect': 'non-scaling-stroke'}));
+    ins.append(sv('path', {d: g.d, fill: '#e27a50'}));
+    ins.append(sv('circle', {cx: bx + bw / 2, cy: by + bh / 2, r: Math.max(G.cabox[2] / 28, Math.max(bw, bh) / 2), fill: 'none', stroke: '#c9623b', 'stroke-width': 1.5, 'vector-effect': 'non-scaling-stroke'}));
+    s.append(ins);
+    return s;
+  }
+
+  // ---------- Detail panel ----------
+  function renderDetail(){
+    var box = $('#detail'); box.replaceChildren();
+    if (st.dist){
+      var id = st.dist, r = D[id], c = el('div', 'dcard');
+      if (st.area){ var bk = el('button', 'back', '← All ' + CH[st.ch].name + ' districts in ' + st.area); bk.type = 'button'; bk.onclick = function(){ selectDist(''); }; c.append(bk); }
+      c.append(el('span', 'eyebrow', CH[st.ch].name + ' · ' + CH[st.ch].map));
+      c.append(el('h3', null, CH[st.ch].long + ' ' + num(id)));
+      c.append(raceBlock(id));
+      var m = null; try { m = distSvg(id); } catch (e) { console.error(e); } if (m) c.append(m);
+      var bar = el('div', 'dbar'); r.areas.forEach(function(a, i){ var s = el('i'); s.style.flex = String(a[1]); s.style.background = PAL[i % PAL.length]; s.title = board(a[0]) + ': ' + a[1] + '%'; bar.append(s); }); c.append(bar);
+      c.append(el('p', 'fine', 'Share of the district’s residents in each local workforce area'));
+      var ul = el('ul', 'dleg');
+      r.areas.forEach(function(a, i){
+        var li = el('li'), sw = el('i'); sw.style.background = PAL[i % PAL.length];
+        var b = el('button', null, board(a[0])); b.type = 'button'; b.title = 'Show every ' + CH[st.ch].name + ' district in this local area'; b.onclick = function(){ selectArea(a[0]); };
+        li.append(sw, el('span', 'p', a[1] + '%'), b); ul.append(li);
+      });
+      if (!r.areas.length) ul.append(el('li', null, 'No local area holds 1 percent or more of this district.'));
+      c.append(ul);
+      box.append(c); return;
+    }
+    if (st.area){
+      var c2 = el('div', 'dcard'), list = covering(st.area);
+      c2.append(el('span', 'eyebrow', 'Local workforce area'));
+      c2.append(el('h3', null, board(st.area)));
+      c2.append(el('p', 'race', list.length + ' ' + CH[st.ch].name + ' district' + (list.length === 1 ? '' : 's') + ' include part of this area. Switch chambers above to see the others.'));
+      var ol = el('ul', 'alist');
+      list.forEach(function(id){
+        var share = D[id].areas.filter(function(x){ return x[0] === st.area; })[0][1];
+        var li = el('li'), b = el('button'); b.type = 'button';
+        var nm = el('span', 'nm'); nm.append(document.createTextNode(who(id) || 'Seat vacant'));
+        var r = D[id].race; nm.append(el('small', null, r ? (STATUS[r.status] || [0, r.status])[1] + (r.change === 'New member' ? ' · new member' : r.change === 'New to Senate' ? ' · moving to the Senate' : '') : 'Not on the 2026 ballot'));
+        b.append(el('span', 'id', id), nm, el('span', 'sh', share + '% of district residents'));
+        b.onclick = function(){ selectDist(id); };
+        li.append(b); ol.append(li);
+      });
+      c2.append(ol);
+      box.append(c2); return;
+    }
+    var pr = el('div', 'prompt');
+    pr.append(el('h3', null, 'Start with your local area'));
+    pr.append(el('p', null, 'Choose a local workforce area to see every district that includes part of it, or choose a district to see the local areas inside it.'));
+    var nw = ids(st.ch).filter(function(id){ var r = D[id].race; return r && (r.change === 'New member' || r.change === 'New to Senate'); });
+    if (nw.length){
+      var wrap = el('div', 'newlist');
+      wrap.append(el('h4', null, 'New to the ' + CH[st.ch].name + ', leading or called (' + nw.length + ')'));
+      var chips = el('div', 'chips');
+      nw.forEach(function(id){ var b = el('button', 'chip'); b.type = 'button'; b.append(el('b', null, id), document.createTextNode(who(id))); b.onclick = function(){ selectDist(id); }; chips.append(b); });
+      wrap.append(chips); pr.append(wrap);
+    }
+    box.append(pr);
+  }
+
+  // ---------- State changes ----------
+  function syncControls(){
+    [].forEach.call(document.querySelectorAll('.seg button'), function(b){ b.setAttribute('aria-selected', String(b.getAttribute('data-ch') === st.ch)); });
+    $('#areaSel').value = st.area;
+    var ds = $('#distSel'); ds.replaceChildren(new Option('Choose a district', ''));
+    ids(st.ch).forEach(function(id){ ds.append(new Option(id + ' · ' + (who(id) || 'Seat vacant'), id)); });
+    ds.value = st.dist;
+    try { history.replaceState(null, '', '#maps' + (st.ch !== 'CD' || st.area || st.dist ? '?' + [st.ch !== 'CD' ? 'ch=' + st.ch : '', st.area ? 'area=' + encodeURIComponent(st.area) : '', st.dist ? 'd=' + st.dist : ''].filter(Boolean).join('&') : '')); } catch (e) {}
+  }
+  function update(){ syncControls(); paint(); zoom(); renderDetail(); }
+  function selectArea(a){ st.area = a; st.dist = ''; update(); }
+  function selectDist(id){ st.dist = id; update(); if (id && window.innerWidth < 980){ var d = $('#detail'); d.scrollIntoView({behavior: 'smooth', block: 'start'}); } }
+  function setCh(ch){ st.ch = ch; st.dist = ''; drawDistricts(); update(); }
+
+  function init(){
+    var as = $('#areaSel');
+    Object.keys(B).sort(function(a, b){ return board(a).localeCompare(board(b)); }).forEach(function(a){ as.append(new Option(board(a), a)); });
+    as.onchange = function(){ selectArea(as.value); };
+    $('#distSel').onchange = function(e){ selectDist(e.target.value); };
+    [].forEach.call(document.querySelectorAll('.seg button'), function(b){ b.onclick = function(){ setCh(b.getAttribute('data-ch')); }; });
+    $('#resetBtn').onclick = function(){ st.area = ''; st.dist = ''; update(); };
+    var m = /#maps\?(.*)$/.exec(location.hash);
+    if (m){ m[1].split('&').forEach(function(kv){ var p = kv.split('='); var v = decodeURIComponent(p[1] || ''); if (p[0] === 'ch' && CH[v]) st.ch = v; if (p[0] === 'area' && B[v]) st.area = v; if (p[0] === 'd' && D[v]) { st.dist = v; st.ch = v.slice(0, 2); } }); }
+    buildState(); update();
+    window.addEventListener('hashchange', function(){ var h = /#maps\?(.*)$/.exec(location.hash); if (!h) return; var n = {ch: st.ch, area: '', dist: ''}; h[1].split('&').forEach(function(kv){ var p = kv.split('='); var v = decodeURIComponent(p[1] || ''); if (p[0] === 'ch' && CH[v]) n.ch = v; if (p[0] === 'area' && B[v]) n.area = v; if (p[0] === 'd' && D[v]) { n.dist = v; n.ch = v.slice(0, 2); } }); var chg = n.ch !== st.ch; st.area = n.area; st.dist = n.dist; if (chg) { st.ch = n.ch; drawDistricts(); } update(); document.getElementById('maps').scrollIntoView(); });
+  }
+
+  Promise.all(['geo', 'districts', 'boards'].map(function(n){ return fetch(BASE + 'data/' + n + '.json').then(function(r){ if (!r.ok) throw new Error(n); return r.json(); }); }))
+    .then(function(x){ G = x[0]; D = x[1]; B = x[2]; init(); })
+    .catch(function(e){ console.error(e); $('#stateMap').replaceChildren(el('p', 'loading', 'The map could not load. Please refresh the page.')); });
+})();
+
+</script>
+</body>
+</html>
